@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    src:
+      url(fonts/inter-regular.woff2) format('woff2'),
+      url(fonts/inter-regular.woff) format('woff');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/inter-medium.woff2) format('woff2'), url(fonts/inter-medium.woff) format('woff');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/inter-bold.woff2) format('woff2'), url(fonts/inter-bold.woff) format('woff');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    src:
+      url(fonts/inter-extrabold.woff2) format('woff2'),
+      url(fonts/inter-extrabold.woff) format('woff');
+    font-display: swap;
+  }
+
+  body {
+    @apply font-body font-normal leading-snug text-black antialiased;
+  }
+}
+
+@layer components {
+  .with-link-primary a {
+    @apply text-primary-1 font-bold no-underline;
+  }
+}
