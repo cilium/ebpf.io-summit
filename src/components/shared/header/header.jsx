@@ -23,11 +23,11 @@ const Header = () => (
     <Popover>
       {({ open }) => (
         <>
-          <Container className="py-5">
-            <img className="absolute left-0 top-full" src={shape1} alt="" aria-hidden />
-            <img className="absolute right-6 top-full" src={shape2} alt="" aria-hidden />
+          <Container className="pt-5 pb-4">
+            <img className="absolute right-6 top-full" src={shape1} alt="" aria-hidden />
+            <img className="absolute left-0 top-full" src={shape2} alt="" aria-hidden />
             <nav className="relative flex items-center justify-between" aria-label="Global">
-              <div className="flex items-center flex-none md:flex-1">
+              <div className="flex items-center flex-none md:flex-1 -mt-2.5">
                 <div className="flex items-center justify-between w-auto md:w-full">
                   <Link to="/">
                     <span className="sr-only">Partnership Leaders</span>
@@ -43,7 +43,11 @@ const Header = () => (
               </div>
               <div className="flex space-x-10 md:hidden lg:space-x-5">
                 {navigation.map((item) => (
-                  <a key={item.name} href={item.href} className="font-bold hover:text-gray-900">
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="font-bold leading-none hover:text-gray-900"
+                  >
                     {item.name}
                   </a>
                 ))}

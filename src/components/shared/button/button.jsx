@@ -19,7 +19,7 @@ const Button = (props) => {
   const Tag = to ? Link : 'button';
 
   const styles =
-    'relative inline-flex justify-center items-center font-extrabold tracking-wider leading-none whitespace-nowrap duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline disabled:pointer-events-none';
+    'relative inline-flex justify-center items-center font-extrabold leading-none whitespace-nowrap duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline disabled:pointer-events-none';
 
   let themeStyles;
   switch (theme) {

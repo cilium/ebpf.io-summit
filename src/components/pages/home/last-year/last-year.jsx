@@ -21,7 +21,7 @@ const LastYear = ({ title, description, link }) => (
         to={link.url}
       >
         {link.title}
-        <ArrowIcon />
+        <ArrowIcon className="ml-2.5" />
       </Link>
       <div className="grid grid-cols-4 max-w-[920px] mx-auto gap-x-10 mt-10">
         <div className="relative">

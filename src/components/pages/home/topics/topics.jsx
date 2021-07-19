@@ -10,7 +10,7 @@ const Topics = ({ title, items, text }) => (
     <Container>
       <Heading tag="h2">{title}</Heading>
       <div className="mt-12">
-        <ul className="grid grid-cols-2 gap-y-6 gap-x-14">
+        <ul className="grid grid-cols-2 gap-y-6 gap-x-8">
           {items.map((item, index) => (
             <li className="flex space-x-3 text-lg font-medium leading-snug" key={index}>
               <CheckIcon className="flex-shrink-0" />

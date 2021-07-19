@@ -17,7 +17,7 @@ const Footer = (props) => (
       <Link className="font-bold text-primary-2" to="/">
         Code of Conduct
       </Link>
-      <div className="flex items-center space-x-7">
+      <div className="flex items-center space-x-6">
         <Link to="/" target="_blank" rel="noopener">
           <TwitterIcon />
         </Link>

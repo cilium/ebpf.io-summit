@@ -21,7 +21,7 @@ const Speakers = ({ title, items }) => (
         <img className="absolute -right-7 bottom-36" src={shape3} alt="" aria-hidden />
         <img className="absolute -bottom-8 left-1/4" src={shape2} alt="" aria-hidden />
         {items.map(({ avatar, name, position }, index) => (
-          <div className="p-8 text-center border-2 border-gray-2" key={index}>
+          <div className="p-8 pb-6 text-center border-2 border-gray-2" key={index}>
             <GatsbyImage className="rounded-full" image={getImage(avatar)} alt={name} />
             <h3 className="mt-4 text-lg font-bold">{name}</h3>
             <span className="mt-1 text-lg text-gray-1">{position}</span>
