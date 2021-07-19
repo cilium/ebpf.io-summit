@@ -13,11 +13,11 @@ const Footer = (props) => (
       Footer
     </h2>
     <Container className="flex items-center justify-between">
-      <Logo />
+      <Logo className="lg:w-auto lg:h-8" />
       <Link className="font-bold text-primary-2" to="/">
         Code of Conduct
       </Link>
-      <div className="flex items-center space-x-6">
+      <div className="flex items-center space-x-6 md:space-x-3">
         <Link to="/" target="_blank" rel="noopener">
           <TwitterIcon />
         </Link>

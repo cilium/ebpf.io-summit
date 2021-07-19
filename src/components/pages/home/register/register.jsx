@@ -12,13 +12,13 @@ const Register = ({ title, description, button }) => (
   <section className="text-center" id="register">
     <Container className="pt-16 overflow-hidden bg-primary-1 pb-14">
       <img
-        className="absolute top-0 left-0 lg:-left-20 md:hidden"
+        className="absolute top-0 left-0 h-full xl:-left-14 lg:hidden"
         src={shape1}
         alt=""
         aria-hidden
       />
       <img
-        className="absolute top-0 right-0 lg:-right-20 md:hidden"
+        className="absolute top-0 right-0 h-full xl:-right-14 lg:hidden"
         src={shape2}
         alt=""
         aria-hidden

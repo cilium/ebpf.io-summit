@@ -31,23 +31,22 @@ const Header = () => (
                 <div className="flex items-center justify-between w-auto md:w-full">
                   <Link to="/">
                     <span className="sr-only">eBPF</span>
-                    <Logo className="w-auto h-15" aria-label="Logo" />
+                    <Logo className="w-auto h-15 lg:w-auto lg:h-8" aria-label="Logo" />
                   </Link>
                   <div className="items-center hidden -mr-2 md:flex">
-                    <Popover.Button className="inline-flex items-center justify-center p-2 text-black rounded-md bg-gray-5 hover:text-gray-5 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-3-500">
+                    <Popover.Button className="inline-flex items-center justify-center p-2 text-black rounded-md bg-gray-5 hover:text-gray-5 hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline">
                       <span className="sr-only">Open main menu</span>
                       <MenuIcon className="w-6 h-6" aria-hidden="true" />
                     </Popover.Button>
                   </div>
                 </div>
               </div>
-              <div className="flex space-x-10 md:hidden lg:space-x-5">
+              <div className="flex space-x-10 md:hidden lg:space-x-4">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
                     className="font-bold leading-none hover:text-gray-900 lg:text-sm"
-                    // onClick={handleClick}
                   >
                     {item.name}
                   </a>
@@ -82,7 +81,7 @@ const Header = () => (
                     <Logo className="w-auto h-8" aria-label="Logo" />
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="inline-flex items-center justify-center p-2 text-black bg-white rounded-md hover:text-gray-5 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-3-500">
+                    <Popover.Button className="inline-flex items-center justify-center p-2 text-black bg-white rounded-md hover:text-gray-5 hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="w-6 h-6" aria-hidden="true" />
                     </Popover.Button>
