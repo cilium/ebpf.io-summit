@@ -8,7 +8,7 @@ import shape1 from './images/shape-1.svg';
 import shape2 from './images/shape-2.svg';
 
 const Agenda = ({ title, subtitle, description }) => (
-  <section className="relative text-center text-white bg-black py-28 md:py-20">
+  <section className="relative text-center text-white bg-black py-28 md:py-20" id="agenda">
     <img className="absolute top-0 left-0 md:h-full sm:hidden" src={shape1} alt="" aria-hidden />
     <img className="absolute top-0 right-0 md:h-full sm:hidden" src={shape2} alt="" aria-hidden />
     <Container className="max-w-[592px]">

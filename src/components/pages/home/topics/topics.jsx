@@ -6,7 +6,7 @@ import Heading from 'components/shared/heading';
 import CheckIcon from 'icons/check.inline.svg';
 
 const Topics = ({ title, items, text }) => (
-  <section className="bg-gray-3 py-28 md:py-20">
+  <section className="bg-gray-3 py-28 md:py-20" id="topics">
     <Container>
       <Heading tag="h2">{title}</Heading>
       <div className="mt-12">

@@ -11,11 +11,11 @@ import shape1 from './images/shape-1.svg';
 import shape2 from './images/shape-2.svg';
 
 const navigation = [
-  { name: 'Featured Speakers', href: '#' },
-  { name: 'Agenda', href: '#' },
-  { name: 'Information', href: '#' },
-  { name: 'Topics', href: '#' },
-  { name: `Last year's`, href: '#' },
+  { name: 'Featured Speakers', href: '#featured-speakers' },
+  { name: 'Agenda', href: '#agenda' },
+  { name: 'Information', href: '#information' },
+  { name: 'Topics', href: '#topics' },
+  { name: `Last year's`, href: `#last-year's` },
 ];
 
 const Header = () => (
@@ -30,7 +30,7 @@ const Header = () => (
               <div className="flex items-center flex-none md:flex-1 -mt-2.5">
                 <div className="flex items-center justify-between w-auto md:w-full">
                   <Link to="/">
-                    <span className="sr-only">Partnership Leaders</span>
+                    <span className="sr-only">eBPF</span>
                     <Logo className="w-auto h-15" aria-label="Logo" />
                   </Link>
                   <div className="items-center hidden -mr-2 md:flex">
@@ -47,6 +47,7 @@ const Header = () => (
                     key={item.name}
                     href={item.href}
                     className="font-bold leading-none hover:text-gray-900 lg:text-sm"
+                    // onClick={handleClick}
                   >
                     {item.name}
                   </a>

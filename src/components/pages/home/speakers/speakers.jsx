@@ -10,7 +10,7 @@ import shape2 from './images/shape-2.svg';
 import shape3 from './images/shape-3.svg';
 
 const Speakers = ({ title, items }) => (
-  <section className="py-28 md:py-20">
+  <section className="py-28 md:py-20" id="featured-speakers">
     <Container>
       <Heading className="text-center" tag="h2">
         {title}

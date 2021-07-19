@@ -16,7 +16,7 @@ const icons = {
 };
 
 const Information = ({ title, items }) => (
-  <section className="py-28 md:py-20">
+  <section className="py-28 md:py-20" id="information">
     <Container>
       <Heading tag="h2">{title}</Heading>
       <div className="grid grid-cols-2 mt-12 gap-x-8 gap-y-12 md:grid-cols-1 md:gap-y-8">

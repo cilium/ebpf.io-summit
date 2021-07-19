@@ -9,7 +9,7 @@ import shape1 from './images/shape-1.svg';
 import shape2 from './images/shape-2.svg';
 
 const Register = ({ title, description, button }) => (
-  <section className="text-center">
+  <section className="text-center" id="register">
     <Container className="pt-16 overflow-hidden bg-primary-1 pb-14">
       <img
         className="absolute top-0 left-0 lg:-left-20 md:hidden"
