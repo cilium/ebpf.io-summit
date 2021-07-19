@@ -3,8 +3,8 @@ import React from 'react';
 
 const Container = ({ className: additionalClassName, small, children, ...restProps }) => {
   const commonClassName = 'relative mx-auto';
-  const defaultSizeClassName = `${commonClassName} max-w-[1216px]`;
-  const smSizeClassName = `${commonClassName} max-w-[1008px]`;
+  const defaultSizeClassName = `${commonClassName} max-w-[1216px] xl:px-10 md:px-6 sm:px-4`;
+  const smSizeClassName = `${commonClassName} max-w-[1008px] xl:px-10 md:px-6 sm:px-4`;
 
   let className = null;
 

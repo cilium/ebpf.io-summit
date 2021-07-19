@@ -42,7 +42,7 @@ const Button = (props) => {
       sizeStyles = 'px-5 py-3.5';
       break;
     case 'md':
-      sizeStyles = 'px-8 py-5 text-xl';
+      sizeStyles = 'px-8 py-5 text-xl md:px-6 md:py-3 md:text-lg';
       break;
     default:
       return undefined;

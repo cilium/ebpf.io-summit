@@ -34,7 +34,7 @@ const Header = () => (
                     <Logo className="w-auto h-15" aria-label="Logo" />
                   </Link>
                   <div className="items-center hidden -mr-2 md:flex">
-                    <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md bg-gray-5 hover:text-gray-5 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-3-500">
+                    <Popover.Button className="inline-flex items-center justify-center p-2 text-black rounded-md bg-gray-5 hover:text-gray-5 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-3-500">
                       <span className="sr-only">Open main menu</span>
                       <MenuIcon className="w-6 h-6" aria-hidden="true" />
                     </Popover.Button>
@@ -46,7 +46,7 @@ const Header = () => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="font-bold leading-none hover:text-gray-900"
+                    className="font-bold leading-none hover:text-gray-900 lg:text-sm"
                   >
                     {item.name}
                   </a>
@@ -81,7 +81,7 @@ const Header = () => (
                     <Logo className="w-auto h-8" aria-label="Logo" />
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-5 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-3-500">
+                    <Popover.Button className="inline-flex items-center justify-center p-2 text-black bg-white rounded-md hover:text-gray-5 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-3-500">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="w-6 h-6" aria-hidden="true" />
                     </Popover.Button>
@@ -92,7 +92,7 @@ const Header = () => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="block px-3 py-2 font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-5"
+                      className="block px-3 py-2 font-medium text-black rounded-md hover:text-gray-900 hover:bg-gray-5"
                     >
                       {item.name}
                     </a>

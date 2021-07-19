@@ -15,13 +15,13 @@ const Heading = (props) => {
   let sizeClassName = null;
   switch (size) {
     case '2xl':
-      sizeClassName = 'text-7xl';
+      sizeClassName = 'text-7xl md:text-6xl sm:text-5xl';
       break;
     case 'xl':
-      sizeClassName = 'text-5xl';
+      sizeClassName = 'text-5xl md:text-4xl';
       break;
     case 'lg':
-      sizeClassName = 'text-4xl';
+      sizeClassName = 'text-4xl md:text-3xl';
       break;
     default:
       return undefined;

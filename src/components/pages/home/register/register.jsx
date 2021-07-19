@@ -10,13 +10,23 @@ import shape2 from './images/shape-2.svg';
 
 const Register = ({ title, description, button }) => (
   <section className="text-center">
-    <Container className="pt-16 bg-primary-1 pb-14">
-      <img className="absolute top-0 left-0" src={shape1} alt="" aria-hidden />
-      <img className="absolute top-0 right-0" src={shape2} alt="" aria-hidden />
+    <Container className="pt-16 overflow-hidden bg-primary-1 pb-14">
+      <img
+        className="absolute top-0 left-0 lg:-left-20 md:hidden"
+        src={shape1}
+        alt=""
+        aria-hidden
+      />
+      <img
+        className="absolute top-0 right-0 lg:-right-20 md:hidden"
+        src={shape2}
+        alt=""
+        aria-hidden
+      />
       <Heading tag="h2" size="lg">
         {title}
       </Heading>
-      <p className="mt-6 text-xl max-w-[656px] mx-auto">{description}</p>
+      <p className="mt-6 text-xl max-w-[656px] mx-auto md:text-lg">{description}</p>
       <Button className="mt-9" to={button.url} theme="black">
         {button.title}
       </Button>
