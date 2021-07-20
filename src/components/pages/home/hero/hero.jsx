@@ -25,7 +25,7 @@ const Hero = ({ date, title, description, button1, button2 }) => {
 
   return (
     <section className="overflow-hidden text-white bg-black">
-      <Container className="py-32 md:pt-24 md:pb-20 xs:pb-10">
+      <Container className="py-32 md:pt-24 md:pb-16 xs:pb-9">
         <div className="max-w-[592px] lg:max-w-[auto] lg:mb-9">
           <span className="inline-block px-4 py-3 font-bold leading-none uppercase border-2 text-primary-1 border-primary-1">
             {date}
