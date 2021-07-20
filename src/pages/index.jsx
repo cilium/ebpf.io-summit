@@ -44,7 +44,7 @@ const information = {
       iconName: 'refresh',
       name: 'Connecting end-users',
       description:
-        'The eBPF Summit brings together end-user and the eBPF developer community for two days of exciting content all around eBPF.',
+        'The eBPF Summit brings together end-users and the eBPF developer community for two days of exciting content all around eBPF.',
     },
     {
       iconName: 'cog',
@@ -85,7 +85,7 @@ const lastYear = {
   description:
     'Many different perspectives were covered from kernel maintainers working on eBPF implementation, through projects using eBPF technology to create next-generation tools, through to end users sharing their experiences of leveraging this awesome new set of capabilities.',
   link: {
-    url: '/',
+    url: 'https://ebpf.io/summit-2020',
     title: 'eBPF Summit 2020',
   },
   items: [

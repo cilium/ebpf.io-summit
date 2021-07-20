@@ -13,7 +13,7 @@ import shape4 from './images/shape-4.svg';
 
 const shapes = [shape1, shape2, shape3, shape4];
 const LastYear = ({ title, description, link, items }) => (
-  <section className="pb-40 pt-28 md:pt-20 md:pb-28 sm:pb-20" id="last-year's">
+  <section className="pb-40 pt-28 md:pt-20 md:pb-28 sm:pb-20" id="last-year's-summit">
     <Container className="text-center" small>
       <Heading tag="h2" size="lg">
         {title}

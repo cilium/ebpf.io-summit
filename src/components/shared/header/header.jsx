@@ -15,7 +15,7 @@ const navigation = [
   { name: 'Agenda', href: '#agenda' },
   { name: 'Information', href: '#information' },
   { name: 'Topics', href: '#topics' },
-  { name: `Last year's`, href: `#last-year's` },
+  { name: `Last year's summit`, href: `#last-year's-summit` },
 ];
 
 const Header = () => (
@@ -41,7 +41,7 @@ const Header = () => (
                   </div>
                 </div>
               </div>
-              <div className="flex space-x-10 md:hidden lg:space-x-4">
+              <div className="flex space-x-10 md:hidden lg:space-x-3.5">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
