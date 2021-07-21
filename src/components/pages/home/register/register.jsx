@@ -27,7 +27,13 @@ const Register = ({ title, description, button }) => (
         {title}
       </Heading>
       <p className="mt-6 text-xl max-w-[656px] mx-auto md:text-lg">{description}</p>
-      <Button className="mt-9" to={button.url} theme="black">
+      <Button
+        className="mt-9"
+        to={button.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        theme="black"
+      >
         {button.title}
       </Button>
     </Container>

@@ -38,10 +38,21 @@ const Hero = ({ date, title, description, button1, button2 }) => {
             dangerouslySetInnerHTML={{ __html: description }}
           />
           <div className="flex space-x-6 mt-9 sm:space-x-3 xs:w-full">
-            <Button className="xs:px-3.5 xs:flex-1" to={button1.url}>
+            <Button
+              className="xs:px-3.5 xs:flex-1"
+              to={button1.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {button1.title}
             </Button>
-            <Button className="xs:px-3.5 xs:flex-1" to={button2.url} theme="white">
+            <Button
+              className="xs:px-3.5 xs:flex-1"
+              to={button2.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              theme="white"
+            >
               <SlackIcon className="mr-2.5 xs:mr-1.5 xs:h-5 xs:w-auto" />
               {buttonText}
             </Button>

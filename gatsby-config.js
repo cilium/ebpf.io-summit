@@ -4,10 +4,11 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    siteTitle: 'Pixel Point Gatsby Starter', // <title>
-    siteDescription: 'Site Description',
+    siteTitle: 'eBPF Summit 2021', // <title>
+    siteDescription:
+      'Register now for the eBPF Summit 2021, Aug 18-19, 2021, a free virtual event for DevOps, SRE, SecOps, and developers.',
     // pathPrefix: "",
-    siteImage: '/images/sample-image.png',
+    siteImage: '/images/social-preview.png',
     siteLanguage: 'en',
     siteUrl: process.env.GATSBY_DEFAULT_SITE_URL,
     /* author */
@@ -39,7 +40,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
     {

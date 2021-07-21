@@ -14,13 +14,13 @@ const hero = {
   date: 'August 18-19th',
   title: 'Summit 2021',
   description:
-    '<p>eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers is open for registration.</p><p>Interested in speaking at eBPF Summit?<br> The <a href="#">Call For Papers</a> for lightning talks is open until July 23!</p>',
+    '<p>eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers is open for registration.</p><p>Interested in speaking at eBPF Summit?<br> The <a href="https://sessionize.com/ebpf-summit-2021/" target="_blank" rel="noopener noreferrer">Call For Papers</a> for lightning talks is open until July 23!</p>',
   button1: {
-    url: '/',
+    url: 'https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true',
     title: 'Register',
   },
   button2: {
-    url: '/',
+    url: 'https://ebpf.io/slack',
     title: 'Join Summit Slack',
   },
 };
@@ -112,7 +112,7 @@ const register = {
   title: 'eBPF Summit 2021 Registration',
   description: `The event is fully virtual and free to attend. By signing up, you'll receive information on how to participate, ahead of the event.`,
   button: {
-    url: '',
+    url: 'https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true',
     title: 'Register',
   },
 };
