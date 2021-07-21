@@ -53,7 +53,13 @@ const Header = () => (
                 ))}
               </div>
               <div className="flex space-x-4 md:hidden">
-                <Button to="/" size="sm" theme="black">
+                <Button
+                  to="https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  size="sm"
+                  theme="black"
+                >
                   Register
                 </Button>
               </div>
@@ -98,7 +104,12 @@ const Header = () => (
                     </a>
                   ))}
                 </div>
-                <Button className="w-full" to="/">
+                <Button
+                  className="w-full"
+                  to="https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Register
                 </Button>
               </div>
