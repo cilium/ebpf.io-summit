@@ -12,7 +12,10 @@ const Footer = () => (
       Footer
     </h2>
     <Container className="flex items-center justify-between">
-      <Logo className="lg:w-auto lg:h-8" />
+      <Link to="/">
+        <Logo className="lg:w-auto lg:h-8" />
+      </Link>
+
       <Link
         className="font-bold text-primary-2"
         to="https://docs.google.com/document/u/0/d/1pmplQdjghadioJVHaGS5X6KrecbYLWVA2VgVz0BzG9E/edit"
