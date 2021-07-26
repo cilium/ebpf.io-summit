@@ -55,7 +55,7 @@ const SEO = ({ data: { title, description, image, slug } = {}, facebook } = {}) 
       <meta property="og:type" content="website" />
       {facebook && <meta property="fb:app_id" content={facebook.appId} />}
       {/* Twitter Card tags */}
-      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={authorTwitterAccount} />
     </Helmet>
   );
