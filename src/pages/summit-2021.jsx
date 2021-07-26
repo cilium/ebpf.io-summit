@@ -117,7 +117,7 @@ const register = {
   },
 };
 
-const IndexPage = () => {
+const IndexPage = ({ path }) => {
   const { jaanaDogan, brendanGregg, lizRice, danielBorkmann, tabithaSable, daveThaler } =
     useStaticQuery(graphql`
       query {
@@ -191,7 +191,7 @@ const IndexPage = () => {
   };
 
   return (
-    <MainLayout>
+    <MainLayout path={path}>
       <Hero {...hero} />
       <Speakers {...speakers} />
       <Agenda {...agenda} />

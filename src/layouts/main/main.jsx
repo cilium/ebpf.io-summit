@@ -5,9 +5,9 @@ import Footer from 'components/shared/footer';
 import Header from 'components/shared/header';
 import SEO from 'components/shared/seo';
 
-const MainLayout = ({ children }) => (
+const MainLayout = ({ path, children }) => (
   <>
-    <SEO />
+    <SEO data={{ slug: path }} />
     <Header />
     <main>{children}</main>
     <Footer />
