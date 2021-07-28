@@ -46,7 +46,6 @@ Check all applicable items.
 - [ ] I've checked these changes on all breakpoints
 - [ ] I've checked these changes on pixel-perfect
 - [ ] I've optimized images via [squoosh.app](https://squoosh.app)
-- [ ] I've checked that the code follows [Pixel Point Development Guidelines](https://github.com/pixel-point/development-guidelines)
 
 **TODO**
 <!--
