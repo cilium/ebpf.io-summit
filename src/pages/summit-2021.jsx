@@ -14,7 +14,7 @@ const hero = {
   date: 'August 18-19th',
   title: 'Summit 2021',
   description:
-    '<p>eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers is open for registration.</p><p>Interested in speaking at eBPF Summit?<br> The <a href="https://sessionize.com/ebpf-summit-2021/" target="_blank" rel="noopener noreferrer">Call For Papers</a> for lightning talks is open until July 23!</p>',
+    '<p>eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers is open for registration.</p>',
   button1: {
     url: 'https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true',
     title: 'Register',
@@ -27,9 +27,13 @@ const hero = {
 
 const agenda = {
   title: 'Agenda',
-  subtitle: 'Full schedule coming soon!',
-  description:
-    'You can expect sessions running both days at 9am-12 midday Pacific / 12 midday-3pm Eastern / 5pm-8pm UK / 6pm-9pm Europe',
+  subtitle:
+    'Sessions run both days 9am-1pm Pacific / 12 midday-4pm Eastern / 5pm-9pm UK / 6pm-10pm Europe',
+  link: {
+    url: 'https://ebpf-summit-2021.sessionize.com/',
+    title: 'View schedule and speakers',
+  },
+  description: 'More sessions being added - check back soon!',
 };
 
 const information = {

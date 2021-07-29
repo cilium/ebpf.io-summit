@@ -59,7 +59,7 @@ const Hero = ({ date, title, description, button1, button2 }) => {
           </div>
         </div>
 
-        <Image className="absolute top-0 -right-48 xl:w-[550px] xl:-right-7 xl:top-16 lg:static lg:w-full h-auto" />
+        <Image className="absolute top-0 -right-48 w-[700px] xl:w-[550px] xl:-right-7 xl:top-16 lg:static lg:w-full h-auto" />
       </Container>
     </section>
   );
