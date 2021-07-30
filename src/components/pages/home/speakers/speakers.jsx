@@ -4,6 +4,8 @@ import React from 'react';
 
 import Container from 'components/shared/container';
 import Heading from 'components/shared/heading';
+import Link from 'components/shared/link';
+import ArrowIcon from 'icons/arrow.inline.svg';
 
 import shape1 from './images/shape-1.svg';
 import shape2 from './images/shape-2.svg';
@@ -30,11 +32,21 @@ const Speakers = ({ title, items }) => (
           alt=""
           aria-hidden
         />
-        {items.map(({ avatar, name, position }, index) => (
+        {items.map(({ avatar, name, position, link }, index) => (
           <div className="p-8 pb-6 text-center border-2 border-gray-2" key={index}>
             <GatsbyImage className="rounded-full" image={getImage(avatar)} alt={name} />
             <h3 className="mt-4 text-lg font-bold md:text-base">{name}</h3>
             <span className="mt-1 text-lg text-gray-1 md:text-base">{position}</span>
+            {link && (
+              <Link
+                className="flex items-center font-bold text-sm leading-none text-primary-2 space-x-2.5 justify-center mt-2.5"
+                to={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link.title} <ArrowIcon className="ml-1.5" />
+              </Link>
+            )}
           </div>
         ))}
       </div>

@@ -165,16 +165,28 @@ const IndexPage = ({ path }) => {
         avatar: jaanaDogan,
         name: 'Jaana Dogan',
         position: 'Principal Engineer, AWS',
+        link: {
+          url: 'https://ebpf-summit-2021.sessionize.com/speaker/756718a2-db38-4ee4-a883-a27c0a57c5b4',
+          title: 'eBPF Observability',
+        },
       },
       {
         avatar: brendanGregg,
         name: 'Brendan Gregg',
         position: 'Author of «BPF Performance Tools», Lead Performance Engineer, Netflix',
+        link: {
+          url: 'https://ebpf-summit-2021.sessionize.com/speaker/1896da81-06a4-49fd-a622-a7bcc622bdfe',
+          title: 'Getting Started with BPF observability',
+        },
       },
       {
         avatar: lizRice,
         name: 'Liz Rice',
         position: 'Chief Open Source Officer, Isovalent',
+        link: {
+          url: 'https://ebpf-summit-2021.sessionize.com/speaker/e48a182b-1cac-4e51-93b5-5e82408a6116',
+          title: 'A Load Balancer from scratch',
+        },
       },
       {
         avatar: danielBorkmann,
@@ -185,11 +197,19 @@ const IndexPage = ({ path }) => {
         avatar: tabithaSable,
         name: 'Tabitha Sable',
         position: 'Kubernetes SIG Security co-chair, Systems Security Engineer, Datadog',
+        // link: {
+        //   url: 'https://ebpf-summit-2021.sessionize.com/speaker/3efbcdc1-c5e7-4d1c-b745-cd934e6d69b5',
+        //   title: 'A Load Balancer from scratch',
+        // },
       },
       {
         avatar: daveThaler,
         name: 'Dave Thaler',
         position: 'Partner Software Architect, Microsoft',
+        link: {
+          url: 'https://ebpf-summit-2021.sessionize.com/speaker/8406d918-7312-4611-b28f-817a11ce4636',
+          title: 'eBPF for Windows',
+        },
       },
     ],
   };
