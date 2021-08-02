@@ -49,3 +49,7 @@
     @apply text-primary-1 font-bold no-underline;
   }
 }
+
+.sz-session__room {
+  @apply !hidden;
+}
