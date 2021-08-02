@@ -47,7 +47,7 @@ const Speakers = ({ title, items }) => (
             </div>
             {link && (
               <Link
-                className="flex items-center justify-center w-full px-8 py-5 mt-auto text-sm font-bold leading-none bg-gray-2"
+                className="flex items-center justify-center w-full px-3 py-5 mt-auto text-sm font-bold leading-none bg-gray-2"
                 to={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
