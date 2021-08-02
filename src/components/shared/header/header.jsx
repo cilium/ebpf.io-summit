@@ -14,7 +14,7 @@ const navigation = [
   { name: 'Featured Speakers', href: '#featured-speakers' },
   { name: 'Agenda', href: '#agenda' },
   { name: 'Information', href: '#information' },
-  { name: 'Schedule', href: '#schedule' },
+  { name: 'Topics', href: '#topics' },
   { name: `Last year's summit`, href: `#last-year's-summit` },
 ];
 
