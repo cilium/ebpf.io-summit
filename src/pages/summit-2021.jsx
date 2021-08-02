@@ -31,7 +31,7 @@ const agenda = {
     'Sessions run both days 9am-1pm Pacific / 12 midday-4pm Eastern / 5pm-9pm UK / 6pm-10pm Europe',
   link: {
     url: 'https://ebpf-summit-2021.sessionize.com/',
-    title: 'View schedule and speakers',
+    title: 'View schedule',
   },
   description: 'More sessions being added - check back soon!',
 };
@@ -67,21 +67,6 @@ const information = {
 
 const topics = {
   title: 'Topics',
-  items: [
-    'Introduction & Getting Started with eBPF',
-    'eBPF-based Observability & Monitoring',
-    'Observing, Tracing, and Debugging Applications with eBPF',
-    'Runtimes, Kernel Implementations, & eBPF Libraries',
-    'eBPF-based Networking, Load-Balancing, & Network Security',
-    'How to write eBPF programs in higher-level Languages',
-    'Performance Troubleshooting with eBPF',
-    'eBPF Projects (bpftrace, Cilium, Falco, ...)',
-    'Observing, Tracing, and Debugging Applications with eBPF',
-    'Future & Outlook of eBPF',
-    'Securing Systems, CI/CD pipelines, Networks, ... with eBPF',
-    'Troubleshooting Networking Issues with eBPF',
-  ],
-  text: 'And much more...',
 };
 
 const lastYear = {

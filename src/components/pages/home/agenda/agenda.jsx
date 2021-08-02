@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import Button from 'components/shared/button';
 import Container from 'components/shared/container';
 import Heading from 'components/shared/heading';
-import Link from 'components/shared/link';
 
 import shape1 from './images/shape-1.svg';
 import shape2 from './images/shape-2.svg';
@@ -15,10 +15,10 @@ const Agenda = ({ title, subtitle, link, description }) => (
     <Container className="max-w-[592px]">
       <Heading tag="h2">{title}</Heading>
       <p className="mt-12 text-lg text-white md:text-base md:mt-6">{subtitle}</p>
-      <Link className="block mt-6 text-xl font-bold md:text-lg text-primary-1" to={link.url}>
+      <Button className="block text-xl font-bold mt-9 md:text-lg " to={link.url}>
         {link.title}
-      </Link>
-      <p className="mt-4 text-lg md:text-base">{description}</p>
+      </Button>
+      <p className="text-lg mt-7 md:text-base">{description}</p>
     </Container>
   </section>
 );

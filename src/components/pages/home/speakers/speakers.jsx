@@ -5,7 +5,6 @@ import React from 'react';
 import Container from 'components/shared/container';
 import Heading from 'components/shared/heading';
 import Link from 'components/shared/link';
-import ArrowIcon from 'icons/arrow.inline.svg';
 
 import shape1 from './images/shape-1.svg';
 import shape2 from './images/shape-2.svg';
@@ -27,7 +26,7 @@ const Speakers = ({ title, items }) => (
           aria-hidden
         />
         <img
-          className="absolute -bottom-8 lg:-bottom-10 left-1/4"
+          className="absolute -bottom-8 lg:-bottom-12 left-1/4"
           src={shape2}
           alt=""
           aria-hidden
