@@ -32,9 +32,12 @@ const Speakers = ({ title, items }) => (
           aria-hidden
         />
         {items.map(({ avatar, name, position, link }, index) => (
-          <div
+          <Link
             className="flex flex-col items-center text-center border-2 border-gray-2"
             key={index}
+            to={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <div className="p-8 pb-5">
               <GatsbyImage
@@ -45,17 +48,10 @@ const Speakers = ({ title, items }) => (
               <h3 className="mt-4 text-lg font-bold md:text-base">{name}</h3>
               <span className="mt-1 text-lg text-gray-1 md:text-base">{position}</span>
             </div>
-            {link && (
-              <Link
-                className="flex items-center justify-center w-full px-3 py-5 mt-auto text-sm font-bold leading-none bg-gray-2"
-                to={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {link.title}
-              </Link>
-            )}
-          </div>
+            <div className="flex items-center justify-center w-full px-3 py-5 mt-auto text-sm font-bold leading-none bg-gray-2">
+              {link.title}
+            </div>
+          </Link>
         ))}
       </div>
     </Container>

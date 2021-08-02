@@ -15,7 +15,12 @@ const Agenda = ({ title, subtitle, link, description }) => (
     <Container className="max-w-[592px]">
       <Heading tag="h2">{title}</Heading>
       <p className="mt-12 text-lg text-white md:text-base md:mt-6">{subtitle}</p>
-      <Button className="block text-xl font-bold mt-9 md:text-lg " to={link.url}>
+      <Button
+        className="block text-xl font-bold mt-9 md:text-lg "
+        to={link.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {link.title}
       </Button>
       <p className="text-lg mt-7 md:text-base">{description}</p>
