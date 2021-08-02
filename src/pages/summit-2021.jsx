@@ -6,13 +6,13 @@ import Hero from 'components/pages/home/hero';
 import Information from 'components/pages/home/information';
 import LastYear from 'components/pages/home/last-year';
 import Register from 'components/pages/home/register';
+import Schedule from 'components/pages/home/schedule';
 import Speakers from 'components/pages/home/speakers';
-import Topics from 'components/pages/home/topics';
 import MainLayout from 'layouts/main';
 
 const hero = {
   date: 'August 18-19th',
-  title: 'Summit 2021',
+  title: 'eBPF Summit 2021',
   description:
     '<p>eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers is open for registration.</p>',
   button1: {
@@ -63,6 +63,10 @@ const information = {
         'Just like last year, we will hear from both end-users sharing their experience using eBPF as well as developers actively working on eBPF and eBPF projects.',
     },
   ],
+};
+
+const schedule = {
+  title: 'Schedule',
 };
 
 const lastYear = {
@@ -201,7 +205,7 @@ const IndexPage = ({ path }) => {
       <Speakers {...speakers} />
       <Agenda {...agenda} />
       <Information {...information} />
-      <Topics />
+      <Schedule {...schedule} />
       <LastYear {...lastYear} />
       <Register {...register} />
     </MainLayout>
