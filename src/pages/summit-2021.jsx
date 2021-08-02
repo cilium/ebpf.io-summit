@@ -65,10 +65,6 @@ const information = {
   ],
 };
 
-const topics = {
-  title: 'Topics',
-};
-
 const lastYear = {
   title: `Last year's summit`,
   description:
