@@ -201,7 +201,7 @@ const IndexPage = ({ path }) => {
       <Speakers {...speakers} />
       <Agenda {...agenda} />
       <Information {...information} />
-      <Topics {...topics} />
+      <Topics />
       <LastYear {...lastYear} />
       <Register {...register} />
     </MainLayout>
