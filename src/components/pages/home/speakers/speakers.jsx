@@ -4,6 +4,7 @@ import React from 'react';
 
 import Container from 'components/shared/container';
 import Heading from 'components/shared/heading';
+import Link from 'components/shared/link';
 
 import shape1 from './images/shape-1.svg';
 import shape2 from './images/shape-2.svg';
@@ -25,16 +26,35 @@ const Speakers = ({ title, items }) => (
           aria-hidden
         />
         <img
-          className="absolute -bottom-8 lg:-bottom-10 left-1/4"
+          className="absolute -bottom-8 lg:-bottom-12 left-1/4"
           src={shape2}
           alt=""
           aria-hidden
         />
-        {items.map(({ avatar, name, position }, index) => (
-          <div className="p-8 pb-6 text-center border-2 border-gray-2" key={index}>
-            <GatsbyImage className="rounded-full" image={getImage(avatar)} alt={name} />
-            <h3 className="mt-4 text-lg font-bold md:text-base">{name}</h3>
-            <span className="mt-1 text-lg text-gray-1 md:text-base">{position}</span>
+        {items.map(({ avatar, name, position, link }, index) => (
+          <div
+            className="flex flex-col items-center text-center border-2 border-gray-2"
+            key={index}
+          >
+            <div className="p-8 pb-5">
+              <GatsbyImage
+                className="flex-shrink-0 w-24 h-24 rounded-full"
+                image={getImage(avatar)}
+                alt={name}
+              />
+              <h3 className="mt-4 text-lg font-bold md:text-base">{name}</h3>
+              <span className="mt-1 text-lg text-gray-1 md:text-base">{position}</span>
+            </div>
+            {link && (
+              <Link
+                className="flex items-center justify-center w-full px-8 py-5 mt-auto text-sm font-bold leading-none bg-gray-2"
+                to={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link.title}
+              </Link>
+            )}
           </div>
         ))}
       </div>

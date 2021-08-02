@@ -14,7 +14,7 @@ const navigation = [
   { name: 'Featured Speakers', href: '#featured-speakers' },
   { name: 'Agenda', href: '#agenda' },
   { name: 'Information', href: '#information' },
-  { name: 'Topics', href: '#topics' },
+  { name: 'Schedule', href: '#schedule' },
   { name: `Last year's summit`, href: `#last-year's-summit` },
 ];
 
@@ -27,13 +27,13 @@ const Header = () => (
             <img className="absolute right-6 top-full" src={shape1} alt="" aria-hidden />
             <img className="absolute left-0 top-full" src={shape2} alt="" aria-hidden />
             <nav className="relative flex items-center justify-between" aria-label="Global">
-              <div className="flex items-center flex-none md:flex-1 -mt-2.5">
-                <div className="flex items-center justify-between w-auto md:w-full">
+              <div className="flex items-center flex-none lg:flex-1 -mt-2.5">
+                <div className="flex items-center justify-between w-auto lg:w-full">
                   <Link to="/">
                     <span className="sr-only">eBPF</span>
                     <Logo className="w-auto h-15 lg:w-auto lg:h-8" aria-label="Logo" />
                   </Link>
-                  <div className="items-center hidden -mr-2 md:flex">
+                  <div className="items-center hidden -mr-2 lg:flex">
                     <Popover.Button className="inline-flex items-center justify-center p-2 text-black rounded-md bg-gray-5 hover:text-gray-5 hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline">
                       <span className="sr-only">Open main menu</span>
                       <MenuIcon className="w-6 h-6" aria-hidden="true" />
@@ -41,18 +41,18 @@ const Header = () => (
                   </div>
                 </div>
               </div>
-              <div className="flex space-x-10 md:hidden lg:space-x-3.5">
+              <div className="flex space-x-10 lg:hidden lg:space-x-3.5">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="font-bold leading-none hover:text-gray-900 lg:text-sm"
+                    className="font-bold leading-none hover:text-gray-900"
                   >
                     {item.name}
                   </a>
                 ))}
               </div>
-              <div className="flex space-x-4 md:hidden">
+              <div className="flex space-x-4 lg:hidden">
                 <Button
                   to="https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true"
                   target="_blank"
@@ -77,7 +77,7 @@ const Header = () => (
             leaveTo="opacity-0 scale-95"
           >
             <Popover.Panel
-              className="absolute inset-x-0 top-0 z-50 hidden p-2 transition origin-top-right transform md:block"
+              className="absolute inset-x-0 top-0 z-50 hidden p-2 transition origin-top-right transform lg:block"
               focus
               static
             >

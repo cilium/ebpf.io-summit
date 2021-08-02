@@ -6,13 +6,13 @@ import Hero from 'components/pages/home/hero';
 import Information from 'components/pages/home/information';
 import LastYear from 'components/pages/home/last-year';
 import Register from 'components/pages/home/register';
+import Schedule from 'components/pages/home/schedule';
 import Speakers from 'components/pages/home/speakers';
-import Topics from 'components/pages/home/topics';
 import MainLayout from 'layouts/main';
 
 const hero = {
   date: 'August 18-19th',
-  title: 'Summit 2021',
+  title: 'eBPF Summit 2021',
   description:
     '<p>eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers is open for registration.</p>',
   button1: {
@@ -31,7 +31,7 @@ const agenda = {
     'Sessions run both days 9am-1pm Pacific / 12 midday-4pm Eastern / 5pm-9pm UK / 6pm-10pm Europe',
   link: {
     url: 'https://ebpf-summit-2021.sessionize.com/',
-    title: 'View schedule and speakers',
+    title: 'View schedule',
   },
   description: 'More sessions being added - check back soon!',
 };
@@ -65,23 +65,8 @@ const information = {
   ],
 };
 
-const topics = {
-  title: 'Topics',
-  items: [
-    'Introduction & Getting Started with eBPF',
-    'eBPF-based Observability & Monitoring',
-    'Observing, Tracing, and Debugging Applications with eBPF',
-    'Runtimes, Kernel Implementations, & eBPF Libraries',
-    'eBPF-based Networking, Load-Balancing, & Network Security',
-    'How to write eBPF programs in higher-level Languages',
-    'Performance Troubleshooting with eBPF',
-    'eBPF Projects (bpftrace, Cilium, Falco, ...)',
-    'Observing, Tracing, and Debugging Applications with eBPF',
-    'Future & Outlook of eBPF',
-    'Securing Systems, CI/CD pipelines, Networks, ... with eBPF',
-    'Troubleshooting Networking Issues with eBPF',
-  ],
-  text: 'And much more...',
+const schedule = {
+  title: 'Schedule',
 };
 
 const lastYear = {
@@ -165,31 +150,55 @@ const IndexPage = ({ path }) => {
         avatar: jaanaDogan,
         name: 'Jaana Dogan',
         position: 'Principal Engineer, AWS',
+        link: {
+          url: 'https://ebpf-summit-2021.sessionize.com/speaker/756718a2-db38-4ee4-a883-a27c0a57c5b4',
+          title: 'eBPF Observability',
+        },
       },
       {
         avatar: brendanGregg,
         name: 'Brendan Gregg',
         position: 'Author of «BPF Performance Tools», Lead Performance Engineer, Netflix',
+        link: {
+          url: 'https://ebpf-summit-2021.sessionize.com/speaker/1896da81-06a4-49fd-a622-a7bcc622bdfe',
+          title: 'Getting Started with BPF observability',
+        },
       },
       {
         avatar: lizRice,
         name: 'Liz Rice',
         position: 'Chief Open Source Officer, Isovalent',
+        link: {
+          url: 'https://ebpf-summit-2021.sessionize.com/speaker/e48a182b-1cac-4e51-93b5-5e82408a6116',
+          title: 'A Load Balancer from scratch',
+        },
       },
       {
         avatar: danielBorkmann,
         name: 'Daniel Borkmann',
         position: 'Co-Creator eBPF, Kernel Developer, Isovalent',
+        link: {
+          url: 'https://ebpf-summit-2021.sessionize.com/speaker/8c862915-ad55-4b12-bb67-46bc45623157',
+          title: 'To be announced...',
+        },
       },
       {
         avatar: tabithaSable,
         name: 'Tabitha Sable',
         position: 'Kubernetes SIG Security co-chair, Systems Security Engineer, Datadog',
+        link: {
+          url: 'https://ebpf-summit-2021.sessionize.com/speaker/3efbcdc1-c5e7-4d1c-b745-cd934e6d69b5',
+          title: 'To be announced...',
+        },
       },
       {
         avatar: daveThaler,
         name: 'Dave Thaler',
         position: 'Partner Software Architect, Microsoft',
+        link: {
+          url: 'https://ebpf-summit-2021.sessionize.com/speaker/8406d918-7312-4611-b28f-817a11ce4636',
+          title: 'eBPF for Windows',
+        },
       },
     ],
   };
@@ -200,7 +209,7 @@ const IndexPage = ({ path }) => {
       <Speakers {...speakers} />
       <Agenda {...agenda} />
       <Information {...information} />
-      <Topics {...topics} />
+      <Schedule {...schedule} />
       <LastYear {...lastYear} />
       <Register {...register} />
     </MainLayout>
