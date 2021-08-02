@@ -177,6 +177,10 @@ const IndexPage = ({ path }) => {
         avatar: danielBorkmann,
         name: 'Daniel Borkmann',
         position: 'Co-Creator eBPF, Kernel Developer, Isovalent',
+        link: {
+          url: 'https://ebpf-summit-2021.sessionize.com/speaker/8c862915-ad55-4b12-bb67-46bc45623157',
+          title: 'To be announced...',
+        },
       },
       {
         avatar: tabithaSable,
