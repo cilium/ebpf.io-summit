@@ -178,10 +178,10 @@ const IndexPage = ({ path }) => {
         avatar: tabithaSable,
         name: 'Tabitha Sable',
         position: 'Kubernetes SIG Security co-chair, Systems Security Engineer, Datadog',
-        // link: {
-        //   url: 'https://ebpf-summit-2021.sessionize.com/speaker/3efbcdc1-c5e7-4d1c-b745-cd934e6d69b5',
-        //   title: 'A Load Balancer from scratch',
-        // },
+        link: {
+          url: 'https://ebpf-summit-2021.sessionize.com/speaker/3efbcdc1-c5e7-4d1c-b745-cd934e6d69b5',
+          title: 'To be announced...',
+        },
       },
       {
         avatar: daveThaler,
