@@ -12,7 +12,7 @@ const Footer = () => (
       Footer
     </h2>
     <Container className="flex items-center justify-between">
-      <Link to="/">
+      <Link to="https://ebpf.io/">
         <Logo className="lg:w-auto lg:h-8" />
       </Link>
 
