@@ -6,8 +6,8 @@ import Hero from 'components/pages/home/hero';
 import Information from 'components/pages/home/information';
 import LastYear from 'components/pages/home/last-year';
 import Register from 'components/pages/home/register';
+import Schedule from 'components/pages/home/schedule';
 import Speakers from 'components/pages/home/speakers';
-import Topics from 'components/pages/home/topics';
 import MainLayout from 'layouts/main';
 
 const hero = {
@@ -65,23 +65,8 @@ const information = {
   ],
 };
 
-const topics = {
-  title: 'Topics',
-  items: [
-    'Introduction & Getting Started with eBPF',
-    'eBPF-based Observability & Monitoring',
-    'Observing, Tracing, and Debugging Applications with eBPF',
-    'Runtimes, Kernel Implementations, & eBPF Libraries',
-    'eBPF-based Networking, Load-Balancing, & Network Security',
-    'How to write eBPF programs in higher-level Languages',
-    'Performance Troubleshooting with eBPF',
-    'eBPF Projects (bpftrace, Cilium, Falco, ...)',
-    'Observing, Tracing, and Debugging Applications with eBPF',
-    'Future & Outlook of eBPF',
-    'Securing Systems, CI/CD pipelines, Networks, ... with eBPF',
-    'Troubleshooting Networking Issues with eBPF',
-  ],
-  text: 'And much more...',
+const schedule = {
+  title: 'Schedule',
 };
 
 const lastYear = {
@@ -224,7 +209,7 @@ const IndexPage = ({ path }) => {
       <Speakers {...speakers} />
       <Agenda {...agenda} />
       <Information {...information} />
-      <Topics {...topics} />
+      <Schedule {...schedule} />
       <LastYear {...lastYear} />
       <Register {...register} />
     </MainLayout>
