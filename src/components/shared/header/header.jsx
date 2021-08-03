@@ -14,7 +14,7 @@ const navigation = [
   { name: 'Featured Speakers', href: '#featured-speakers' },
   { name: 'Agenda', href: '#agenda' },
   { name: 'Information', href: '#information' },
-  { name: 'Topics', href: '#topics' },
+  { name: 'Schedule', href: '#schedule' },
   { name: `Last year's summit`, href: `#last-year's-summit` },
 ];
 
@@ -29,7 +29,7 @@ const Header = () => (
             <nav className="relative flex items-center justify-between" aria-label="Global">
               <div className="flex items-center flex-none lg:flex-1 -mt-2.5">
                 <div className="flex items-center justify-between w-auto lg:w-full">
-                  <Link to="/">
+                  <Link to="https://ebpf.io/">
                     <span className="sr-only">eBPF</span>
                     <Logo className="w-auto h-15 lg:w-auto lg:h-8" aria-label="Logo" />
                   </Link>
