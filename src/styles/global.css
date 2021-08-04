@@ -75,11 +75,15 @@
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__track-label {
-  @apply border border-black border-t-2;
+  @apply border border-black border-t-2 font-bold !text-xl;
 }
 
 #sessionize.sessionize-wrapper .sz-session__speakers {
   @apply opacity-50;
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-separator {
+  @apply border-solid border-t border-black !important;
 }
 
 #sessionize.sessionize-wrapper .sz-speaker__links .sz-speaker__link,
