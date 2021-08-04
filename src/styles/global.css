@@ -85,7 +85,7 @@
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-separator {
-  @apply border-solid border-t border-black !important;
+  @apply border-solid border-t-2 border-black -mt-px !important;
 }
 
 #sessionize.sessionize-wrapper .sz-speaker__links .sz-speaker__link,
@@ -123,4 +123,8 @@
   @apply shadow-none border-b opacity-100 border-black !important;
 
   box-shadow: 0 theme('spacing.px') 0 0 theme('colors.black') !important;
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label {
+  @apply uppercase !font-bold;
 }
