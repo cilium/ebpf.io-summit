@@ -31,7 +31,7 @@ const Schedule = ({ title }) => {
         <Heading className="text-center" tag="h2">
           {title}
         </Heading>
-        <DangerousHtml className="mt-10 md:mt-6" html={scheduleHTML} />
+        <DangerousHtml className="mt-6" html={scheduleHTML} />
       </Container>
     </section>
   ) : null;

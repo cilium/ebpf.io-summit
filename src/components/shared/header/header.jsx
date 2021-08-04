@@ -46,7 +46,7 @@ const Header = () => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="font-bold leading-none hover:text-gray-900"
+                    className="font-bold leading-none transition-colors duration-200 hover:text-gray-1"
                   >
                     {item.name}
                   </a>
@@ -98,7 +98,7 @@ const Header = () => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="block px-3 py-2 font-medium text-black rounded-md hover:text-gray-900 hover:bg-gray-5"
+                      className="block px-3 py-2 font-medium text-black transition-colors duration-200 rounded-md hover:text-gray-1 hover:bg-gray-5"
                     >
                       {item.name}
                     </a>

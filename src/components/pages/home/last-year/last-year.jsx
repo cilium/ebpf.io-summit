@@ -20,7 +20,7 @@ const LastYear = ({ title, description, link, items }) => (
       </Heading>
       <p className="mt-6 text-xl md:text-lg">{description}</p>
       <Link
-        className="flex items-center text-lg font-bold leading-none text-primary-2 space-x-2.5 justify-center mt-7"
+        className="flex items-center text-lg font-bold leading-none text-primary-2 space-x-2.5 justify-center mt-7 transition-colors duration-200 hover:text-black"
         to={link.url}
       >
         {link.title}
