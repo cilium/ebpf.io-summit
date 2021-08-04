@@ -126,5 +126,5 @@
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label {
-  @apply uppercase !font-bold;
+  @apply !font-bold;
 }
