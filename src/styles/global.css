@@ -53,3 +53,46 @@
 .sz-session__room {
   @apply !hidden;
 }
+
+#sessionize.sessionize-wrapper .sz-cssgrid {
+  @apply gap-0 !important;
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card:hover {
+  @apply bg-primary-1 !important;
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card:hover .sz-session__speakers {
+  @apply opacity-100 underline;
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session--service .sz-session__card {
+  @apply border border-black !important;
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card {
+  @apply border border-black shadow-none !important;
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__track-label {
+  @apply border border-black border-t-2;
+}
+
+#sessionize.sessionize-wrapper .sz-session__speakers {
+  @apply opacity-50;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker__links .sz-speaker__link,
+#sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__name,
+#sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__tagline,
+#sessionize.sessionize-wrapper .sz-timezone__radio input[type='radio']:checked + label {
+  @apply !text-black;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__sessions li::before {
+  @apply !bg-black;
+}
+
+#sessionize.sessionize-wrapper .sz-modal-overlay {
+  @apply !bg-black opacity-20;
+}
