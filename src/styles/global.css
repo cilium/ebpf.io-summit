@@ -67,15 +67,15 @@
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session--service .sz-session__card {
-  @apply border border-black !important;
+  @apply border border-black bg-white !important;
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card {
-  @apply border border-black shadow-none rounded-none !important;
+  @apply border border-black shadow-none rounded-none bg-white !important;
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__track-label {
-  @apply border border-black border-t-2 font-bold !text-xl;
+  @apply border border-black border-t-2 font-bold !text-xl !rounded-none;
 }
 
 #sessionize.sessionize-wrapper .sz-session__speakers {
