@@ -71,7 +71,7 @@
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card {
-  @apply border border-black shadow-none !important;
+  @apply border border-black shadow-none rounded-none !important;
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__track-label {
