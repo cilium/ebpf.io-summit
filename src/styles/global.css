@@ -62,10 +62,6 @@
   @apply bg-primary-1 !important;
 }
 
-#sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card:hover .sz-session__speakers {
-  @apply opacity-100 underline;
-}
-
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session--service .sz-session__card {
   @apply border border-black bg-white !important;
 }
@@ -78,8 +74,14 @@
   @apply border border-black border-t-2 font-bold !text-xl !rounded-none;
 }
 
-#sessionize.sessionize-wrapper .sz-session__speakers {
+#sessionize.sessionize-wrapper .sz-session__speakers a {
   @apply opacity-50;
+}
+
+#sessionize.sessionize-wrapper .sz-session__speakers a:hover,
+#sessionize.sessionize-wrapper .sz-session__speakers a:focus,
+#sessionize.sessionize-wrapper .sz-session__speakers a:active {
+  @apply opacity-100;
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-separator {
@@ -99,4 +101,12 @@
 
 #sessionize.sessionize-wrapper .sz-modal-overlay {
   @apply !bg-black opacity-20;
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card a:hover,
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card a:focus,
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card a:active {
+  @apply shadow-none border-b opacity-100 border-black !important;
+
+  box-shadow: 0 theme('spacing.px') 0 0 theme('colors.black') !important;
 }
