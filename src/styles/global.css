@@ -95,8 +95,22 @@
   @apply !text-black;
 }
 
+#sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__tagline {
+  @apply opacity-60;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__sessions li {
+  @apply pl-0 text-primary-2 !important;
+}
+
+#sessionize.sessionize-wrapper a:hover,
+#sessionize.sessionize-wrapper a:focus,
+#sessionize.sessionize-wrapper a:active {
+  @apply shadow-none text-black !important;
+}
+
 #sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__sessions li::before {
-  @apply !bg-black;
+  @apply hidden;
 }
 
 #sessionize.sessionize-wrapper .sz-modal-overlay {
