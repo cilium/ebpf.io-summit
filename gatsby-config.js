@@ -75,6 +75,13 @@ module.exports = {
     'gatsby-alias-imports',
     'gatsby-plugin-postcss',
     'gatsby-plugin-image',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-96283704-3',
+        head: false,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
