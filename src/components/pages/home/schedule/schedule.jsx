@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { useState, useEffect } from 'react';
+import React, { useCallback, useRef, useState, useEffect } from 'react';
 
 import Container from 'components/shared/container';
 import DangerousHtml from 'components/shared/dangerous-html';
@@ -19,11 +19,20 @@ const fetchScheduleData = async (cb) => {
 const Schedule = ({ title }) => {
   const [scheduleHTML, setScheduleHTML] = useState('');
 
+  const modifySessionizeScript = useCallback((html) => {
+    // this requires for the sessionize logic to run
+    // consistently
+    const htmlWithModifiedScriptAndReplacedAmpersand = html
+      .replace(/(showLocalTimezone = true;)([\s\S]+)$/m, '$1sessionize.onLoad();$2')
+      .replace(/&amp;/g, '&');
+    setScheduleHTML(htmlWithModifiedScriptAndReplacedAmpersand);
+  }, []);
+
   useEffect(() => {
     if (process.env.GATSBY_SESSIONIZE_URL) {
-      fetchScheduleData(setScheduleHTML);
+      fetchScheduleData(modifySessionizeScript);
     }
-  }, []);
+  }, [modifySessionizeScript]);
 
   return scheduleHTML ? (
     <section className="bg-gray-3 py-28 md:py-20" id="schedule">
@@ -31,7 +40,7 @@ const Schedule = ({ title }) => {
         <Heading className="text-center" tag="h2">
           {title}
         </Heading>
-        <DangerousHtml className="mt-10 md:mt-6" html={scheduleHTML} />
+        <DangerousHtml className="mt-6" html={scheduleHTML} />
       </Container>
     </section>
   ) : null;

@@ -188,7 +188,7 @@ const IndexPage = ({ path }) => {
         position: 'Kubernetes SIG Security co-chair, Systems Security Engineer, Datadog',
         link: {
           url: 'https://ebpf-summit-2021.sessionize.com/speaker/3efbcdc1-c5e7-4d1c-b745-cd934e6d69b5',
-          title: 'To be announced...',
+          title: 'eBPF Capture the Flag (CTF)',
         },
       },
       {

@@ -19,18 +19,18 @@ const Button = (props) => {
   const Tag = to ? Link : 'button';
 
   const styles =
-    'relative inline-flex justify-center items-center font-extrabold leading-none whitespace-nowrap duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline disabled:pointer-events-none';
+    'relative inline-flex justify-center items-center font-extrabold leading-none whitespace-nowrap transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline disabled:pointer-events-none';
 
   let themeStyles;
   switch (theme) {
     case 'black':
-      themeStyles = 'text-white bg-black';
+      themeStyles = 'text-white bg-black hover:bg-black-hover';
       break;
     case 'white':
-      themeStyles = 'text-black bg-white';
+      themeStyles = 'text-black bg-white transition-opacity hover:opacity-90';
       break;
     case 'primary-1':
-      themeStyles = 'bg-primary-1 text-black transition-colors';
+      themeStyles = 'bg-primary-1 text-black hover:bg-primary-1-hover';
       break;
     default:
       return undefined;

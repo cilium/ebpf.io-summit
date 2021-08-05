@@ -23,10 +23,12 @@ module.exports = {
       colors: {
         white: '#ffffff',
         black: ' #1A1A1A',
+        'black-hover': '#2E2D2D',
         primary: {
           1: '#FFE100',
           2: '#00ACE6',
           3: '#CFEDFC',
+          '1-hover': '#E8CD02',
         },
         gray: {
           1: '#808080',
