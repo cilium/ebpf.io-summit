@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { useCallback, useRef, useState, useEffect } from 'react';
 
+import Button from 'components/shared/button';
 import Container from 'components/shared/container';
 import DangerousHtml from 'components/shared/dangerous-html';
 import Heading from 'components/shared/heading';
@@ -16,7 +17,7 @@ const fetchScheduleData = async (cb) => {
   }
 };
 
-const Schedule = ({ title }) => {
+const Schedule = ({ title, buttonLink, buttonText, bottomText }) => {
   const [scheduleHTML, setScheduleHTML] = useState('');
 
   const modifySessionizeScript = useCallback((html) => {
@@ -41,6 +42,12 @@ const Schedule = ({ title }) => {
           {title}
         </Heading>
         <DangerousHtml className="mt-6" html={scheduleHTML} />
+        <div className="text-center">
+          <Button className="mt-9" theme="black" to={buttonLink}>
+            {buttonText}
+          </Button>
+          <span className="block text-xs text-gray-1 mt-2.5">{bottomText}</span>
+        </div>
       </Container>
     </section>
   ) : null;

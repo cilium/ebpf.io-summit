@@ -48,11 +48,9 @@ const Speakers = ({ title, items }) => (
               <h3 className="mt-4 text-lg font-bold md:text-base">{name}</h3>
               <span className="mt-1 text-lg text-gray-1 md:text-base">{position}</span>
             </div>
-            {link && (
-              <span className="flex items-center justify-center w-full px-8 py-2.5 mt-auto text-sm font-bold leading-snug bg-gray-2 min-h-[59px]">
-                {link.title}
-              </span>
-            )}
+            <span className="flex items-center justify-center w-full px-8 md:px-4 py-2.5 mt-auto text-sm font-bold leading-snug bg-gray-2 min-h-[59px]">
+              {link.title}
+            </span>
           </Link>
         ))}
       </div>

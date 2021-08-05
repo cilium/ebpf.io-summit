@@ -1,7 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
-import Agenda from 'components/pages/home/agenda';
 import Hero from 'components/pages/home/hero';
 import Information from 'components/pages/home/information';
 import LastYear from 'components/pages/home/last-year';
@@ -23,17 +22,6 @@ const hero = {
     url: 'https://ebpf.io/slack',
     title: 'Join Summit Slack',
   },
-};
-
-const agenda = {
-  title: 'Agenda',
-  subtitle:
-    'Sessions run both days 9am-1pm Pacific / 12 midday-4pm Eastern / 5pm-9pm UK / 6pm-10pm Europe',
-  link: {
-    url: 'https://ebpf-summit-2021.sessionize.com/',
-    title: 'View schedule',
-  },
-  description: 'More sessions being added - check back soon!',
 };
 
 const information = {
@@ -67,6 +55,9 @@ const information = {
 
 const schedule = {
   title: 'Schedule',
+  buttonLink: 'https://ebpf-summit-2021.sessionize.com/',
+  buttonText: 'Create your agenda',
+  bottomText: 'In mobile app',
 };
 
 const lastYear = {
@@ -207,7 +198,6 @@ const IndexPage = ({ path }) => {
     <MainLayout path={path}>
       <Hero {...hero} />
       <Speakers {...speakers} />
-      <Agenda {...agenda} />
       <Information {...information} />
       <Schedule {...schedule} />
       <LastYear {...lastYear} />
