@@ -57,7 +57,7 @@ const schedule = {
   title: 'Schedule',
   buttonLink: 'https://ebpf-summit-2021.sessionize.com/',
   buttonText: 'Create your agenda',
-  bottomText: 'In our mobile app',
+  bottomText: 'In mobile app',
 };
 
 const lastYear = {

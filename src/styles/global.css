@@ -55,10 +55,11 @@
 }
 
 #sessionize.sessionize-wrapper .sz-timezone .sz-timezone__name {
-  @apply text-xl;
+  @apply text-xl md:text-lg;
 }
 
-#sessionize.sessionize-wrapper .sz-timezone__radio input[type='radio']:checked + label {
+#sessionize.sessionize-wrapper .sz-timezone__radio input[type='radio']:checked + label,
+#sessionize.sessionize-wrapper .sz-timezone__radio input[type='radio']:hover + label {
   box-shadow: inset 0 -0.125rem 0 0 theme('colors.black') !important;
 }
 
@@ -146,4 +147,8 @@
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-cssgrid__time-label {
   @apply !font-bold;
+}
+
+#sessionize.sessionize-wrapper .sz-modal-container-inner {
+  @apply px-6;
 }
