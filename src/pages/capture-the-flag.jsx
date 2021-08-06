@@ -50,7 +50,7 @@ const sessions = {
     {
       stage: 'Stage 2',
       time: 'Aug 19, 10:55am PT, 19:55 CET',
-      linkUrl: '/',
+      linkUrl: '/summit-2021/',
       linkText: 'eBPF Capture the Flag (CTF) #',
     },
     {
