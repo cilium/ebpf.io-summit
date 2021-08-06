@@ -23,7 +23,13 @@ const Ctf = ({ description, name, url }) => {
         <p className="mt-28 md:mt-20">{description}</p>
         <div className="mt-8">
           <span className="font-bold">Moderator & Commentator:</span> The awesome{' '}
-          <Link className="font-bold" theme="primary" to={url}>
+          <Link
+            className="font-bold"
+            theme="primary"
+            to={url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {name}
           </Link>
         </div>

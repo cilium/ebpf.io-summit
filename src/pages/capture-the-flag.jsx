@@ -25,14 +25,14 @@ const hero = {
 const ctf = {
   description:
     'Welcome to the first-ever eBPF-themed Capture the Flag (CTF) event. The CTF is open to everyone, please see below how to participate. The CTF will feature 3 stages which can be solved separately, each stage will be unlocked and open to solving 24h before the respective live solving session hosted at the eBPF Summit & the eCHO live-stream.',
-  url: 'https://ebpf-summit-2021.sessionize.com/speaker/3efbcdc1-c5e7-4d1c-b745-cd934e6d69b5',
+  url: 'https://twitter.com/TabbySable',
   name: 'Tabitha Sable',
 };
 
 const participate = {
   title: 'How to Participate',
   items: [
-    '<a href="#register">Register</a> for the eBPF Summit 2021.',
+    '<a href="/summit-2021/">Register</a> for the eBPF Summit 2021.',
     'Visit this site 24h before the live solving sessions for information on how to access each individual stage.',
     'Join the eBPF Summit and eCHO live-stream to attend the entertaining CTF live solving sessions moderated and commentated by Tabitha Sable.',
   ],
@@ -56,7 +56,7 @@ const sessions = {
     {
       stage: 'Stage 3',
       time: 'Aug 20, 7am PT, 15:00 CET',
-      linkUrl: '/',
+      linkUrl: 'https://github.com/isovalent/eCHO',
       linkText: 'eCHO Live Stream',
     },
   ],

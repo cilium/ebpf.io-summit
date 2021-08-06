@@ -19,7 +19,13 @@ const Sessions = ({ title, items, bottomText }) => (
             <span className="flex items-center mt-4 text-xl md:text-lg">
               <ClockIcon className="flex-shrink-0 mr-3" />
               {time} <span className="contents">–</span>{' '}
-              <Link className="font-bold contents" theme="primary" to={linkUrl}>
+              <Link
+                className="font-bold contents"
+                theme="primary"
+                to={linkUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {linkText}
               </Link>
             </span>
