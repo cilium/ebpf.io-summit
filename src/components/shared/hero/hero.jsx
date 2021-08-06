@@ -30,9 +30,7 @@ const Hero = ({ date, title, description, button1, button2 }) => {
           <span className="inline-block px-4 py-3 font-bold leading-none uppercase border-2 text-primary-1 border-primary-1">
             {date}
           </span>
-          <Heading className="mt-6" tag="h1" size="2xl">
-            {title}
-          </Heading>
+          <Heading className="mt-6" tag="h1" size="2xl" innerHTML={title} />
           <div
             className="mt-6 space-y-6 text-xl with-link-primary md:text-lg md:space-y-4"
             dangerouslySetInnerHTML={{ __html: description }}

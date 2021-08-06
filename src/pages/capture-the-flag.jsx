@@ -9,7 +9,7 @@ import MainLayout from 'layouts/main';
 
 const hero = {
   date: 'August 18-19th',
-  title: 'eBPF Summit 2021',
+  title: 'eBPF<br> Summit 2021',
   description:
     '<p>eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers is open for registration.</p>',
   button1: {
