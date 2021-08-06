@@ -1,12 +1,12 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
-import Hero from 'components/pages/home/hero';
 import Information from 'components/pages/home/information';
 import LastYear from 'components/pages/home/last-year';
-import Register from 'components/pages/home/register';
 import Schedule from 'components/pages/home/schedule';
 import Speakers from 'components/pages/home/speakers';
+import Hero from 'components/shared/hero';
+import Register from 'components/shared/register';
 import MainLayout from 'layouts/main';
 
 const hero = {
