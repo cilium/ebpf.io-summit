@@ -50,8 +50,8 @@ const sessions = {
     {
       stage: 'Stage 2',
       time: 'Aug 19, 10:55am PT, 19:55 CET',
-      linkUrl: '/summit-2021/',
-      linkText: 'eBPF Capture the Flag (CTF) #',
+      linkUrl: 'https://ebpf-summit-2021.sessionize.com/session/275707',
+      linkText: 'eBPF Capture the Flag (CTF) #2',
     },
     {
       stage: 'Stage 3',
