@@ -3,11 +3,9 @@ import React from 'react';
 
 import Footer from 'components/shared/footer';
 import Header from 'components/shared/header';
-import SEO from 'components/shared/seo';
 
-const MainLayout = ({ path, children }) => (
+const MainLayout = ({ children }) => (
   <>
-    <SEO data={{ slug: path }} />
     <Header />
     <main>{children}</main>
     <Footer />

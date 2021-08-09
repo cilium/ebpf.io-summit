@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 import Ctf from 'components/pages/capture-the-flag/ctf';
@@ -5,7 +6,10 @@ import Participate from 'components/pages/capture-the-flag/participate';
 import Sessions from 'components/pages/capture-the-flag/sessions';
 import Hero from 'components/shared/hero';
 import Register from 'components/shared/register';
+import SEO from 'components/shared/seo';
 import MainLayout from 'layouts/main';
+
+const ogImage = '/images/og-ctf.png';
 
 const hero = {
   date: 'August 18-19th',
@@ -72,8 +76,9 @@ const register = {
   },
 };
 
-const CaptureTheFlag = ({ path }) => (
-  <MainLayout path={path}>
+const CaptureTheFlag = ({ location: { pathname } }) => (
+  <MainLayout>
+    <SEO data={{ title: 'eBPF Summit 2021 – Capture the flag', image: ogImage, slug: pathname }} />
     <Hero {...hero} />
     <Ctf {...ctf} />
     <Participate {...participate} />

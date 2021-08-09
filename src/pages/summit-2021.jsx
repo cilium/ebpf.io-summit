@@ -7,7 +7,10 @@ import Schedule from 'components/pages/home/schedule';
 import Speakers from 'components/pages/home/speakers';
 import Hero from 'components/shared/hero';
 import Register from 'components/shared/register';
+import SEO from 'components/shared/seo';
 import MainLayout from 'layouts/main';
+
+const ogImage = '/images/og-summit-2021.png';
 
 const hero = {
   date: 'August 18-19th',
@@ -97,7 +100,7 @@ const register = {
   },
 };
 
-const IndexPage = ({ path }) => {
+const IndexPage = ({ location: { pathname } }) => {
   const { jaanaDogan, brendanGregg, lizRice, danielBorkmann, tabithaSable, daveThaler } =
     useStaticQuery(graphql`
       query {
@@ -195,7 +198,8 @@ const IndexPage = ({ path }) => {
   };
 
   return (
-    <MainLayout path={path}>
+    <MainLayout>
+      <SEO data={{ title: 'eBPF Summit 2021', image: ogImage, slug: pathname }} />
       <Hero {...hero} />
       <Speakers {...speakers} />
       <Information {...information} />
