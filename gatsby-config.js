@@ -8,7 +8,7 @@ module.exports = {
     siteDescription:
       'Register now for the eBPF Summit 2021, Aug 18-19, 2021, a free virtual event for DevOps, SRE, SecOps, and developers.',
     // pathPrefix: "",
-    siteImage: '/images/og-summit-2021.png',
+    siteImage: '/images/social-preview.png',
     siteLanguage: 'en',
     siteUrl: process.env.GATSBY_DEFAULT_SITE_URL,
     /* author */
