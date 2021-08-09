@@ -39,7 +39,7 @@ const SEO = ({ data: { title, description, image, slug } = {}, facebook } = {}) 
   const currentUrl = slug ? `${siteUrl}${slug}` : siteUrl;
   const currentImagePath = image
     ? createMetaImagePath(image, siteUrl)
-    : siteUrl + (slug === '/summit-2021/' ? siteImage : ctfImage);
+    : siteUrl + (slug === '/summit-2021/ctf/' ? ctfImage : siteImage);
 
   return (
     <Helmet

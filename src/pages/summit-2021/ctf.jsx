@@ -72,8 +72,8 @@ const register = {
   },
 };
 
-const CaptureTheFlag = () => (
-  <MainLayout>
+const CaptureTheFlag = ({ path }) => (
+  <MainLayout path={path}>
     <Hero {...hero} />
     <Ctf {...ctf} />
     <Participate {...participate} />
