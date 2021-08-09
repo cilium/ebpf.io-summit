@@ -7,6 +7,7 @@ import Schedule from 'components/pages/home/schedule';
 import Speakers from 'components/pages/home/speakers';
 import Hero from 'components/shared/hero';
 import Register from 'components/shared/register';
+import SEO from 'components/shared/seo';
 import MainLayout from 'layouts/main';
 
 const hero = {
@@ -97,7 +98,7 @@ const register = {
   },
 };
 
-const IndexPage = ({ path }) => {
+const IndexPage = ({ location: { pathname } }) => {
   const { jaanaDogan, brendanGregg, lizRice, danielBorkmann, tabithaSable, daveThaler } =
     useStaticQuery(graphql`
       query {
@@ -195,7 +196,8 @@ const IndexPage = ({ path }) => {
   };
 
   return (
-    <MainLayout path={path}>
+    <MainLayout>
+      <SEO data={{ slug: pathname }} />
       <Hero {...hero} />
       <Speakers {...speakers} />
       <Information {...information} />
