@@ -35,13 +35,13 @@ const Schedule = ({ title, buttonLink, buttonText, bottomText }) => {
     }
   }, [modifySessionizeScript]);
 
-  return scheduleHTML ? (
+  return (
     <section className="bg-gray-3 py-28 md:py-20" id="schedule">
       <Container>
         <Heading className="text-center" tag="h2">
           {title}
         </Heading>
-        <DangerousHtml className="mt-6" html={scheduleHTML} />
+        {scheduleHTML ? <DangerousHtml className="mt-6" html={scheduleHTML} /> : null}
         <div className="text-center">
           <Button className="mt-9" theme="black" to={buttonLink}>
             {buttonText}
@@ -50,7 +50,7 @@ const Schedule = ({ title, buttonLink, buttonText, bottomText }) => {
         </div>
       </Container>
     </section>
-  ) : null;
+  );
 };
 
 Schedule.propTypes = {

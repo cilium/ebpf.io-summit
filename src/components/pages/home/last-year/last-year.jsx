@@ -28,21 +28,21 @@ const LastYear = ({ title, description, link, items }) => (
       </Link>
       <div className="grid grid-cols-4 max-w-[920px] mx-auto gap-x-10 mt-10 place-items-center gap-y-8 md:grid-cols-2 md:gap-x-8">
         {items.map(({ number, unit }, index) => {
-          const isOddElement = index % 2 === 0;
+          const isEvenElement = index % 2 === 0;
           return (
             <div className="relative max-w-[200px]" key={index}>
               <img src={shapes[index]} alt="" aria-hidden />
               <div className="absolute flex flex-col transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 space-y-2.5 md:space-y-1.5">
                 <span
                   className={`font-extrabold leading-none text-7xl lg:text-5xl md:text-6xl xs:text-5xl ${
-                    isOddElement ? 'text-primary-1' : 'text-black'
+                    isEvenElement ? 'text-primary-1' : 'text-black'
                   }`}
                 >
                   {number}
                 </span>
                 <span
                   className={`text-lg font-bold leading-none md:text-base ${
-                    isOddElement ? 'text-white' : 'text-black'
+                    isEvenElement ? 'text-white' : 'text-black'
                   }`}
                 >
                   {unit}

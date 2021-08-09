@@ -48,6 +48,10 @@
   .with-link-primary a {
     @apply text-primary-1 font-bold no-underline;
   }
+
+  .with-link-secondary a {
+    @apply text-primary-2 font-bold no-underline hover:text-black transition-colors duration-200;
+  }
 }
 
 .sz-session__room {
