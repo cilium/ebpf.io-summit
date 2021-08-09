@@ -8,7 +8,7 @@ import BlackStar from './icons/black-star.inline.svg';
 import YellowStar from './icons/yellow-star.inline.svg';
 
 const EbpfFoundation = ({ title, items }) => (
-  <section className="mt-28 md:mt-20">
+  <section className="mt-32 md:mt-20">
     <Container>
       <Heading tag="h2" size="xl">
         {title}

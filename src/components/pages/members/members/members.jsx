@@ -7,7 +7,7 @@ import Heading from 'components/shared/heading';
 const Members = ({ title, items }) => (
   <section className="my-28 md:my-20">
     <Container>
-      <Heading tag="h2" size="lg">
+      <Heading tag="h2" size="xl">
         {title}
       </Heading>
       <div>

@@ -14,13 +14,13 @@ const navigation = {
 const MainFooter = () => (
   <footer className="relative overflow-hidden">
     <img
-      className="absolute bottom-0 left-0 xl:-left-1/4 md:hidden"
+      className="absolute bottom-0 left-0 h-full xl:-left-1/4 md:hidden"
       src={leftShape}
       alt=""
       aria-hidden
     />
     <img
-      className="absolute bottom-0 right-0 xl:-right-1/4 md:hidden"
+      className="absolute bottom-0 right-0 h-full xl:-right-1/4 md:hidden"
       src={rightShape}
       alt=""
       aria-hidden

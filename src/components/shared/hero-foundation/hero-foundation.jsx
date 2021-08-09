@@ -1,11 +1,10 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 import Container from 'components/shared/container';
 import Heading from 'components/shared/heading';
 
 const HeroFoundation = () => (
-  <section className="bg-center bg-hero-foundation">
+  <section className="bg-center bg-hero-foundation mt-2.5">
     <Container className="text-center py-28">
       <Heading tag="h1" size="2xl">
         eBPF Foundation

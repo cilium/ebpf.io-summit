@@ -21,7 +21,7 @@ const SubMenu = ({ name, menuItems }) => (
           <ChevronDownIcon
             className={classNames(
               open ? 'text-gray-900' : 'text-black',
-              'ml-2 h-5 w-5 group-hover:text-gray-1 transition-colors duration-200'
+              'h-5 w-5 group-hover:text-gray-1 transition-colors duration-200'
             )}
             aria-hidden="true"
           />
