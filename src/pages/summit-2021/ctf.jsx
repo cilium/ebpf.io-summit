@@ -7,8 +7,9 @@ import Sessions from 'components/pages/capture-the-flag/sessions';
 import Hero from 'components/shared/hero';
 import Register from 'components/shared/register';
 import SEO from 'components/shared/seo';
-import image from 'images/ctf.png';
 import MainLayout from 'layouts/main';
+
+const ogImage = '/images/og-ctf.png';
 
 const hero = {
   date: 'August 18-19th',
@@ -77,7 +78,7 @@ const register = {
 
 const CaptureTheFlag = ({ location: { pathname } }) => (
   <MainLayout>
-    <SEO data={{ title: 'EBPF Summit 2021 | Capture the flag', ogImage: image, slug: pathname }} />
+    <SEO data={{ title: 'eBPF Summit 2021 – Capture the flag', image: ogImage, slug: pathname }} />
     <Hero {...hero} />
     <Ctf {...ctf} />
     <Participate {...participate} />

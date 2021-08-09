@@ -10,6 +10,8 @@ import Register from 'components/shared/register';
 import SEO from 'components/shared/seo';
 import MainLayout from 'layouts/main';
 
+const ogImage = '/images/og-summit-2021.png';
+
 const hero = {
   date: 'August 18-19th',
   title: 'eBPF<br> Summit 2021',
@@ -197,7 +199,7 @@ const IndexPage = ({ location: { pathname } }) => {
 
   return (
     <MainLayout>
-      <SEO data={{ slug: pathname }} />
+      <SEO data={{ title: 'eBPF Summit 2021', image: ogImage, slug: pathname }} />
       <Hero {...hero} />
       <Speakers {...speakers} />
       <Information {...information} />
