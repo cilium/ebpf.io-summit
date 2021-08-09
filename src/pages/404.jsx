@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MainLayout from 'layouts/main';
+import MainLayout from 'layouts/summit';
 
 const NotFoundPage = () => (
   <MainLayout>

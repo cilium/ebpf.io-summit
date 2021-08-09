@@ -7,7 +7,7 @@ import LastYear from 'components/pages/home/last-year';
 import Register from 'components/pages/home/register';
 import Schedule from 'components/pages/home/schedule';
 import Speakers from 'components/pages/home/speakers';
-import MainLayout from 'layouts/main';
+import SummitLayout from 'layouts/summit';
 
 const hero = {
   date: 'August 18-19th',
@@ -195,14 +195,14 @@ const IndexPage = ({ path }) => {
   };
 
   return (
-    <MainLayout path={path}>
+    <SummitLayout path={path}>
       <Hero {...hero} />
       <Speakers {...speakers} />
       <Information {...information} />
       <Schedule {...schedule} />
       <LastYear {...lastYear} />
       <Register {...register} />
-    </MainLayout>
+    </SummitLayout>
   );
 };
 
