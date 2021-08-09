@@ -81,7 +81,7 @@ const Header = () => (
               focus
               static
             >
-              <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
+              <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-gray-900 ring-opacity-5">
                 <div className="flex items-center justify-between px-5 pt-4">
                   <div>
                     <Logo className="w-auto h-8" aria-label="Logo" />

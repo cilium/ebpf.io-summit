@@ -76,7 +76,7 @@ const MainHeader = () => (
   <Popover>
     {({ open }) => (
       <>
-        <Container className="pt-5 pb-4">
+        <Container className="pt-5 pb-4" large>
           <nav className="relative flex items-center justify-between" aria-label="Global">
             <div className="flex items-center flex-none lg:flex-1 -mt-2.5">
               <div className="flex items-center justify-between w-auto lg:w-full">
@@ -111,61 +111,65 @@ const MainHeader = () => (
                 );
               })}
             </div>
-            <div className="flex items-center">
-              <Popover className="relative">
-                {({ open }) => (
-                  <>
-                    <Popover.Button
-                      className={classNames(
-                        open ? 'text-gray-900' : 'text-black',
-                        'group bg-white rounded-md inline-flex items-center text-base focus:outline-none font-bold leading-none transition-colors duration-200 hover:text-gray-1'
-                      )}
-                    >
-                      <EnglishFlag className="mr-3" />
-                      <span>English</span>
-                      <ChevronDownIcon
+            <div className="relative lg:hidden">
+              <div className="absolute -translate-y-1/2 top-1/2 -left-36">
+                <Popover className="relative">
+                  {({ open }) => (
+                    <>
+                      <Popover.Button
                         className={classNames(
                           open ? 'text-gray-900' : 'text-black',
-                          'ml-2 h-5 w-5 group-hover:text-gray-1 transition-colors duration-200'
+                          'group bg-white rounded-md flex items-center text-base focus:outline-none font-bold leading-none transition-colors duration-200 hover:text-gray-1'
                         )}
-                        aria-hidden="true"
-                      />
-                    </Popover.Button>
-
-                    <Transition
-                      show={open}
-                      as={Fragment}
-                      enter="transition ease-out duration-200"
-                      enterFrom="opacity-0 translate-y-1"
-                      enterTo="opacity-100 translate-y-0"
-                      leave="transition ease-in duration-150"
-                      leaveFrom="opacity-100 translate-y-0"
-                      leaveTo="opacity-0 translate-y-1"
-                    >
-                      <Popover.Panel
-                        className="absolute z-10 w-screen max-w-[180px] px-2 mt-3 transform -translate-x-1/2 left-1/2 sm:px-0"
-                        static
                       >
-                        <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-gray-900 ring-opacity-5">
-                          <div className="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
-                            {languages.map(({ icon: Icon, name }) => (
-                              <button
-                                type="button"
-                                key={name}
-                                className="flex items-center px-3 py-2 -m-3 space-x-5 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
-                              >
-                                <Icon />
-                                <span>{name}</span>
-                              </button>
-                            ))}
+                        <EnglishFlag className="mr-3" />
+                        <span>English</span>
+                        <ChevronDownIcon
+                          className={classNames(
+                            open ? 'text-gray-900' : 'text-black',
+                            'ml-2 h-5 w-5 group-hover:text-gray-1 transition-colors duration-200'
+                          )}
+                          aria-hidden="true"
+                        />
+                      </Popover.Button>
+
+                      <Transition
+                        show={open}
+                        as={Fragment}
+                        enter="transition ease-out duration-200"
+                        enterFrom="opacity-0 translate-y-1"
+                        enterTo="opacity-100 translate-y-0"
+                        leave="transition ease-in duration-150"
+                        leaveFrom="opacity-100 translate-y-0"
+                        leaveTo="opacity-0 translate-y-1"
+                      >
+                        <Popover.Panel
+                          className="absolute z-10 w-screen max-w-[180px] px-2 mt-3 transform -translate-x-1/2 left-1/2 sm:px-0"
+                          static
+                        >
+                          <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-gray-900 ring-opacity-5">
+                            <div className="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
+                              {languages.map(({ icon: Icon, name }) => (
+                                <button
+                                  type="button"
+                                  key={name}
+                                  className="flex items-center px-3 py-2 -m-3 space-x-5 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
+                                >
+                                  <Icon />
+                                  <span>{name}</span>
+                                </button>
+                              ))}
+                            </div>
                           </div>
-                        </div>
-                      </Popover.Panel>
-                    </Transition>
-                  </>
-                )}
-              </Popover>
-              <CiliumLogo className="flex-shrink-0 pl-8 ml-8 border-l-2 border-gray-2" />
+                        </Popover.Panel>
+                      </Transition>
+                    </>
+                  )}
+                </Popover>
+              </div>
+              <div className="pl-8 border-l-2 border-gray-2">
+                <CiliumLogo />
+              </div>
             </div>
           </nav>
         </Container>
@@ -185,7 +189,7 @@ const MainHeader = () => (
             focus
             static
           >
-            <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
+            <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-gray-900 ring-opacity-5">
               <div className="flex items-center justify-between px-5 pt-4">
                 <div>
                   <Logo className="w-auto h-8" aria-label="Logo" />

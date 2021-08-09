@@ -40,6 +40,9 @@ module.exports = {
         xl: ['1.25rem', '1.5'],
         lg: ['1.125rem', '1.5'],
       },
+      backgroundImage: (theme) => ({
+        'hero-foundation': "url('/images/background.svg')",
+      }),
     },
   },
   variants: {

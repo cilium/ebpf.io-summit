@@ -43,8 +43,8 @@ const SubMenu = ({ name, menuItems }) => (
           >
             <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-gray-900 ring-opacity-5">
               <div className="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
-                {menuItems.map(({ name, href }) => (
-                  <>
+                {menuItems.map(({ name, href }, index) => (
+                  <Fragment key={index}>
                     {!href ? (
                       <h3 className="-mb-2 font-bold tracking-wide uppercase text-gray-1">
                         {name}
@@ -58,7 +58,7 @@ const SubMenu = ({ name, menuItems }) => (
                         {name}
                       </a>
                     )}
-                  </>
+                  </Fragment>
                 ))}
               </div>
             </div>
