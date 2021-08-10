@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import MainFooter from 'components/shared/main-footer';
-import MainHeader from 'components/shared/main-header';
+import Footer from 'components/shared/footer';
+import Header from 'components/shared/header';
 import SEO from 'components/shared/seo';
 
 const MainLayout = ({ path, children }) => (
   <>
     <SEO data={{ slug: path }} />
-    <MainHeader />
+    <Header />
     <main>{children}</main>
-    <MainFooter />
+    <Footer />
   </>
 );
 

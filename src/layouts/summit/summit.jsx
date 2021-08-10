@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Footer from 'components/shared/footer';
-import Header from 'components/shared/header';
 import SEO from 'components/shared/seo';
+import SummitFooter from 'components/shared/summit-footer';
+import SummitHeader from 'components/shared/summit-header';
 
 const SummitLayout = ({ path, children }) => (
   <>
     <SEO data={{ slug: path }} />
-    <Header />
+    <SummitHeader />
     <main>{children}</main>
-    <Footer />
+    <SummitFooter />
   </>
 );
 
