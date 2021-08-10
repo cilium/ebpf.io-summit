@@ -22,7 +22,7 @@ title: 'Charter'
 
 ### 3) Governing Board
 
--The Governing Board voting members will consist of:
+- The Governing Board voting members will consist of:
 
 - One representative appointed by each Platinum Member.
 - Identify themselves as members of the eBPF Foundation supporting the eBPF Foundation community.
