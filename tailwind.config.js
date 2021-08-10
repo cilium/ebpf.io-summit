@@ -43,10 +43,66 @@ module.exports = {
       backgroundImage: (theme) => ({
         'hero-foundation': "url('/images/background.svg')",
       }),
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.black'),
+            h1: {
+              color: theme('colors.black'),
+              fontWeight: theme('font.bold'),
+            },
+            h2: {
+              color: theme('colors.black'),
+              fontWeight: theme('font.bold'),
+            },
+            h3: {
+              color: theme('colors.black'),
+              fontWeight: theme('font.bold'),
+            },
+            h4: {
+              color: theme('colors.black'),
+              fontWeight: theme('font.bold'),
+            },
+            h5: {
+              color: theme('colors.black'),
+              fontWeight: theme('font.bold'),
+            },
+            h6: {
+              color: theme('colors.black'),
+              fontWeight: theme('font.bold'),
+            },
+            a: {
+              color: theme('colors.primary.2'),
+              textDecoration: 'none',
+              transitionDuration: theme('transitionDuration.200'),
+              transitionProperty: theme('transitionProperty.colors'),
+              transitionTimingFunction: theme('transitionTimingFunction.DEFAULT'),
+              '&:hover': {
+                color: theme('colors.black'),
+              },
+            },
+            ul: {
+              li: {
+                '&:before': {
+                  backgroundColor: theme('colors.black'),
+                },
+              },
+            },
+            ol: {
+              li: {
+                '&:before': {
+                  color: theme('colors.black'),
+                },
+              },
+            },
+          },
+        },
+      }),
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  // eslint-disable-next-line global-require
+  plugins: [require('@tailwindcss/typography')],
 };
