@@ -48,8 +48,8 @@ const navigation = [
     name: `About`,
     menuItems: [
       { name: 'Members', href: '/members' },
-      { name: 'Governing Board', href: '/governing-board' },
-      { name: 'eBPF Steering Committee', href: '/steering-committee' },
+      // { name: 'Governing Board', href: '/governing-board' },
+      // { name: 'eBPF Steering Committee', href: '/steering-committee' },
       { name: 'Charter', href: '/charter' },
       { name: 'How to Contribute', href: 'https://ebpf.io/contribute' },
     ],
@@ -62,8 +62,8 @@ const mobileNavigation = [
   { name: 'Projects', href: 'https://ebpf.io/projects' },
   { name: `Slack`, href: `https://ebpf.io/slack` },
   { name: 'Members', href: '/members' },
-  { name: 'Governing Board', href: '/governing-board' },
-  { name: 'eBPF Steering Committee', href: '/steering-committee' },
+  // { name: 'Governing Board', href: '/governing-board' },
+  // { name: 'eBPF Steering Committee', href: '/steering-committee' },
   { name: 'Charter', href: '/charter' },
   { name: 'How to Contribute', href: 'https://ebpf.io/contribute' },
 ];
