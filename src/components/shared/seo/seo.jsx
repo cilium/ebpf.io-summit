@@ -3,8 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import createMetaImagePath from 'utils/create-meta-image-path';
-
 const SEO = ({ data: { title, description, image, slug } = {}, facebook } = {}) => {
   const {
     site: {
@@ -35,7 +33,7 @@ const SEO = ({ data: { title, description, image, slug } = {}, facebook } = {}) 
   const currentTitle = title || siteTitle;
   const currentDescription = description || siteDescription;
   const currentUrl = slug ? `${siteUrl}${slug}` : siteUrl;
-  const currentImagePath = image ? createMetaImagePath(image, siteUrl) : siteUrl + siteImage;
+  const currentImagePath = image ? siteUrl + image : siteUrl + siteImage;
 
   return (
     <Helmet
