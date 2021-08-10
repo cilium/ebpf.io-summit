@@ -56,6 +56,18 @@ const navigation = [
   },
 ];
 
+const mobileNavigation = [
+  { name: 'What is eBPF?', href: 'https://ebpf.io/what-is-ebpf' },
+  { name: 'Blog', href: 'https://ebpf.io/blog' },
+  { name: 'Projects', href: 'https://ebpf.io/projects' },
+  { name: `Slack`, href: `https://ebpf.io/slack` },
+  { name: 'Members', href: '/members' },
+  { name: 'Governing Board', href: '/governing-board' },
+  { name: 'eBPF Steering Committee', href: '/steering-committee' },
+  { name: 'Charter', href: '/charter' },
+  { name: 'How to Contribute', href: 'https://ebpf.io/contribute' },
+];
+
 const Header = ({ switchLanguages }) => (
   <Popover>
     {({ open }) => (
@@ -137,7 +149,7 @@ const Header = ({ switchLanguages }) => (
                 </div>
               </div>
               <div className="px-2 pt-2 pb-3">
-                {navigation.map((item) => (
+                {mobileNavigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
