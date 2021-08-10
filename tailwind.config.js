@@ -28,6 +28,7 @@ module.exports = {
           1: '#FFE100',
           2: '#00ACE6',
           3: '#CFEDFC',
+          4: '#FDF1D0',
           '1-hover': '#E8CD02',
         },
         gray: {
