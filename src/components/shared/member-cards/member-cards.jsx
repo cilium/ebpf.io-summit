@@ -9,7 +9,7 @@ import Link from 'components/shared/link';
 import LinkedinIcon from './icons/linkedin.inline.svg';
 import TwitterIcon from './icons/twitter.inline.svg';
 
-const GoverningBoard = ({ title, description, items }) => (
+const MemberCards = ({ title, description, items }) => (
   <section className="my-28 md:my-20">
     <Container>
       <Heading tag="h2" size="xl">
@@ -43,7 +43,7 @@ const GoverningBoard = ({ title, description, items }) => (
   </section>
 );
 
-GoverningBoard.propTypes = {
+MemberCards.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(
@@ -57,4 +57,4 @@ GoverningBoard.propTypes = {
   ).isRequired,
 };
 
-export default GoverningBoard;
+export default MemberCards;

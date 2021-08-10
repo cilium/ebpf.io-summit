@@ -5,7 +5,7 @@ import HeroFoundation from 'components/shared/hero-foundation';
 import MemberCards from 'components/shared/member-cards';
 import MainLayout from 'layouts/main';
 
-const GoverningBoardPage = () => {
+const SteeringCommitteePage = () => {
   const { avatar1, avatar2, avatar3, avatar4 } = useStaticQuery(graphql`
     query {
       avatar1: file(relativePath: { eq: "pages/governing-board/avatar-1.jpg" }) {
@@ -30,10 +30,10 @@ const GoverningBoardPage = () => {
       }
     }
   `);
-  const governingBoard = {
-    title: 'Governing Board',
+  const steeringCommittee = {
+    title: 'eBPF Steering Committee',
     description:
-      'The eBPF Foundation Governing Board (GB) is responsible for marketing and other business oversight and budget decisions.',
+      'The eBPF Steering Committee (BSC) is responsible for the technical direction and overall vision of eBPF, the collaboration among projects, making recommendations to the governing board, defining the minimal requirements of eBPF runtimes, overseeing community events, maintaining project lifecycle procedures, and communicating on behalf of the eBPF community.',
     items: [
       {
         avatar: avatar1,
@@ -65,12 +65,12 @@ const GoverningBoardPage = () => {
       },
     ],
   };
-
   return (
     <MainLayout>
       <HeroFoundation />
-      <MemberCards {...governingBoard} />
+      <MemberCards {...steeringCommittee} />
     </MainLayout>
   );
 };
-export default GoverningBoardPage;
+
+export default SteeringCommitteePage;
