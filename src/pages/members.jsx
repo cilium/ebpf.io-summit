@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 import EbpfFoundation from 'components/pages/members/ebpf-foundation';
 import Members from 'components/pages/members/members';
 import HeroFoundation from 'components/shared/hero-foundation';
+import SEO from 'components/shared/seo';
 import FacebookLogo from 'images/pages/members/facebook.inline.svg';
 import GoogleLogo from 'images/pages/members/google.inline.svg';
 import IsovalentLogo from 'images/pages/members/isovalent.inline.svg';
@@ -33,8 +35,9 @@ const members = {
   ],
 };
 
-const MembersPage = () => (
+const MembersPage = ({ location: { pathname } }) => (
   <MainLayout>
+    <SEO data={{ title: 'eBPF Members', slug: pathname }} />
     <HeroFoundation />
     <EbpfFoundation {...ebpfFoundation} />
     <Members {...members} />

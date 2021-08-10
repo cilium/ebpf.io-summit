@@ -4,13 +4,15 @@ import React from 'react';
 
 import Content from 'components/shared/content';
 import HeroFoundation from 'components/shared/hero-foundation';
+import SEO from 'components/shared/seo';
 import MainLayout from 'layouts/main';
 
-const StaticPage = ({ data }) => {
+const StaticPage = ({ data, location: { pathname } }) => {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
   return (
     <MainLayout>
+      <SEO data={{ title: `eBPF ${frontmatter.title}`, slug: pathname }} />
       <HeroFoundation />
       <Content title={frontmatter.title} content={html} />
     </MainLayout>

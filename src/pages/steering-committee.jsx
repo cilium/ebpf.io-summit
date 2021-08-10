@@ -1,11 +1,13 @@
+/* eslint-disable react/prop-types */
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
 import HeroFoundation from 'components/shared/hero-foundation';
 import MemberCards from 'components/shared/member-cards';
+import SEO from 'components/shared/seo';
 import MainLayout from 'layouts/main';
 
-const SteeringCommitteePage = () => {
+const SteeringCommitteePage = ({ location: { pathname } }) => {
   const { avatar1, avatar2, avatar3, avatar4 } = useStaticQuery(graphql`
     query {
       avatar1: file(relativePath: { eq: "pages/governing-board/avatar-1.jpg" }) {
@@ -67,6 +69,7 @@ const SteeringCommitteePage = () => {
   };
   return (
     <MainLayout>
+      <SEO data={{ title: 'eBPF Steering Committee', slug: pathname }} />
       <HeroFoundation />
       <MemberCards {...steeringCommittee} />
     </MainLayout>
