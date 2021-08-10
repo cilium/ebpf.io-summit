@@ -167,7 +167,12 @@ const MainHeader = () => (
                   )}
                 </Popover>
               </div>
-              <Link className="block pl-8 border-l-2 border-gray-2" to="https://cilium.io/">
+              <Link
+                className="block pl-8 border-l-2 border-gray-2"
+                to="https://cilium.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <CiliumLogo />
               </Link>
             </div>
