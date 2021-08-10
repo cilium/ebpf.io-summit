@@ -215,14 +215,14 @@ const Header = () => (
                   </a>
                 ))}
               </div>
-              <Button
-                className="w-full"
-                to="https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true"
+              <Link
+                className="block px-4 pb-4"
+                to="https://cilium.io/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Register
-              </Button>
+                <CiliumLogo />
+              </Link>
             </div>
           </Popover.Panel>
         </Transition>
