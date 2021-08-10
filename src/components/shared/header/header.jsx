@@ -149,13 +149,13 @@ const Header = ({ switchLanguages }) => (
                 </div>
               </div>
               <div className="px-2 pt-2 pb-3">
-                {mobileNavigation.map((item) => (
+                {mobileNavigation.map(({ name, href }) => (
                   <a
-                    key={item.name}
-                    href={item.href}
+                    key={name}
+                    href={href}
                     className="block px-3 py-2 font-medium text-black transition-colors duration-200 rounded-md hover:text-gray-1 hover:bg-gray-5"
                   >
-                    {item.name}
+                    {name}
                   </a>
                 ))}
               </div>
