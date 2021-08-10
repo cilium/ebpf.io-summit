@@ -19,7 +19,7 @@ const navigation = [
     menuItems: [
       { name: 'eBPF Summit' },
       { name: '2021', href: '/summit-2021' },
-      { name: '2020', href: '/summit-2020' },
+      { name: '2020', href: 'https://ebpf.io/summit-2020' },
       { name: 'eBPF Track (LPC)' },
       {
         name: '2021 CFP',
