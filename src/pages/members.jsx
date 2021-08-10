@@ -14,14 +14,13 @@ const ebpfFoundation = {
   title: 'What is eBPF Foundation?',
   items: [
     {
-      title: 'Lorem ipsum dolor sit amet',
+      title: 'eBPF is a revolutionary technology',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis.',
+        '<p>eBPF is a revolutionary technology with origins in the Linux kernel that can run sandboxed programs in an operating system kernel. It is used to safely and efficiently extend the capabilities of the kernel without requiring to change kernel source code or load kernel modules.</p> <p>Historically, the operating system has always been an ideal place to implement observability, security, and networking functionality due to the kernel’s privileged ability to oversee and control the entire system. At the same time, an operating system kernel is hard to evolve due to its central role and high requirement towards stability and security. The rate of innovation at the operating system level has thus traditionally been lower compared to functionality implemented outside of the operating system.</p>',
     },
     {
-      title: 'Lorem ipsum dolor sit amet',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas ipsum, scelerisque magna ante blandit. Ut vitae odio vitae quam adipiscing sit. Elit nisi, odio felis, nec et, accumsan.',
+      title: 'eBPF changes this formula fundamentally',
+      description: `<p>By allowing to run sandboxed programs within the operating system, application developers can run eBPF programs to add additional capabilities to the operating system at runtime. The operating system then guarantees safety and execution efficiency as if natively compiled with the aid of a Just-In-Time (JIT) compiler and verification engine. This has led to a wave of eBPF-based projects covering a wide array of use cases, including next-generation networking, observability, and security functionality.</p> <p>Today, eBPF is used extensively to drive a wide variety of use cases: Providing high-performance networking and load-balancing in modern data centers and cloud native environments, extracting fine-grained security observability data at low overhead, helping application developers trace applications, providing insights for performance troubleshooting, preventive application and container runtime security enforcement, and much more. The possibilities are endless, and the innovation that eBPF is unlocked has only just begun.</p>`,
     },
   ],
 };

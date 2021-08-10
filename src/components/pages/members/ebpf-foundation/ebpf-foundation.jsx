@@ -20,7 +20,10 @@ const EbpfFoundation = ({ title, items }) => (
             <div key={index}>
               {isEvenElement ? <BlackStar /> : <YellowStar />}
               <h3 className="mt-6 text-2xl font-bold leading-tight md:text-xl">{title}</h3>
-              <p className="mt-3 text-xl leading-relaxed md:text-lg">{description}</p>
+              <div
+                className="mt-3 space-y-4 text-xl leading-relaxed md:text-lg"
+                dangerouslySetInnerHTML={{ __html: description }}
+              />
             </div>
           );
         })}
