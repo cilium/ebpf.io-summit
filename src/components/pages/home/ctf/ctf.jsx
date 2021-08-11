@@ -7,7 +7,7 @@ import Link from 'components/shared/link';
 import CtfSvg from 'images/ctf.inline.svg';
 
 const Ctf = ({ title, description, linkUrl, linkText }) => (
-  <section className="py-28 md:py-20">
+  <section className="py-28 md:py-20" id="capture-the-flag">
     <Container className="flex flex-col items-center">
       <Heading tag="h2">{title}</Heading>
       <p
