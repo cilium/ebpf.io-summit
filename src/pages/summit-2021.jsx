@@ -68,7 +68,7 @@ const ctf = {
   title: 'Capture The Flag',
   description:
     'First-ever eBPF-themed Capture the Flag (CTF) event.<br> The CTF is open to everyone.',
-  linkUrl: '/summit-2020/ctf',
+  linkUrl: '/summit-2021/ctf',
   linkText: 'Learn more about CTF',
 };
 
