@@ -14,6 +14,7 @@ const navigation = [
   { name: 'Featured Speakers', href: '/summit-2021/#featured-speakers' },
   { name: 'Information', href: '/summit-2021/#information' },
   { name: 'Schedule', href: '/summit-2021/#schedule' },
+  { name: 'CTF', href: '/summit-2021/#capture-the-flag' },
   { name: `Last year's summit`, href: `/summit-2021/#last-year's-summit` },
 ];
 

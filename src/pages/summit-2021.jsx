@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
+import Ctf from 'components/pages/home/ctf';
 import Information from 'components/pages/home/information';
 import LastYear from 'components/pages/home/last-year';
 import Schedule from 'components/pages/home/schedule';
@@ -61,6 +62,14 @@ const schedule = {
   buttonLink: 'https://ebpf-summit-2021.sessionize.com/',
   buttonText: 'Create your agenda',
   bottomText: 'In mobile app',
+};
+
+const ctf = {
+  title: 'Capture The Flag',
+  description:
+    'First-ever eBPF-themed Capture the Flag (CTF) event.<br> The CTF is open to everyone.',
+  linkUrl: '/summit-2021/ctf',
+  linkText: 'Learn more about CTF',
 };
 
 const lastYear = {
@@ -204,6 +213,7 @@ const IndexPage = ({ location: { pathname } }) => {
       <Speakers {...speakers} />
       <Information {...information} />
       <Schedule {...schedule} />
+      <Ctf {...ctf} />
       <LastYear {...lastYear} />
       <Register {...register} />
     </MainLayout>
