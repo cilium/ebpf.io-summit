@@ -27,6 +27,7 @@ const hero = {
 };
 
 const ctf = {
+  title: 'Capture The Flag',
   description:
     'Welcome to the first-ever eBPF-themed Capture the Flag (CTF) event. The CTF is open to everyone, please see below how to participate. The CTF will feature 3 stages which can be solved separately, each stage will be unlocked and open to solving 24h before the respective live solving session hosted at the eBPF Summit & the eCHO live-stream.',
   url: 'https://twitter.com/TabbySable',

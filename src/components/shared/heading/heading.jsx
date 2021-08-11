@@ -14,6 +14,9 @@ const Heading = (props) => {
   const commonStylesClassName = 'font-extrabold';
   let sizeClassName = null;
   switch (size) {
+    case '3xl':
+      sizeClassName = 'text-7xl md:text-6xl';
+      break;
     case '2xl':
       sizeClassName = 'text-6xl md:text-5xl';
       break;
@@ -47,7 +50,7 @@ const Heading = (props) => {
 Heading.propTypes = {
   className: PropTypes.string,
   tag: PropTypes.string.isRequired,
-  size: PropTypes.oneOf(['2xl', 'xl', 'lg']),
+  size: PropTypes.oneOf(['3xl', '2xl', 'xl', 'lg']),
   innerHTML: PropTypes.string,
   children: PropTypes.node,
 };

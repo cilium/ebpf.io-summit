@@ -13,18 +13,14 @@ import shape4 from './images/shape-4.svg';
 
 const shapes = [shape1, shape2, shape3, shape4];
 const LastYear = ({ title, description, link, items }) => (
-  <section className="pb-40 pt-28 md:pt-20 md:pb-28 sm:pb-20" id="last-year's-summit">
+  <section className="py-28 md:py-20 bg-gray-3" id="last-year's-summit">
     <Container className="text-center" small>
       <Heading tag="h2" size="lg">
         {title}
       </Heading>
       <p className="mt-6 text-xl md:text-lg">{description}</p>
-      <Link
-        className="flex items-center text-lg font-bold leading-none text-primary-2 space-x-2.5 justify-center mt-7 transition-colors duration-200 hover:text-black"
-        to={link.url}
-      >
+      <Link className="text-lg mt-7" theme="primary" to={link.url} withArrow>
         {link.title}
-        <ArrowIcon className="ml-2.5" />
       </Link>
       <div className="grid grid-cols-4 max-w-[920px] mx-auto gap-x-10 mt-10 place-items-center gap-y-8 md:grid-cols-2 md:gap-x-8">
         {items.map(({ number, unit }, index) => {
