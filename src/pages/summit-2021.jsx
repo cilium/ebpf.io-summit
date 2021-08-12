@@ -9,7 +9,7 @@ import Speakers from 'components/pages/home/speakers';
 import Hero from 'components/shared/hero';
 import Register from 'components/shared/register';
 import SEO from 'components/shared/seo';
-import MainLayout from 'layouts/main';
+import SummitLayout from 'layouts/summit';
 
 const ogImage = '/images/og-summit-2021.png';
 
@@ -207,8 +207,16 @@ const IndexPage = ({ location: { pathname } }) => {
   };
 
   return (
-    <MainLayout>
-      <SEO data={{ title: 'eBPF Summit 2021', image: ogImage, slug: pathname }} />
+    <SummitLayout>
+      <SEO
+        data={{
+          title: 'eBPF Summit 2021',
+          description:
+            'Register now for the eBPF Summit 2021, Aug 18-19, 2021, a free virtual event for DevOps, SRE, SecOps, and developers.',
+          image: ogImage,
+          slug: pathname,
+        }}
+      />
       <Hero {...hero} />
       <Speakers {...speakers} />
       <Information {...information} />
@@ -216,7 +224,7 @@ const IndexPage = ({ location: { pathname } }) => {
       <Ctf {...ctf} />
       <LastYear {...lastYear} />
       <Register {...register} />
-    </MainLayout>
+    </SummitLayout>
   );
 };
 

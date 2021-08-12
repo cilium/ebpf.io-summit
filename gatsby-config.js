@@ -4,9 +4,9 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    siteTitle: 'eBPF Summit 2021', // <title>
+    siteTitle: 'eBPF - Introduction, Tutorials & Community Resources', // <title>
     siteDescription:
-      'Register now for the eBPF Summit 2021, Aug 18-19, 2021, a free virtual event for DevOps, SRE, SecOps, and developers.',
+      'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.',
     // pathPrefix: "",
     siteImage: '/images/social-preview.png',
     siteLanguage: 'en',
@@ -24,6 +24,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-sharp',

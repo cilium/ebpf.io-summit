@@ -32,12 +32,18 @@ const Button = (props) => {
     case 'primary-1':
       themeStyles = 'bg-primary-1 text-black hover:bg-primary-1-hover';
       break;
+    case 'with-border':
+      themeStyles = 'text-black border-2 border-black';
+      break;
     default:
       return undefined;
   }
 
   let sizeStyles;
   switch (size) {
+    case 'xs':
+      sizeStyles = 'px-4 py-2.5 md:px-3 md:py-2 text-sm';
+      break;
     case 'sm':
       sizeStyles = 'px-5 py-3.5 lg:px-4 lg:py-3';
       break;
@@ -66,7 +72,7 @@ const Button = (props) => {
 Button.propTypes = {
   className: PropTypes.string,
   to: PropTypes.string,
-  theme: PropTypes.oneOf(['primary-1', 'black', 'white']),
+  theme: PropTypes.oneOf(['primary-1', 'black', 'white', 'wih-border']),
   size: PropTypes.oneOf(['sm', 'md']),
   loading: PropTypes.bool,
   disabled: PropTypes.bool,
