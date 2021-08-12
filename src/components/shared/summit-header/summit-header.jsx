@@ -11,11 +11,11 @@ import shape1 from './images/shape-1.svg';
 import shape2 from './images/shape-2.svg';
 
 const navigation = [
-  { name: 'Featured Speakers', href: '#featured-speakers' },
-  { name: 'Agenda', href: '#agenda' },
-  { name: 'Information', href: '#information' },
-  { name: 'Schedule', href: '#schedule' },
-  { name: `Last year's summit`, href: `#last-year's-summit` },
+  { name: 'Featured Speakers', href: '/summit-2021/#featured-speakers' },
+  { name: 'Information', href: '/summit-2021/#information' },
+  { name: 'Schedule', href: '/summit-2021/#schedule' },
+  { name: 'CTF', href: '/summit-2021/#capture-the-flag' },
+  { name: `Last year's summit`, href: `/summit-2021/#last-year's-summit` },
 ];
 
 const SummitHeader = () => (
