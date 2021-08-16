@@ -182,6 +182,50 @@ curl localhost:1977
 <p>Good luck!</p>
 `,
     },
+    {
+      stage: 'Stage 3',
+      content: `<h4>The Story So Far</h4>
+<blockquote>
+<p>You are Jephen’Tsa, former beekeeper, and active member of the Rebel Alliance now that the Empire has invaded your home planet. You only joined recently, but the Alliance is, well, pretty much understaffed, and given your recent achievements to escape a blockade, you already got a top-priority assignment. Blue Hex, a fellow member, has stolen a terminal from a stormtrooper. She’s confident that, with the help of a new imperial tool, it could give you access to the management systems of the Death Star, no less!</p>
+<p>While you study the stolen terminal in the base, Blue Hex takes her X-wing and flies towards the gigantic station somewhere in the Inner Rim, relying on you to lift the restrictions so she can infiltrate the system. Do your best!</p>
+</blockquote>
+
+<h4>Task</h4>
+<p>Your friend <code>x-wing</code> needs to connect to the Death Star's management system (<code>death-star</code>), but communications seem to be blocked. There may be some sort of eBPF-based firewall in place. Luckily you were able to get access to a stormtrooper's unmonitored terminal (<code>stormtrooper</code>) and will hopefully be able to open a breach in the firewall to allow communications to flow.</p>
+
+<h4>Prerequisites</h4>
+<ul>
+<li><a href="https://minikube.sigs.k8s.io/docs/start/">Minikube</a></li>
+<li><a href="https://github.com/cilium/cilium-cli/releases">Cilium CLI</a></li>
+</ul>
+
+<h4>Mandatory Preparation Steps</h4>
+<pre>
+minikube start --network-plugin=cni
+cilium install
+cilium hubble enable
+</pre>
+
+<pre>
+minikube kubectl -- create ns inner-rim
+minikube kubectl -- apply -n inner-rim -f https://isogo.to/ctf2-yaml
+</pre>
+
+<h4>Rules</h4>
+<ol>
+ <li>Everything that you are able to do within the pod <code>stormtrooper-XXXXXX-yyyyy</code> is allowed. The instructions on how to enter this pod are provided below, in the <em>Start</em> section.</li>
+ <li>You can open <a href="https://editor.cilium.io">editor.cilium.io</a>, a brand new technology deployed by the Empire, and interact with it freely and copy/paste from there into the <code>stormtrooper-XXXXXX-yyyyy</code> pod.</li>
+ <li>Everything else is forbidden.</li>
+</ol>
+
+<h4>Start</h4>
+<p>When you are ready to start, run</p>
+<pre>
+minikube kubectl -- exec -n inner-rim -ti deployment/stormtrooper -- bash
+</pre>
+<p>Good luck!</p>
+`,
+    },
   ],
 };
 
