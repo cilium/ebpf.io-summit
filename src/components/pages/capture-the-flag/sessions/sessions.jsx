@@ -7,7 +7,7 @@ import Link from 'components/shared/link';
 import ClockIcon from 'icons/clock.inline.svg';
 
 const Sessions = ({ title, items, bottomText }) => (
-  <section className="pb-40 pt-28 md:pt-20 md:pb-28 sm:pb-20">
+  <section className="pb-20 pt-28 md:pt-20 md:pb-14 sm:pb-10">
     <Container small>
       <Heading tag="h2">{title}</Heading>
       <div className="mt-12">
