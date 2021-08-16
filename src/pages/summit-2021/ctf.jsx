@@ -83,7 +83,8 @@ const instructions = {
 </blockquote>
 
 <h4>Prerequisites</h4>
-<p>This challenge requires Docker and a recent Linux kernel (5.6+) with eBPF and WireGuard support enabled. We recommend running it with Fedora CoreOS on an <a href="https://cloud.google.com/free">always free <code>e2-micro</code></a> instance on Google Cloud:</p>
+<p>This challenge requires Docker and a recent Linux kernel with eBPF and WireGuard support enabled (5.6+, although Ubuntu 20.04 with kernel 5.4 and backported Wireguard support is known to work).</p>
+<p>We recommend running it with Fedora CoreOS on an <a href="https://cloud.google.com/free">always free <code>e2-micro</code></a> instance on Google Cloud:</p>
 
 <pre>
 VM_NAME=ebpf-summit-ctf1
