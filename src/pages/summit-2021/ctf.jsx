@@ -75,10 +75,12 @@ const instructions = {
     {
       stage: 'Stage 1 (Challenge I)',
       content: `<h4>The Story So Far</h4>
+<blockquote>
 <p>You have a bad feeling about this.</p>
 <p>You, Jephen’Tsa, have always kept away from politics, and you live a quiet life on the planet Berpaffyl, in the Kloudna system. You’re a beekeeper, and extracting honey from the giant bees living on the planet does not leave you much time to think about conflicts raging at the other end of the quadrant.</p>
 <p>But politics caught up with you. The Empire has taken an interest in the planet, imposed a blockade, and seized various assets, including your hives. Your dear, cherished hives and bees, now aboard a Star Destroyer! They said you’d get them back. Of course, they would. But the bureaucrats from the Empire are not renowned for keeping their word, and you don’t believe them. There must be something you can do?</p>
 <p>From a friend of a friend, a Mon Calamari going under the name Blue Hex that you met on a speedbike ride, you have heard that a moon in a neighbor system might be hosting more friends—the Rebel Alliance. After a few days of reflection you contact her again to ask if she knows how to pass the blockade to reach them. There is a way, she says, to bypass the jamming signals and eavesdrop the passphrase required for passing the checkpoint. You board the Yellow Stripe, your small aircraft, you take off and you head towards the imperial cruisers…</p>
+</blockquote>
 
 <h4>Prerequisites</h4>
 <p>This challenge requires Docker and a recent Linux kernel (5.6+) with eBPF and WireGuard support enabled. We recommend running it with Fedora CoreOS on an <a href="https://cloud.google.com/free">always free <code>e2-micro</code></a> instance on Google Cloud:</p>
