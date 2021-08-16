@@ -124,7 +124,7 @@ sudo docker run --privileged --rm --tty --interactive "quay.io/isovalent/ebpf-su
 <p>Good luck!</p>
 
 <h4>Hints</h4>
-<p>A mysterious entity has reached out on your Holocomm while you were flying towards the imperial ships. There are three hints available to help you evade the blockade if you feel stuck, they said. But beware! Each clue you read may bring you a little bit closer to the Dark Side!</p>
+<p>A mysterious entity has reached out on your Holocomm while you were flying towards the imperial ships. There are three hints available to help you evade the blockade if you feel stuck, they said. But beware! Each clue you read may bring you a little bit closer to the Dark Side! (The hints are ordered, start with number 1.)</p>
 <ul>
   <li><a href="https://isogo.to/ctf-stage1-hint1">Hint 1</a></li>
   <li><a href="https://isogo.to/ctf-stage1-hint2">Hint 2</a></li>
