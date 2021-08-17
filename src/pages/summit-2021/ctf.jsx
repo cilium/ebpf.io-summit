@@ -73,7 +73,7 @@ const instructions = {
   title: 'Instructions',
   items: [
     {
-      stage: 'Stage 1 (Challenge I)',
+      stage: 'Stage 1',
       content: `<h4>The Story So Far</h4>
 <blockquote>
 <p>You have a bad feeling about this.</p>
