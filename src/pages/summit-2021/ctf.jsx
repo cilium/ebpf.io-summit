@@ -109,11 +109,16 @@ gcloud compute instances delete --zone=us-central1-a $VM_NAME
 <h4>Task</h4>
 <p>Your objective is to receive a secret from a UDP server. The server is running in the <code>berpaffyl</code> network namespace and is accessible via a WireGuard tunnel with the <code>100.202.1.1</code> IP address.</p>
 <p>To send a request to that IP, you can use <code>echo | netcat -u 100.202.1.1 1138</code>.</p>
+<p>Unfortunately, a jamming signal was installed. You can see it with <code>iptables-save -c</code>. You are not allowed to remove it but you are allowed to bypass it.</p>
 <p>Your ally mentioned the existence of a <code>/bpf</code> directory, which you might find useful.</p>
 
 <p>The CTF challenge itself needs to run as a <b>privileged</b> container. Start the challenge as follows:</p>
 <pre>
-sudo docker run --privileged --rm --tty --interactive "quay.io/isovalent/ebpf-summit-2021-ctf-challenge-1"
+sudo docker run --privileged --name ctf-1 --rm --tty --interactive "quay.io/isovalent/ebpf-summit-2021-ctf-challenge-1"
+</pre>
+<p>To create a new terminal:</p>
+<pre>
+sudo docker exec -ti ctf-1 /bin/bash
 </pre>
 
 <h4>Rules</h4>
