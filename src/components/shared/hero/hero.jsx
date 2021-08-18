@@ -55,6 +55,26 @@ const Hero = ({ date, title, description, button1, button2 }) => {
               {buttonText}
             </Button>
           </div>
+          <div className="flex space-x-6 mt-9 sm:space-x-3 xs:w-full">
+            <Button
+              className="xs:px-3.5 xs:flex-1"
+              to='https://youtu.be/Kp3PHPuFkaA'
+              target="_blank"
+              rel="noopener noreferrer"
+              theme="white"
+            >
+              Live Stream Day 1
+            </Button>
+            <Button
+              className="xs:px-3.5 xs:flex-1"
+              to='https://youtu.be/ZNtVedFsD-k'
+              target="_blank"
+              rel="noopener noreferrer"
+              theme="white"
+            >
+              Live Stream Day 2
+            </Button>
+          </div>
         </div>
 
         <Image className="absolute top-0 -right-48 w-[700px] xl:w-[550px] xl:-right-7 xl:top-16 lg:static lg:w-full h-auto" />
