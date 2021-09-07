@@ -18,7 +18,15 @@ const Ctf = ({ title, description, links }) => (
       />
       <div className="flex flex-col space-y-5 mt-7">
         {links.map(({ linkUrl, linkText }, index) => (
-          <Link key={index} className="text-lg" to={linkUrl} theme="primary" withArrow>
+          <Link
+            key={index}
+            className="text-lg"
+            to={linkUrl}
+            theme="primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            withArrow
+          >
             {linkText}
           </Link>
         ))}
