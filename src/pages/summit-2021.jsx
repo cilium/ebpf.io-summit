@@ -6,6 +6,7 @@ import Information from 'components/pages/home/information';
 import LastYear from 'components/pages/home/last-year';
 import Schedule from 'components/pages/home/schedule';
 import Speakers from 'components/pages/home/speakers';
+import Talks from 'components/pages/home/talks';
 import Hero from 'components/shared/hero';
 import Register from 'components/shared/register';
 import SEO from 'components/shared/seo';
@@ -18,10 +19,6 @@ const hero = {
   title: 'eBPF<br> Summit 2021',
   description:
     '<p>eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers is open for registration.</p>',
-  button1: {
-    url: 'https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true',
-    title: 'Register',
-  },
   button2: {
     url: 'https://ebpf.io/slack',
     title: 'Join Summit Slack',
@@ -64,12 +61,58 @@ const schedule = {
   bottomText: 'In mobile app',
 };
 
+const talks = {
+  title: 'Talks',
+  items: [
+    {
+      speaker: 'Daniel Borkmann, Isovalent',
+      title: 'BPF and Spectre: Mitigating transient execution attacks',
+      linkUrl: 'https://drive.google.com/file/d/1exwbhaNYQab_72PSQPqhlIe99u05KA0E/view?usp=sharing',
+      buttonUrl: 'https://youtu.be/6N30Yp5f9c4',
+    },
+    {
+      speaker: 'Jaana Dogan, AWS',
+      title: 'eBPF in Microservices Observability',
+      buttonUrl: 'https://youtu.be/-I29Cuj2nbI',
+    },
+    {
+      speaker: 'Brendan Gregg, Netflix',
+      title: 'Getting Started with BPF observability',
+      buttonUrl: 'https://youtu.be/bGAVrtb_tFs',
+    },
+    {
+      speaker: 'Thomas Graf, Isovalent',
+      title: 'The State & Future of eBPF',
+      buttonUrl: 'https://youtu.be/vNuEx0wB_-4',
+    },
+    {
+      speaker: 'Liz Rice, Isovalent',
+      title: 'A Load Balancer from scratch',
+      linkUrl: 'https://drive.google.com/file/d/1su_UP08xLXbMxYqQq6yH4wgtURK2cjsa/view?usp=sharing',
+      buttonUrl: 'https://youtu.be/L3_AOFSNKK8',
+    },
+    {
+      speaker: 'Dave Thaler, Microsoft',
+      title: 'eBPF for Windows',
+      buttonUrl: 'https://youtu.be/CEl29L2IDEo',
+    },
+    {
+      speaker: 'Anthony Comtois, Joseph Samuel, Sebastian Duff, Sky',
+      title: 'eBPF & Cilium at Sky',
+      buttonUrl: 'https://youtu.be/u-4naOMfs_w',
+    },
+  ],
+};
+
 const ctf = {
   title: 'Capture The Flag',
   description:
     'First-ever eBPF-themed Capture the Flag (CTF) event.<br> The CTF is open to everyone.',
-  linkUrl: '/summit-2021/ctf',
-  linkText: 'Learn more about CTF',
+  links: [
+    { linkUrl: 'https://www.youtube.com/watch?v=sYcLw-Fc7wo', linkText: 'Watch challenge 1' },
+    { linkUrl: 'https://www.youtube.com/watch?v=ZwbaNmOMeAQ', linkText: 'Watch challenge 2' },
+    { linkUrl: 'https://www.youtube.com/watch?v=l18YnO2b7mM', linkText: 'Watch challenge 3' },
+  ],
 };
 
 const lastYear = {
@@ -220,10 +263,11 @@ const IndexPage = ({ location: { pathname } }) => {
       <Hero {...hero} />
       <Speakers {...speakers} />
       <Information {...information} />
-      <Schedule {...schedule} />
+      {/* <Schedule {...schedule} /> */}
+      <Talks {...talks} />
       <Ctf {...ctf} />
       <LastYear {...lastYear} />
-      <Register {...register} />
+      {/* <Register {...register} /> */}
     </SummitLayout>
   );
 };
