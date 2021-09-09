@@ -52,6 +52,14 @@
   .with-link-secondary a {
     @apply text-primary-2 font-bold no-underline hover:text-black transition-colors duration-200;
   }
+
+  .list-style > * {
+    @apply pl-6;
+  }
+
+  .list-style > li {
+    @apply relative before:absolute before:w-2 before:h-2 before:rounded-full before:bg-black before:left-0 before:top-3;
+  }
 }
 
 .sz-session__room {
