@@ -38,6 +38,7 @@ const SteeringCommittee = ({ title, description, items }) => (
               { icon: GithubIcon, url: githubUrl },
               { icon: ShareIcon, url: blogUrl },
             ];
+            const socialLinks = links.filter((link) => link.url !== undefined);
             return (
               <div className="flex flex-col p-8 border-2 border-gray-2" key={index}>
                 <Logo />
@@ -55,7 +56,7 @@ const SteeringCommittee = ({ title, description, items }) => (
                     </div>
                   </div>
                   <div className="flex space-x-4 xl:space-x-3">
-                    {links.map(
+                    {socialLinks.map(
                       ({ icon: Icon, url }, index) =>
                         url && (
                           <Link key={index} target="_blank" rel="noopener noreferrer" to={url}>
