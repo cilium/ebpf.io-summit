@@ -58,7 +58,7 @@ const SteeringCommittee = ({ title, description, items }) => (
                     {links.map(
                       ({ icon: Icon, url }, index) =>
                         url && (
-                          <Link key={index} to={url}>
+                          <Link key={index} target="_blank" rel="noopener noreferrer" to={url}>
                             <Icon className="xl:w-7 xl:h-auto lg:w-max sm:w-8" />
                           </Link>
                         )
