@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
 import EbpfFoundation from 'components/pages/members/ebpf-foundation';
+import Join from 'components/pages/members/join';
 import Members from 'components/pages/members/members';
 import SteeringCommittee from 'components/pages/members/steering-committee';
 import HeroFoundation from 'components/shared/hero-foundation';
@@ -31,7 +32,13 @@ const members = {
   ],
 };
 
-const MembersPage = ({ location: { pathname } }) => {
+const join = {
+  title: 'Join as a Member',
+  buttonUrl: 'https://enrollment.lfx.linuxfoundation.org/?project=ebpf ',
+  buttonText: 'Join now',
+};
+
+const FoundationPage = ({ location: { pathname } }) => {
   const {
     andriiNakryiko,
     brendanGregg,
@@ -182,8 +189,9 @@ const MembersPage = ({ location: { pathname } }) => {
       <EbpfFoundation {...ebpfFoundation} />
       <SteeringCommittee {...steeringCommittee} />
       <Members {...members} />
+      <Join {...join} />
     </MainLayout>
   );
 };
 
-export default MembersPage;
+export default FoundationPage;
