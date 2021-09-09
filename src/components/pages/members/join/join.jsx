@@ -8,7 +8,9 @@ import Heading from 'components/shared/heading/heading';
 const Join = ({ title, buttonUrl, buttonText }) => (
   <section className="mt-40 lg:mt-32 md:mt-24">
     <Container className="flex flex-col items-center py-20 bg-center bg-cover bg-join-banner bg-yellow-1">
-      <Heading tag="h2">{title}</Heading>
+      <Heading className="text-center" tag="h2">
+        {title}
+      </Heading>
       <Button
         className="mt-8"
         theme="black"
