@@ -17,7 +17,7 @@ const Members = ({ title, items }) => (
             <div className="grid grid-cols-4 gap-8 mt-7 auto-rows-[120px] lg:grid-cols-2 md:gap-6 sm:gap-x-4 xs:grid-cols-1">
               {logos.map((Logo, index) => (
                 <div
-                  className="flex items-center justify-center border-2 border-gray-2"
+                  className="flex items-center justify-center px-4 border-2 border-gray-2"
                   key={index}
                 >
                   <Logo />
