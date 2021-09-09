@@ -12,7 +12,7 @@ import ShareIcon from './icons/share.inline.svg';
 import TwitterIcon from './icons/twitter.inline.svg';
 
 const SteeringCommittee = ({ title, description, items }) => (
-  <section className="mt-40">
+  <section className="mt-40 lg:mt-32 md:mt-24">
     <Container>
       <Heading tag="h2">{title}</Heading>
       <p className="mt-8 text-xl md:text-lg max-w-[1008px]">{description}</p>
