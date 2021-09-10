@@ -182,7 +182,7 @@ const FoundationPage = ({ location: { pathname } }) => {
 
   return (
     <MainLayout>
-      <SEO data={{ title: 'eBPF Members', slug: pathname }} />
+      <SEO data={{ title: 'eBPF Foundation', slug: pathname }} />
       <HeroFoundation />
       <EbpfFoundation {...ebpfFoundation} />
       <SteeringCommittee {...steeringCommittee} />
