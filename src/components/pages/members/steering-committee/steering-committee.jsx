@@ -15,7 +15,7 @@ const SteeringCommittee = ({ title, description, items }) => (
   <section className="mt-28 md:mt-20">
     <Container>
       <Heading tag="h2">{title}</Heading>
-      <p className="mt-8 text-xl md:text-lg max-w-[1008px]">{description}</p>
+      <p className="mt-8 text-xl md:text-lg leading-relaxed max-w-[1008px]">{description}</p>
       <div className="grid grid-cols-2 gap-8 mt-14 md:mt-10 lg:grid-cols-1">
         {items.map(
           (
@@ -42,7 +42,7 @@ const SteeringCommittee = ({ title, description, items }) => (
             return (
               <div className="flex flex-col p-8 border-2 border-gray-2" key={index}>
                 <Logo />
-                <p className="my-8 text-lg">{text}</p>
+                <p className="my-8 text-lg leading-relaxed">{text}</p>
                 <div className="flex items-center justify-between mt-auto sm:flex-col sm:items-start">
                   <div className="flex items-center space-x-3 sm:order-1 sm:mt-6">
                     <GatsbyImage
