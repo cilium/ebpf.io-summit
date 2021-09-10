@@ -11,7 +11,7 @@ const EbpfFoundation = ({ title, text }) => (
         {title}
       </Heading>
       <div
-        className="mt-10 max-w-[1008px] text-xl md:text-lg space-y-7 md:space-y-5 with-link-secondary"
+        className="mt-10 max-w-[1008px] text-xl md:text-lg space-y-7 md:space-y-5 with-link-secondary leading-relaxed"
         dangerouslySetInnerHTML={{ __html: text }}
       />
     </Container>
@@ -20,7 +20,7 @@ const EbpfFoundation = ({ title, text }) => (
 
 EbpfFoundation.propTypes = {
   title: PropTypes.string.isRequired,
-  text: PropTypes.arrayOf(PropTypes.string).isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default EbpfFoundation;
