@@ -131,7 +131,7 @@ const FoundationPage = ({ location: { pathname } }) => {
         text: `Daniel Borkmann co-created eBPF and is a kernel developer at Isovalent working on all things eBPF, the Linux kernel and Cilium's networking datapath. He is a long-term Linux kernel core contributor in the eBPF and networking subsystem for over a decade, and co-maintains both eBPF and XDP.`,
         avatar: danielBorkmann,
         name: 'Daniel Borkmann',
-        position: 'Co-Creator eBPF, Kernel Developer',
+        position: 'Staff Software Engineer',
         blogUrl: 'http://borkmann.ch/',
       },
       {
@@ -167,7 +167,7 @@ const FoundationPage = ({ location: { pathname } }) => {
         text: `Joe is a co-maintainer for the Cilium project. He’s passionate about building efficient network dataplanes, having contributed to a variety of OSS projects including Cilium, Open vSwitch, and the Linux kernel.`,
         avatar: joeStringer,
         name: 'Joe Stringer',
-        position: 'Software Engineer',
+        position: 'Staff Software Engineer',
         twitterUrl: 'https://twitter.com/joestringernz',
         linkedInUrl: 'https://www.linkedin.com/in/joestringernz',
         githubUrl: 'https://github.com/joestringer',
