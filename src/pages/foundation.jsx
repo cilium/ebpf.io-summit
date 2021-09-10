@@ -19,7 +19,7 @@ import MainLayout from 'layouts/main';
 
 const ebpfFoundation = {
   title: 'What is eBPF Foundation?',
-  text: '<p>The number of eBPF-based projects has exploded in recent years and many more have been announcing intent to start adopting the technology. eBPF is quickly becoming one of the most influential technologies in the infrastructure software world. As such, the demand is high to optimize collaboration between projects and ensure that the core of eBPF is well maintained and equipped with a clear roadmap and vision for the bright future ahead of eBPF. This is where the eBPF Foundation comes in, and establishes an eBPF steering committee to take care of the technical direction and vision of eBPF.</p><p>If you are interested to collaborate with the eBPF Foundation, please join <b>#ebpf-foundation</b> on <a href="ebpf.io/slack" target="_blank" rel="noopener noreferrer">ebpf.io/slack</a>.</p>',
+  text: '<p>The number of eBPF-based projects has exploded in recent years and many more have been announcing intent to start adopting the technology. eBPF is quickly becoming one of the most influential technologies in the infrastructure software world. As such, the demand is high to optimize collaboration between projects and ensure that the core of eBPF is well maintained and equipped with a clear roadmap and vision for the bright future ahead of eBPF. This is where the eBPF Foundation comes in, and establishes an eBPF steering committee to take care of the technical direction and vision of eBPF.</p><p>If you are interested to collaborate with the eBPF Foundation, please join <b>#ebpf-foundation</b> on <a href="http://ebpf.io/slack" target="_blank" rel="noopener noreferrer">ebpf.io/slack</a>.</p>',
 };
 
 const members = {
