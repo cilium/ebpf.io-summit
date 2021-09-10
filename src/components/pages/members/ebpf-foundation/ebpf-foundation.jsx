@@ -7,18 +7,13 @@ import Heading from 'components/shared/heading';
 const EbpfFoundation = ({ title, text }) => (
   <section className="mt-32 md:mt-20">
     <Container>
-      <Heading className="text-center" tag="h2" size="xl">
+      <Heading tag="h2" size="xl">
         {title}
       </Heading>
-      <div className="grid grid-cols-2 mt-10 gap-x-8 sm:grid-cols-1 sm:gap-y-5">
-        {text.map((item, index) => (
-          <ul
-            className="text-xl list-style space-y-7 md:text-lg md:space-y-5 with-link-secondary"
-            key={index}
-            dangerouslySetInnerHTML={{ __html: item }}
-          />
-        ))}
-      </div>
+      <div
+        className="mt-10 max-w-[1008px] text-xl md:text-lg space-y-7 md:space-y-5 with-link-secondary"
+        dangerouslySetInnerHTML={{ __html: text }}
+      />
     </Container>
   </section>
 );
