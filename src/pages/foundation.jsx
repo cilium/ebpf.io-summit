@@ -9,6 +9,7 @@ import SteeringCommittee from 'components/pages/members/steering-committee';
 import HeroFoundation from 'components/shared/hero-foundation';
 import SEO from 'components/shared/seo';
 import CloudflareLogo from 'icons/cloudflare.inline.svg';
+import DaoCloudLogo from 'icons/daocloud.inline.svg';
 import FacebookLogo from 'icons/facebook.inline.svg';
 import GoogleLogo from 'icons/google.inline.svg';
 import IsovalentLogo from 'icons/isovalent.inline.svg';
@@ -18,17 +19,14 @@ import MainLayout from 'layouts/main';
 
 const ebpfFoundation = {
   title: 'What is eBPF Foundation?',
-  text: [
-    '<li>eBPF is a revolutionary technology with origins in the Linux kernel that can run sandboxed programs in an operating system kernel. It is used to safely and efficiently extend the capabilities of the kernel without requiring to change kernel source code or load kernel modules.</li> <li>Historically, the operating system has always been an ideal place to implement observability, security, and networking functionality due to the kernel’s privileged ability to oversee and control the entire system. At the same time, an operating system kernel is hard to evolve due to its central role and high requirement towards stability and security. The rate of innovation at the operating system level has thus traditionally been lower compared to functionality implemented outside of the operating system.</li><li>eBPF changes this formula fundamentally. By allowing to run sandboxed programs within the operating system, application developers can run eBPF programs to add additional capabilities to the operating system at runtime.</li>',
-    '<p>The operating system then guarantees safety and execution efficiency as if natively compiled with the aid of a Just-In-Time (JIT) compiler and verification engine. This has led to a wave of <a href="https://ebpf.io/projects/">eBPF-based projects</a> covering a wide array of use cases, including next-generation networking, observability, and security functionality.</p><li>Today, eBPF is used extensively to drive a wide variety of use cases: Providing high-performance networking and load-balancing in modern data centers and cloud native environments, extracting fine-grained security observability data at low overhead, helping application developers trace applications, providing insights for performance troubleshooting, preventive application and container runtime security enforcement, and much more. The possibilities are endless, and the innovation that eBPF is unlocked has only just begun.</li>',
-  ],
+  text: '<p>The number of eBPF-based projects has exploded in recent years and many more have been announcing intent to start adopting the technology. eBPF is quickly becoming one of the most influential technologies in the infrastructure software world. As such, the demand is high to optimize collaboration between projects and ensure that the core of eBPF is well maintained and equipped with a clear roadmap and vision for the bright future ahead of eBPF. This is where the eBPF Foundation comes in, and establishes an eBPF steering committee to take care of the technical direction and vision of eBPF.</p><p>If you are interested to collaborate with the eBPF Foundation, please join <b>#ebpf-foundation</b> on <a href="ebpf.io/slack" target="_blank" rel="noopener noreferrer">ebpf.io/slack</a>.</p>',
 };
 
 const members = {
   title: 'Members',
   items: [
     { name: 'Platinum', logos: [FacebookLogo, GoogleLogo, IsovalentLogo, MicrosoftLogo] },
-    { name: 'Silver', logos: [NetflixLogo] },
+    { name: 'Silver', logos: [NetflixLogo, DaoCloudLogo] },
   ],
 };
 

@@ -12,11 +12,11 @@ import ShareIcon from './icons/share.inline.svg';
 import TwitterIcon from './icons/twitter.inline.svg';
 
 const SteeringCommittee = ({ title, description, items }) => (
-  <section className="mt-40 lg:mt-32 md:mt-24">
+  <section className="mt-28 md:mt-20">
     <Container>
       <Heading tag="h2">{title}</Heading>
       <p className="mt-8 text-xl md:text-lg max-w-[1008px]">{description}</p>
-      <div className="grid grid-cols-2 gap-8 mt-14 lg:grid-cols-1">
+      <div className="grid grid-cols-2 gap-8 mt-14 md:mt-10 lg:grid-cols-1">
         {items.map(
           (
             {
