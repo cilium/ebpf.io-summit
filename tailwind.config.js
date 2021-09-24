@@ -36,13 +36,17 @@ module.exports = {
           2: '#F2F2F2',
           3: '#FAFAFA',
         },
+        yellow: {
+          1: '#FEF8E7',
+        },
       },
       fontSize: {
         xl: ['1.25rem', '1.5'],
         lg: ['1.125rem', '1.5'],
       },
       backgroundImage: (theme) => ({
-        'hero-foundation': "url('/images/background.svg')",
+        'hero-foundation': "url('/images/foundation-background.svg')",
+        'join-banner': "url('/images/join-background.svg')",
       }),
       typography: (theme) => ({
         DEFAULT: {
