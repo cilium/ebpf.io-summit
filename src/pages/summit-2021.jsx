@@ -67,8 +67,7 @@ const talks = {
 
 const ctf = {
   title: 'Capture The Flag',
-  description:
-    'First-ever eBPF-themed Capture the Flag (CTF) event.<br> The CTF is open to everyone.',
+  description: 'First-ever eBPF-themed Capture the Flag (CTF) event.',
   links: [
     { linkUrl: 'https://www.youtube.com/watch?v=sYcLw-Fc7wo', linkText: 'Watch challenge 1' },
     { linkUrl: 'https://www.youtube.com/watch?v=ZwbaNmOMeAQ', linkText: 'Watch challenge 2' },
