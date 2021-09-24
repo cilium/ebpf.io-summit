@@ -90,6 +90,7 @@ Button.propTypes = {
   loading: PropTypes.bool,
   disabled: PropTypes.bool,
   children: PropTypes.node.isRequired,
+  withArrow: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -99,6 +100,7 @@ Button.defaultProps = {
   size: 'md',
   loading: false,
   disabled: false,
+  withArrow: false,
 };
 
 export default Button;
