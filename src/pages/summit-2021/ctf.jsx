@@ -17,11 +17,11 @@ const hero = {
   title: 'eBPF<br> Summit 2021',
   description:
     '<p>eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers is open for registration.</p>',
-  button1: {
-    url: 'https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true',
-    title: 'Register',
-  },
-  button2: {
+  // button1: {
+  //   url: 'https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true',
+  //   title: 'Register',
+  // },
+  button: {
     url: 'https://ebpf.io/slack',
     title: 'Join Summit Slack',
   },
