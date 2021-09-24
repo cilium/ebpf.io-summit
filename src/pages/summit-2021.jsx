@@ -11,6 +11,7 @@ import Hero from 'components/shared/hero';
 import Register from 'components/shared/register';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'layouts/summit';
+import talksData from 'utils/data';
 
 const ogImage = '/images/og-summit-2021.png';
 
@@ -19,7 +20,7 @@ const hero = {
   title: 'eBPF<br> Summit 2021',
   description:
     '<p>eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers is open for registration.</p>',
-  button2: {
+  button: {
     url: 'https://ebpf.io/slack',
     title: 'Join Summit Slack',
   },
@@ -54,54 +55,14 @@ const information = {
   ],
 };
 
-const schedule = {
-  title: 'Schedule',
-  buttonLink: 'https://ebpf-summit-2021.sessionize.com/',
-  buttonText: 'Create your agenda',
-  bottomText: 'In mobile app',
+const keynotes = {
+  title: 'Keynotes',
+  items: talksData.filter((item) => item.keynotes),
 };
 
 const talks = {
   title: 'Talks',
-  items: [
-    {
-      speaker: 'Daniel Borkmann, Isovalent',
-      title: 'BPF and Spectre: Mitigating transient execution attacks',
-      linkUrl: 'https://drive.google.com/file/d/1exwbhaNYQab_72PSQPqhlIe99u05KA0E/view?usp=sharing',
-      buttonUrl: 'https://youtu.be/6N30Yp5f9c4',
-    },
-    {
-      speaker: 'Jaana Dogan, AWS',
-      title: 'eBPF in Microservices Observability',
-      buttonUrl: 'https://youtu.be/-I29Cuj2nbI',
-    },
-    {
-      speaker: 'Brendan Gregg, Netflix',
-      title: 'Getting Started with BPF observability',
-      buttonUrl: 'https://youtu.be/bGAVrtb_tFs',
-    },
-    {
-      speaker: 'Thomas Graf, Isovalent',
-      title: 'The State & Future of eBPF',
-      buttonUrl: 'https://youtu.be/vNuEx0wB_-4',
-    },
-    {
-      speaker: 'Liz Rice, Isovalent',
-      title: 'A Load Balancer from scratch',
-      linkUrl: 'https://drive.google.com/file/d/1su_UP08xLXbMxYqQq6yH4wgtURK2cjsa/view?usp=sharing',
-      buttonUrl: 'https://youtu.be/L3_AOFSNKK8',
-    },
-    {
-      speaker: 'Dave Thaler, Microsoft',
-      title: 'eBPF for Windows',
-      buttonUrl: 'https://youtu.be/CEl29L2IDEo',
-    },
-    {
-      speaker: 'Anthony Comtois, Joseph Samuel, Sebastian Duff, Sky',
-      title: 'eBPF & Cilium at Sky',
-      buttonUrl: 'https://youtu.be/u-4naOMfs_w',
-    },
-  ],
+  items: talksData.filter((item) => !item.keynotes),
 };
 
 const ctf = {
@@ -141,15 +102,6 @@ const lastYear = {
       unit: 'Companies',
     },
   ],
-};
-
-const register = {
-  title: 'eBPF Summit 2021 Registration',
-  description: `The event is fully virtual and free to attend. By signing up, you'll receive information on how to participate, ahead of the event.`,
-  button: {
-    url: 'https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true',
-    title: 'Register',
-  },
 };
 
 const IndexPage = ({ location: { pathname } }) => {
@@ -264,7 +216,8 @@ const IndexPage = ({ location: { pathname } }) => {
       <Speakers {...speakers} />
       <Information {...information} />
       {/* <Schedule {...schedule} /> */}
-      <Talks {...talks} />
+      <Talks className="py-28 md:py-20" {...keynotes} />
+      <Talks className="pb-28 md:pb-20" {...talks} />
       <Ctf {...ctf} />
       <LastYear {...lastYear} />
       {/* <Register {...register} /> */}

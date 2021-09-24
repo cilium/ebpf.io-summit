@@ -1,16 +1,13 @@
 import PropTypes from 'prop-types';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import Button from 'components/shared/button';
 import Container from 'components/shared/container';
 import Heading from 'components/shared/heading';
-import useWindowSize from 'hooks/use-window-size';
 
 import Image from './images/image.inline.svg';
 
-const MOBILE_WIDTH = 414;
-
-const Hero = ({ date, title, description, button2 }) => (
+const Hero = ({ date, title, description, button }) => (
   <section className="overflow-hidden text-white bg-black">
     <Container className="py-32 md:pt-24 md:pb-16 xs:pb-9">
       <div className="max-w-[592px] lg:max-w-[auto] lg:mb-9">
@@ -25,11 +22,11 @@ const Hero = ({ date, title, description, button2 }) => (
         <div className="flex space-x-6 sm:flex-col mt-9 sm:space-x-0 sm:space-y-3 xs:w-full">
           <Button
             className="xs:px-3.5 xs:flex-1"
-            to={button2.url}
+            to={button.url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {button2.title}
+            {button.title}
           </Button>
           <div className="flex space-x-6 sm:w-full sm:space-x-3">
             <Button
@@ -63,11 +60,7 @@ Hero.propTypes = {
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  button1: PropTypes.shape({
-    url: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  }).isRequired,
-  button2: PropTypes.shape({
+  button: PropTypes.shape({
     url: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
