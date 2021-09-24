@@ -17,17 +17,17 @@ const Talks = ({ className, title, items }) => {
         <ul className="mt-14">
           {items.slice(0, maxRange).map(({ speaker, topic, pdfLink, youtubeLink }, index) => (
             <li
-              className="flex items-center justify-between py-8 border-t-2 last:border-b-2 border-gray-2 md:flex-col md:items-start md:space-y-4"
+              className="flex items-center justify-between py-8 border-t-2 last:border-b-2 border-gray-2 lg:flex-col lg:items-start lg:space-y-4"
               key={index}
             >
               <div className="space-y-2.5">
                 <span className="leading-none text-gray-1">{speaker}</span>
                 <h3 className="text-xl font-bold leading-snug md:text-lg">{topic}</h3>
               </div>
-              <div className="flex items-center space-x-6 lg:flex-col lg:items-end lg:space-x-0 lg:space-y-4 md:flex-row-reverse md:items-center md:space-y-0">
+              <div className="flex items-center space-x-6 lg:space-x-0 lg:flex-row-reverse lg:items-center lg:space-y-0">
                 {pdfLink && (
                   <Button
-                    className="items-center text-lg h-11 md:text-base md:ml-5"
+                    className="items-center text-lg h-11 lg:h-10 md:text-base lg:ml-5"
                     theme="with-border"
                     size="xs"
                     target="_blank"
