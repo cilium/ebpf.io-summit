@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Link from 'components/shared/link';
-import ArrowIcon from 'icons/arrow.inline.svg';
+import ChevronIcon from 'icons/chevron.inline.svg';
 import LoaderSvg from 'icons/loader.inline.svg';
 
-const arrow = <ArrowIcon className="ml-2.5" />;
+const arrow = <ChevronIcon className="ml-2.5" />;
 
 const Button = (props) => {
   const {
