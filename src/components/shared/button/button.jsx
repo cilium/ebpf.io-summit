@@ -2,7 +2,10 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Link from 'components/shared/link';
+import ChevronIcon from 'icons/chevron.inline.svg';
 import LoaderSvg from 'icons/loader.inline.svg';
+
+const arrow = <ChevronIcon className="ml-2.5" />;
 
 const Button = (props) => {
   const {
@@ -11,6 +14,7 @@ const Button = (props) => {
     theme,
     size,
     children,
+    withArrow,
     loading,
     disabled,
     ...otherProps
@@ -35,6 +39,9 @@ const Button = (props) => {
     case 'with-border':
       themeStyles = 'text-black border-2 border-black';
       break;
+    case 'link-primary':
+      themeStyles = 'text-primary-2';
+      break;
     default:
       return undefined;
   }
@@ -50,6 +57,9 @@ const Button = (props) => {
     case 'md':
       sizeStyles = 'px-8 py-5 text-xl md:px-6 md:py-3 md:text-lg';
       break;
+    case 'none':
+      sizeStyles = 'p-0';
+      break;
     default:
       return undefined;
   }
@@ -63,7 +73,10 @@ const Button = (props) => {
       {loading ? (
         <LoaderSvg className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" />
       ) : (
-        children
+        <>
+          {children}
+          {withArrow && arrow}
+        </>
       )}
     </Tag>
   );
@@ -72,11 +85,12 @@ const Button = (props) => {
 Button.propTypes = {
   className: PropTypes.string,
   to: PropTypes.string,
-  theme: PropTypes.oneOf(['primary-1', 'black', 'white', 'with-border']),
-  size: PropTypes.oneOf(['xs', 'sm', 'md']),
+  theme: PropTypes.oneOf(['primary-1', 'black', 'white', 'with-border', 'link-primary']),
+  size: PropTypes.oneOf(['xs', 'sm', 'md', 'none']),
   loading: PropTypes.bool,
   disabled: PropTypes.bool,
   children: PropTypes.node.isRequired,
+  withArrow: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -86,6 +100,7 @@ Button.defaultProps = {
   size: 'md',
   loading: false,
   disabled: false,
+  withArrow: false,
 };
 
 export default Button;

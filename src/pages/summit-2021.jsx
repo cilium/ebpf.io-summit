@@ -6,10 +6,12 @@ import Information from 'components/pages/home/information';
 import LastYear from 'components/pages/home/last-year';
 import Schedule from 'components/pages/home/schedule';
 import Speakers from 'components/pages/home/speakers';
+import Talks from 'components/pages/home/talks';
 import Hero from 'components/shared/hero';
 import Register from 'components/shared/register';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'layouts/summit';
+import talksData from 'utils/data';
 
 const ogImage = '/images/og-summit-2021.png';
 
@@ -18,11 +20,7 @@ const hero = {
   title: 'eBPF<br> Summit 2021',
   description:
     '<p>eBPF Summit, a virtual event, targeted at DevOps, SecOps, platform architects, and developers is open for registration.</p>',
-  button1: {
-    url: 'https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true',
-    title: 'Register',
-  },
-  button2: {
+  button: {
     url: 'https://ebpf.io/slack',
     title: 'Join Summit Slack',
   },
@@ -57,19 +55,24 @@ const information = {
   ],
 };
 
-const schedule = {
-  title: 'Schedule',
-  buttonLink: 'https://ebpf-summit-2021.sessionize.com/',
-  buttonText: 'Create your agenda',
-  bottomText: 'In mobile app',
+const keynotes = {
+  title: 'Keynotes',
+  items: talksData.filter((item) => item.keynotes),
+};
+
+const talks = {
+  title: 'Talks',
+  items: talksData.filter((item) => !item.keynotes),
 };
 
 const ctf = {
   title: 'Capture The Flag',
-  description:
-    'First-ever eBPF-themed Capture the Flag (CTF) event.<br> The CTF is open to everyone.',
-  linkUrl: '/summit-2021/ctf',
-  linkText: 'Learn more about CTF',
+  description: 'First-ever eBPF-themed Capture the Flag (CTF) event.',
+  links: [
+    { linkUrl: 'https://www.youtube.com/watch?v=sYcLw-Fc7wo', linkText: 'Watch challenge 1' },
+    { linkUrl: 'https://www.youtube.com/watch?v=ZwbaNmOMeAQ', linkText: 'Watch challenge 2' },
+    { linkUrl: 'https://www.youtube.com/watch?v=l18YnO2b7mM', linkText: 'Watch challenge 3' },
+  ],
 };
 
 const lastYear = {
@@ -98,15 +101,6 @@ const lastYear = {
       unit: 'Companies',
     },
   ],
-};
-
-const register = {
-  title: 'eBPF Summit 2021 Registration',
-  description: `The event is fully virtual and free to attend. By signing up, you'll receive information on how to participate, ahead of the event.`,
-  button: {
-    url: 'https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true',
-    title: 'Register',
-  },
 };
 
 const IndexPage = ({ location: { pathname } }) => {
@@ -220,10 +214,12 @@ const IndexPage = ({ location: { pathname } }) => {
       <Hero {...hero} />
       <Speakers {...speakers} />
       <Information {...information} />
-      <Schedule {...schedule} />
+      {/* <Schedule {...schedule} /> */}
+      <Talks className="py-28 md:py-20" {...keynotes} />
+      <Talks className="pb-28 md:pb-20" {...talks} />
       <Ctf {...ctf} />
       <LastYear {...lastYear} />
-      <Register {...register} />
+      {/* <Register {...register} /> */}
     </SummitLayout>
   );
 };

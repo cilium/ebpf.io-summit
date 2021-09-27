@@ -13,7 +13,7 @@ import shape2 from './images/shape-2.svg';
 const navigation = [
   { name: 'Featured Speakers', href: '/summit-2021/#featured-speakers' },
   { name: 'Information', href: '/summit-2021/#information' },
-  { name: 'Schedule', href: '/summit-2021/#schedule' },
+  { name: 'Talks', href: '/summit-2021/#talks' },
   { name: 'CTF', href: '/summit-2021/ctf' },
   { name: `Last year's summit`, href: `/summit-2021/#last-year's-summit` },
 ];
@@ -53,14 +53,8 @@ const SummitHeader = () => (
                 ))}
               </div>
               <div className="flex space-x-4 lg:hidden">
-                <Button
-                  to="https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  size="sm"
-                  theme="black"
-                >
-                  Register
+                <Button to="/summit-2021/#talks" size="sm" theme="black">
+                  Watch
                 </Button>
               </div>
             </nav>
@@ -104,13 +98,8 @@ const SummitHeader = () => (
                     </a>
                   ))}
                 </div>
-                <Button
-                  className="w-full"
-                  to="https://docs.google.com/forms/d/e/1FAIpQLSfZRsMmxxjoQK2Fo0nhyrQt25AEkq0mpTPQfOAAe6h5oVljWQ/viewform?embedded=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Register
+                <Button className="w-full" to="/summit-2021/#talks">
+                  Watch
                 </Button>
               </div>
             </Popover.Panel>
