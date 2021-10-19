@@ -3,7 +3,6 @@ const talksData = [
     speaker: 'Kevin Sheldrake, Microsoft',
     topic: 'Auto-discovery of Kernel Struct Offsets without BTF',
     youtubeLink: 'https://youtu.be/sZDGyr669kc',
-    pdfLink: 'https://drive.google.com/file/d/1KkIyDbicfGzn8C5JJ1h92KusdPKea0T2/view?usp=sharing',
     keynotes: false,
   },
   {

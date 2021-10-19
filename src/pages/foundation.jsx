@@ -11,6 +11,8 @@ import SEO from 'components/shared/seo';
 import CloudflareLogo from 'icons/cloudflare.inline.svg';
 import DaoCloudLogo from 'icons/daocloud.inline.svg';
 import FacebookLogo from 'icons/facebook.inline.svg';
+import FutureweiLogo from 'icons/futurewei.inline.svg';
+import GoogleSMLogo from 'icons/google-sm.inline.svg';
 import GoogleLogo from 'icons/google.inline.svg';
 import IsovalentLogo from 'icons/isovalent.inline.svg';
 import MicrosoftLogo from 'icons/microsoft.inline.svg';
@@ -25,7 +27,10 @@ const ebpfFoundation = {
 const members = {
   title: 'Members',
   items: [
-    { name: 'Platinum', logos: [FacebookLogo, GoogleLogo, IsovalentLogo, MicrosoftLogo] },
+    {
+      name: 'Platinum',
+      logos: [FacebookLogo, GoogleSMLogo, IsovalentLogo, MicrosoftLogo, FutureweiLogo],
+    },
     { name: 'Silver', logos: [NetflixLogo, DaoCloudLogo] },
   ],
 };
