@@ -10,6 +10,7 @@ import HeroFoundation from 'components/shared/hero-foundation';
 import SEO from 'components/shared/seo';
 import CloudflareLogo from 'icons/cloudflare.inline.svg';
 import DaoCloudLogo from 'icons/daocloud.inline.svg';
+import DatomsLogo from 'icons/datoms.inline.svg';
 import FacebookLogo from 'icons/facebook.inline.svg';
 import FutureweiLogo from 'icons/futurewei.inline.svg';
 import GoogleSMLogo from 'icons/google-sm.inline.svg';
@@ -31,7 +32,7 @@ const members = {
       name: 'Platinum',
       logos: [FacebookLogo, GoogleSMLogo, IsovalentLogo, MicrosoftLogo, FutureweiLogo],
     },
-    { name: 'Silver', logos: [NetflixLogo, DaoCloudLogo] },
+    { name: 'Silver', logos: [NetflixLogo, DaoCloudLogo, DatomsLogo] },
   ],
 };
 
