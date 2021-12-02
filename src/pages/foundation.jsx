@@ -15,9 +15,12 @@ import FacebookLogo from 'icons/facebook.inline.svg';
 import FutureweiLogo from 'icons/futurewei.inline.svg';
 import GoogleSMLogo from 'icons/google-sm.inline.svg';
 import GoogleLogo from 'icons/google.inline.svg';
+import HuaweiLogo from 'icons/huawei.inline.svg';
 import IsovalentLogo from 'icons/isovalent.inline.svg';
+import MicrosoftSmLogo from 'icons/microsoft-sm.inline.svg';
 import MicrosoftLogo from 'icons/microsoft.inline.svg';
 import NetflixLogo from 'icons/netflix.inline.svg';
+import TigeraLogo from 'icons/tigera.inline.svg';
 import MainLayout from 'layouts/main';
 
 const ebpfFoundation = {
@@ -30,9 +33,9 @@ const members = {
   items: [
     {
       name: 'Platinum',
-      logos: [FacebookLogo, GoogleSMLogo, IsovalentLogo, MicrosoftLogo, FutureweiLogo],
+      logos: [FacebookLogo, GoogleSMLogo, IsovalentLogo, MicrosoftSmLogo, TigeraLogo, HuaweiLogo],
     },
-    { name: 'Silver', logos: [NetflixLogo, DaoCloudLogo, DatomsLogo] },
+    { name: 'Silver', logos: [NetflixLogo, DaoCloudLogo, DatomsLogo, FutureweiLogo] },
   ],
 };
 
