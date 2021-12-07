@@ -9,6 +9,7 @@ import SteeringCommittee from 'components/pages/members/steering-committee';
 import HeroFoundation from 'components/shared/hero-foundation';
 import SEO from 'components/shared/seo';
 import CloudflareLogo from 'icons/cloudflare.inline.svg';
+import CrowdStrikeLogo from 'icons/crowdstrike.inline.svg';
 import DaoCloudLogo from 'icons/daocloud.inline.svg';
 import DatomsLogo from 'icons/datoms.inline.svg';
 import FacebookLogo from 'icons/facebook.inline.svg';
@@ -17,6 +18,7 @@ import GoogleSMLogo from 'icons/google-sm.inline.svg';
 import GoogleLogo from 'icons/google.inline.svg';
 import HuaweiLogo from 'icons/huawei.inline.svg';
 import IsovalentLogo from 'icons/isovalent.inline.svg';
+import MetaLogo from 'icons/meta.inline.svg';
 import MicrosoftSmLogo from 'icons/microsoft-sm.inline.svg';
 import MicrosoftLogo from 'icons/microsoft.inline.svg';
 import NetflixLogo from 'icons/netflix.inline.svg';
@@ -33,7 +35,15 @@ const members = {
   items: [
     {
       name: 'Platinum',
-      logos: [FacebookLogo, GoogleSMLogo, IsovalentLogo, MicrosoftSmLogo, TigeraLogo, HuaweiLogo],
+      logos: [
+        MetaLogo,
+        GoogleSMLogo,
+        IsovalentLogo,
+        MicrosoftSmLogo,
+        TigeraLogo,
+        HuaweiLogo,
+        CrowdStrikeLogo,
+      ],
     },
     { name: 'Silver', logos: [NetflixLogo, DaoCloudLogo, DatomsLogo, FutureweiLogo] },
   ],
