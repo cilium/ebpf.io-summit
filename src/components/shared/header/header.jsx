@@ -129,6 +129,8 @@ const Header = ({ switchLanguages }) => (
         >
           <Popover.Panel
             className="absolute inset-x-0 top-0 z-50 hidden p-2 transition origin-top-right transform lg:block"
+            // click outside logic is broken, it will be fixed in the next release https://github.com/tailwindlabs/headlessui/issues/283
+            tabIndex={-1}
             focus
             static
           >
