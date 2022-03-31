@@ -1,7 +1,8 @@
 ---
 slug: '/charter'
 date: '2021-08-10'
-title: 'Charter'
+title: 'The eBPF Foundation Charter'
+description: 'The Linux Foundation<br/>Effective June 6, 2021'
 ---
 
 ### 1. Mission and Scope of the eBPF Foundation

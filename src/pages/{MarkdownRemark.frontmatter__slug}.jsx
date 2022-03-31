@@ -13,8 +13,8 @@ const StaticPage = ({ data, location: { pathname } }) => {
   return (
     <MainLayout>
       <SEO data={{ title: `eBPF ${frontmatter.title}`, slug: pathname }} />
-      <HeroFoundation />
-      <Content title={frontmatter.title} content={html} pathname={pathname} />
+      <HeroFoundation title={frontmatter.title} description={frontmatter.description} />
+      <Content content={html} pathname={pathname} />
     </MainLayout>
   );
 };
@@ -29,6 +29,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        description
       }
     }
   }
