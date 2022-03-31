@@ -10,7 +10,7 @@ const HeroFoundation = ({ title, description }) => (
       <Heading tag="h1" size="lg">
         {title}
       </Heading>
-      <p className="text-gray-1 mt-3 text-lg" dangerouslySetInnerHTML={{ __html: description }} />
+      <p className="mt-3 text-xl" dangerouslySetInnerHTML={{ __html: description }} />
     </Container>
   </section>
 );
