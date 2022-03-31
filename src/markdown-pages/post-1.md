@@ -74,12 +74,10 @@ c) Conduct of Meetings
 
 - i) Governing Board meetings will be limited to the Governing Board representatives,
   invited guests and LF staff.
-
 - ii) Governing Board meetings follow the requirements for quorum and voting outlined in
   this Charter. The Governing Board may decide whether to allow named
   representatives (one per Member per Governing Board and per Committee) to attend
   as an alternate.
-
 - iii) The Governing Board meetings will be private unless decided otherwise by the
   Governing Board. The Governing Board may invite guests to participate in
   consideration of specific Governing Board topics (but such guest may not participate
