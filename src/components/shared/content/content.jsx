@@ -9,7 +9,7 @@ const Content = ({ content, pathname }) => (
     <Container>
       <div
         className={classNames(
-          'mt-12 prose prose-xl md:prose-lg sm:prose max-w-none',
+          'mt-12 prose prose-xl md:prose-lg sm:prose max-w-none sm:break-words',
           pathname === '/charter/' && 'without-bullet-list'
         )}
         dangerouslySetInnerHTML={{ __html: content }}
