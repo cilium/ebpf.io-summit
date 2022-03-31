@@ -60,6 +60,12 @@
   .list-style > li {
     @apply relative before:absolute before:w-2 before:h-2 before:rounded-full before:bg-black before:left-0 before:top-3;
   }
+
+  .without-bullet-list {
+    ul > li::before {
+      display: none;
+    }
+  }
 }
 
 .sz-session__room {

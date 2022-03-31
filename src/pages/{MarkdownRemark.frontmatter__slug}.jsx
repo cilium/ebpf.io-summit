@@ -14,7 +14,7 @@ const StaticPage = ({ data, location: { pathname } }) => {
     <MainLayout>
       <SEO data={{ title: `eBPF ${frontmatter.title}`, slug: pathname }} />
       <HeroFoundation />
-      <Content title={frontmatter.title} content={html} />
+      <Content title={frontmatter.title} content={html} pathname={pathname} />
     </MainLayout>
   );
 };
