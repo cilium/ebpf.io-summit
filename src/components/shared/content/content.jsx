@@ -4,13 +4,12 @@ import React from 'react';
 
 import Container from '../container';
 
-const Content = ({ content, pathname }) => (
+const Content = ({ content }) => (
   <article className="my-28 md:my-20">
     <Container>
       <div
         className={classNames(
-          'mt-12 prose prose-xl md:prose-lg sm:prose max-w-none sm:break-words',
-          pathname === '/charter/' && 'without-bullet-list'
+          'mt-12 prose prose-xl md:prose-lg sm:prose max-w-none sm:break-words'
         )}
         dangerouslySetInnerHTML={{ __html: content }}
       />
@@ -20,7 +19,6 @@ const Content = ({ content, pathname }) => (
 
 Content.propTypes = {
   content: PropTypes.string.isRequired,
-  pathname: PropTypes.string.isRequired,
 };
 
 export default Content;
