@@ -48,7 +48,7 @@ const navigation = [
     name: `About`,
     menuItems: [
       { name: 'Governance', href: '/foundation' },
-      { name: 'Charter', href: '/charter' },
+      { name: 'Charter', href: 'https://ebpf.io/charter' },
       { name: 'How to Contribute', href: 'https://ebpf.io/contribute' },
     ],
   },
