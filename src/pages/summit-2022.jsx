@@ -5,6 +5,7 @@ import Banner from 'components/pages/summit-2022/banner';
 import CfpBanner from 'components/pages/summit-2022/cfp-banner';
 import Hero from 'components/pages/summit-2022/hero';
 import Information from 'components/pages/summit-2022/information';
+import LastYear from 'components/pages/summit-2022/last-year';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'layouts/summit-2022';
 
@@ -25,6 +26,38 @@ const hero = {
   },
 };
 
+const lastYear = {
+  title: `Last year's summit`,
+  description:
+    'eBPF Summit 2021 featured 43 talks from many different perspectives, from kernel maintainers working on eBPF implementation, through projects using eBPF technology to create next-generation tools, through to end users sharing their experiences of leveraging this awesome new set of capabilities. Join us this September for what promises to be an even more exciting edition!',
+  link: {
+    url: 'https://ebpf.io/summit-2021',
+    title: 'eBPF Summit 2021',
+  },
+  items: [
+    {
+      number: '3k',
+      unit: 'Registrations',
+      theme: 'black',
+    },
+    {
+      number: '10',
+      unit: 'Keynotes',
+      theme: 'white',
+    },
+    {
+      number: '28',
+      unit: 'Companies',
+      theme: 'white',
+    },
+    {
+      number: '2',
+      unit: 'Days',
+      theme: 'black',
+    },
+  ],
+};
+
 const Summit2022 = () => (
   <SummitLayout>
     <SEO
@@ -39,6 +72,7 @@ const Summit2022 = () => (
     <Hero {...hero} />
     <CfpBanner />
     <Information />
+    <LastYear {...lastYear} />
     <Banner />
   </SummitLayout>
 );

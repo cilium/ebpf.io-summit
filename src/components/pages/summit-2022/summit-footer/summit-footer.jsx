@@ -7,7 +7,7 @@ import TwitterIcon from 'icons/twitter.inline.svg';
 import Logo from 'images/logo.inline.svg';
 
 const SummitFooter = () => (
-  <footer className="py-14 lg:py-8 md:py-6" aria-labelledby="footerHeading">
+  <footer className="py-8 lg:py-6 md:py-4" aria-labelledby="footerHeading">
     <h2 id="footerHeading" className="sr-only">
       Footer
     </h2>

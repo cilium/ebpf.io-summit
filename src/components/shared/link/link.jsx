@@ -11,6 +11,8 @@ const stylesClassName = 'inline-flex items-center leading-none transition-colors
 
 const themeClassNames = {
   primary: 'text-primary-2 font-bold hover:text-black',
+  underline:
+    'font-bold text-black hover:text-primary-5 underline underline-offset-4 decoration-primary-5 decoration-2',
 };
 
 const Link = ({ className: additionalClassName, to, children, theme, withArrow, ...props }) => {

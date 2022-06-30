@@ -8,7 +8,7 @@ import honeycomb from './images/honeycomb.svg';
 import shape from './images/shape.svg';
 
 const Banner = () => (
-  <section className="my-32 lg:py-28 md:py-24 sm:py-20">
+  <section className="pb-36 lg:pb-32 md:pb-28 sm:pb-24 bg-gray-3">
     <Container className="flex-col bg-orange-gradient flex items-center justify-center py-14 rounded-lg">
       <img className="absolute top-full left-3/8" src={shape} alt="" aria-hidden />
       <img className="absolute right-0 md:hidden" src={honeycomb} alt="" aria-hidden />
