@@ -8,7 +8,7 @@ import Sessions from 'components/pages/capture-the-flag/sessions';
 import Hero from 'components/shared/hero';
 import Register from 'components/shared/register';
 import SEO from 'components/shared/seo';
-import SummitLayout from 'layouts/summit';
+import SummitLayout from 'layouts/summit-2021';
 
 const ogImage = '/images/og-ctf.png';
 

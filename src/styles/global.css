@@ -53,6 +53,10 @@
     @apply text-primary-2 font-bold no-underline hover:text-black transition-colors duration-200;
   }
 
+  .with-orange-highlight strong {
+    @apply text-primary-5;
+  }
+
   .list-style > * {
     @apply pl-6;
   }

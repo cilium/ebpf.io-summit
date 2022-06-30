@@ -10,7 +10,7 @@ import Talks from 'components/pages/home/talks';
 import Hero from 'components/shared/hero';
 import Register from 'components/shared/register';
 import SEO from 'components/shared/seo';
-import SummitLayout from 'layouts/summit';
+import SummitLayout from 'layouts/summit-2021';
 import talksData from 'utils/data';
 
 const ogImage = '/images/og-summit-2021.png';

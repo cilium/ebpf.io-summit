@@ -23,7 +23,7 @@ const Button = (props) => {
   const Tag = to ? Link : 'button';
 
   const styles =
-    'relative inline-flex justify-center items-center font-extrabold leading-none whitespace-nowrap transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline disabled:pointer-events-none';
+    'relative inline-flex justify-center items-center font-extrabold leading-none whitespace-nowrap transition-colors transition-opacity duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline disabled:pointer-events-none';
 
   let themeStyles;
   switch (theme) {
@@ -39,8 +39,14 @@ const Button = (props) => {
     case 'with-border':
       themeStyles = 'text-black border-2 border-black';
       break;
+    case 'orange':
+      themeStyles = 'text-white bg-button-gradient hover:opacity-90';
+      break;
     case 'link-primary':
       themeStyles = 'text-primary-2';
+      break;
+    case 'gray':
+      themeStyles = 'text-black bg-opacity-20 bg-gray-4 hover:bg-gray-2';
       break;
     default:
       return undefined;
@@ -53,6 +59,9 @@ const Button = (props) => {
       break;
     case 'sm':
       sizeStyles = 'px-5 py-3.5 lg:px-4 lg:py-3';
+      break;
+    case 'sm-rounded':
+      sizeStyles = 'rounded-lg px-6 py-4 lg:px-4 lg:py-3';
       break;
     case 'md':
       sizeStyles = 'px-8 py-5 text-xl md:px-6 md:py-3 md:text-lg';

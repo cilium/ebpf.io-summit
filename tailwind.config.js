@@ -29,12 +29,14 @@ module.exports = {
           2: '#00ACE6',
           3: '#CFEDFC',
           4: '#FDF1D0',
+          5: '#FFA41D',
           '1-hover': '#E8CD02',
         },
         gray: {
           1: '#808080',
           2: '#F2F2F2',
           3: '#FAFAFA',
+          4: '#D4D4D4',
         },
         yellow: {
           1: '#FEF8E7',
@@ -47,6 +49,8 @@ module.exports = {
       backgroundImage: (theme) => ({
         'hero-foundation': "url('/images/foundation-background.svg')",
         'join-banner': "url('/images/join-background.svg')",
+        'button-gradient': 'linear-gradient(82.18deg, #DB6C2E -0.66%, #FD9800 97.55%)',
+        'orange-gradient': 'linear-gradient(265.88deg, #FFE100 -0.55%, #FF6B00 98.81%)',
       }),
       typography: (theme) => ({
         DEFAULT: {
