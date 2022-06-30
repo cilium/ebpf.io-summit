@@ -6,8 +6,8 @@ import Container from 'components/shared/container';
 import honeycomb from './images/honeycomb.svg';
 
 const CfpBanner = () => (
-  <section className="mt-16 md:mb-12">
-    <Container className="overflow-hidden mx-auto relative bg-orange-gradient flex space-x-9 items-center justify-center py-8 rounded-lg md:flex-col md:space-x-0 md:space-y-6">
+  <section className="mt-16 md:mt-12">
+    <Container className="overflow-hidden bg-orange-gradient flex space-x-9 items-center justify-center py-8 rounded-lg md:flex-col md:space-x-0 md:space-y-6">
       <img className="absolute right-0 md:hidden" src={honeycomb} alt="" aria-hidden />
       <img className="absolute -left-9 md:hidden rotate-180" src={honeycomb} alt="" aria-hidden />
 

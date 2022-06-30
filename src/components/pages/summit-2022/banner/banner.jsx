@@ -9,7 +9,7 @@ import shape from './images/shape.svg';
 
 const Banner = () => (
   <section className="my-32 lg:py-28 md:py-24 sm:py-20">
-    <Container className="mx-auto relative flex-col bg-orange-gradient flex items-center justify-center py-14 rounded-lg">
+    <Container className="flex-col bg-orange-gradient flex items-center justify-center py-14 rounded-lg">
       <img className="absolute top-full left-3/8" src={shape} alt="" aria-hidden />
       <img className="absolute right-0 md:hidden" src={honeycomb} alt="" aria-hidden />
       <img className="absolute left-0 md:hidden" src={honeycombLeft} alt="" aria-hidden />

@@ -4,6 +4,7 @@ import React from 'react';
 import Banner from 'components/pages/summit-2022/banner';
 import CfpBanner from 'components/pages/summit-2022/cfp-banner';
 import Hero from 'components/pages/summit-2022/hero';
+import Information from 'components/pages/summit-2022/information';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'layouts/summit-2022';
 
@@ -37,6 +38,7 @@ const Summit2022 = () => (
     />
     <Hero {...hero} />
     <CfpBanner />
+    <Information />
     <Banner />
   </SummitLayout>
 );
