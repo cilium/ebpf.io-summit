@@ -66,6 +66,63 @@ const LastYear = ({ title, description, link, items }) => (
           );
         })}
       </div>
+      <div className="grid grid-cols-2 gap-x-8 md:grid-cols-1 mt-32 lg:mt-28 mg:mt-24 sm:mt-20 place-items-center">
+        <blockquote className="twitter-tweet">
+          <p lang="en" dir="ltr">
+            There is so much good content and awesome speakers at
+            <a href="https://twitter.com/hashtag/ebpfSummit?src=hash&amp;ref_src=twsrc%5Etfw">
+              #ebpfSummit
+            </a>
+            . I love to learn about such innovative and fascinating topic
+          </p>
+          &mdash; Pablo Moncada Isla (@pmoncadaisla)
+          <a href="https://twitter.com/pmoncadaisla/status/1321526526035349505?ref_src=twsrc%5Etfw">
+            October 28, 2020
+          </a>
+        </blockquote>
+        <blockquote className="twitter-tweet">
+          <p lang="en" dir="ltr">
+            I&#39;m at the
+            <a href="https://twitter.com/hashtag/eBPFSummit?src=hash&amp;ref_src=twsrc%5Etfw">
+              #eBPFSummit
+            </a>
+            today (and tomorrow), and so far each talk has been at the perfect level of technical
+            depth 🔥. Complex stuff, explained in a really accessible way.
+            <br />
+            <br />
+            Props to the organizers!
+          </p>
+          &mdash; nickt (@nicktrav)
+          <a href="https://twitter.com/nicktrav/status/1321506792879255554?ref_src=twsrc%5Etfw">
+            October 28, 2020
+          </a>
+        </blockquote>
+        <blockquote className="twitter-tweet">
+          <p lang="en" dir="ltr">
+            <a href="https://twitter.com/hashtag/eBPFsummit?src=hash&amp;ref_src=twsrc%5Etfw">
+              #eBPFsummit
+            </a>
+            CTF is kicking my ass, but I dig it. It&#39;s my first time doing anything like this.
+            Looking forward to my mind melting for the next two days!
+          </p>
+          &mdash; Alex Kirby (@iprouteget)
+          <a href="https://twitter.com/iprouteget/status/1427869603133227017?ref_src=twsrc%5Etfw">
+            August 18, 2021
+          </a>
+        </blockquote>
+        <blockquote className="twitter-tweet">
+          <p lang="en" dir="ltr">
+            Really digging the eBPF Summit 😀 had far too much fun watching the CTF walkthrough
+            <a href="https://twitter.com/hashtag/eBPFSummit?src=hash&amp;ref_src=twsrc%5Etfw">
+              #eBPFSummit
+            </a>
+          </p>
+          &mdash; Jason W. Eckert 💉💉💉 (@the_unix_guru)
+          <a href="https://twitter.com/the_unix_guru/status/1428060449875152902?ref_src=twsrc%5Etfw">
+            August 18, 2021
+          </a>
+        </blockquote>
+      </div>
     </Container>
   </section>
 );
