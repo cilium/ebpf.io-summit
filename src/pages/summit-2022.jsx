@@ -1,6 +1,7 @@
 // import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
+import Banner from 'components/pages/summit-2022/banner';
 import Hero from 'components/pages/summit-2022/hero';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'layouts/summit-2022';
@@ -26,7 +27,7 @@ const Summit2022 = () => (
   <SummitLayout>
     <SEO
       data={{
-        title: 'eBPF Summit 2021',
+        title: 'eBPF Summit 2022',
         description:
           'Register now for the eBPF Summit 2022, Sep 28-29, 2022, a free virtual event for DevOps, SRE, SecOps, and developers.',
         image: ogImage,
@@ -34,14 +35,7 @@ const Summit2022 = () => (
       }}
     />
     <Hero {...hero} />
-    {/* <Speakers {...speakers} />
-      <Information {...information} />
-      {/* <Schedule {...schedule} /> */}
-    {/* <Talks className="py-28 md:py-20" {...keynotes} />
-      <Talks className="pb-28 md:pb-20" {...talks} />
-      <Ctf {...ctf} />
-      <LastYear {...lastYear} />
-      <Register {...register} /> */}
+    <Banner />
   </SummitLayout>
 );
 
