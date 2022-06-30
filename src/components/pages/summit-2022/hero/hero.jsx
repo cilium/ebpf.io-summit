@@ -27,19 +27,19 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => (
         />
         <div className="flex space-x-6 sm:flex-col mt-9 sm:space-x-0 sm:space-y-3 xs:w-full">
           <Button
-            className="xs:px-3.5 xs:flex-1"
+            className="xs:px-3.5 xs:flex-1 rounded-lg"
             to={firstButton.url}
             theme="orange"
-            size="sm-rounded"
+            size="sm"
           >
             {firstButton.title}
           </Button>
           <div className="flex space-x-6 sm:w-full sm:space-x-3">
             <Button
-              className="xs:px-3.5 sm:flex-1 flex items-center space-x-3"
+              className="xs:px-3.5 sm:flex-1 flex items-center space-x-3 rounded-lg"
               to={secondButton.url}
               theme="gray"
-              size="sm-rounded"
+              size="sm"
             >
               <SlackIcon className="shrink-0 w-6 h-6" />
               <span>{secondButton.title}</span>

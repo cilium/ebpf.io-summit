@@ -58,10 +58,7 @@ const Button = (props) => {
       sizeStyles = 'px-4 py-2.5 md:px-3 md:py-2 text-sm';
       break;
     case 'sm':
-      sizeStyles = 'px-5 py-3.5 lg:px-4 lg:py-3';
-      break;
-    case 'sm-rounded':
-      sizeStyles = 'rounded-lg px-6 py-4 lg:px-4 lg:py-3';
+      sizeStyles = 'px-6 py-4 lg:px-4 lg:py-3';
       break;
     case 'md':
       sizeStyles = 'px-8 py-5 text-xl md:px-6 md:py-3 md:text-lg';
