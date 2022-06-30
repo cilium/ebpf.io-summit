@@ -16,6 +16,7 @@ module.exports = {
     authorTwitterAccount: '@',
   },
   plugins: [
+    'gatsby-plugin-twitter',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
