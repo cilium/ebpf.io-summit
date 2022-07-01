@@ -90,8 +90,4 @@ const Information = () => (
   </section>
 );
 
-Information.propTypes = {};
-
-Information.defaultProps = {};
-
 export default Information;

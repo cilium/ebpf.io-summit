@@ -118,7 +118,7 @@ const LastYear = ({ title, description, link, items }) => {
           </div>
         </div>
 
-        <ul className="mt-[8.5rem] lg:mt-32 md:mt-28 sm:mt-24 grid grid-cols-4 max-w-[760px] mx-auto gap-x-10 place-items-center gap-y-8 md:grid-cols-2 md:gap-x-8">
+        <ul className="mt-[8.5rem] lg:mt-32 md:mt-28 sm:mt-24 grid grid-cols-4 max-w-[760px] md:max-w-[400px] mx-auto gap-x-10 place-items-center gap-y-8 md:grid-cols-2 md:gap-x-8">
           {items.map(({ number, unit, theme }, index) => {
             const isThemeBlack = theme === 'black';
             return (
