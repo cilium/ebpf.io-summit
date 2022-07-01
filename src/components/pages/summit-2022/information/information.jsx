@@ -43,24 +43,27 @@ const Information = () => (
   <section className="mt-32 lg:mt-28 md:mt-24 sm:mt-20">
     <Container className="flex flex-col items-center">
       <div className="max-w-3xl md:max-w-2xl text-center">
-        <Heading size="lg" tag="h2">
+        <Heading size="xl" tag="h2">
           {title}
         </Heading>
-        <p className="text-lg md:text-base mt-5 leading-normal">{description}</p>
+        <p className="text-xl lg:text-lg md:text-base mt-5 leading-normal">{description}</p>
       </div>
       <div className="mt-14 md:mt-10 flex space-x-8 lg:space-x-6 md:flex-col md:space-x-0 md:space-y-6">
         {cardItems.map(({ iconName, title, description }, index) => {
           const Icon = icons[iconName];
           return (
             <div
-              className="border border-gray-2 rounded-lg flex flex-col items-start p-8 md:p-6"
+              className="border border-gray-2 rounded-lg flex flex-col items-start p-8 lg:p-6 flex-1"
               key={index}
             >
               <Icon className="shrink-0 w-14 h-auto" />
-              <Heading tag="h3" className="leading-tight text-2xl md:text-xl mt-6 md:mt-4">
+              <Heading
+                tag="h3"
+                className="leading-tight text-2xl lg:text-xl md:text-xl mt-6 md:mt-4"
+              >
                 {title}
               </Heading>
-              <p className="mt-2.5 text-lg md:text-base leading-normal">{description}</p>
+              <p className="mt-2.5 text-lg lg:text-base leading-normal">{description}</p>
             </div>
           );
         })}

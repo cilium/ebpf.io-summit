@@ -8,8 +8,8 @@ import SlackIcon from 'icons/slack.inline.svg';
 
 const Hero = ({ date, title, description, firstButton, secondButton }) => (
   <section className="overflow-hidden">
-    <Container className="py-32 md:pt-24 md:pb-16 xs:pb-9">
-      <div className="max-w-[592px] lg:max-w-[auto] lg:mb-9">
+    <Container className="pt-28 pb-32 md:pt-24 md:pb-16 sm:pt-16 xs:pb-9">
+      <div className="max-w-[644px] lg:max-w-[auto] lg:mb-9">
         <span
           className="with-orange-highlight inline-block p-2 font-bold text-center leading-none uppercase border-2 rounded-md text-black border-primary-5 border-opacity-30"
           dangerouslySetInnerHTML={{ __html: date }}
