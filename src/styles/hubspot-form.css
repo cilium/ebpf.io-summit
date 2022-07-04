@@ -96,7 +96,7 @@
     }
 
     input[type='submit'] {
-      @apply rounded-lg text-white px-5 py-[18px] leading-none font-extrabold;
+      @apply rounded-lg text-white px-5 py-[18px] leading-none font-extrabold hover:opacity-90 transition-colors duration-200;
 
       background: linear-gradient(82.18deg, #db6c2e -0.66%, #fd9800 97.55%);
     }
