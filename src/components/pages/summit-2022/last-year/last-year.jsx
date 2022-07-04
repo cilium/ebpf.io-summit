@@ -152,7 +152,7 @@ const LastYear = ({ title, description, link, items }) => {
               to={url}
             >
               <div className="flex space-x-3 items-center self-start">
-                <GatsbyImage image={getImage(avatar)} />
+                <GatsbyImage image={getImage(avatar)} alt={name} />
                 <div className="flex flex-col">
                   <span className="font-bold">{name}</span>
                   <span className="text-gray-1">{nick}</span>
