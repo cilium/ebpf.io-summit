@@ -156,7 +156,7 @@ const LastYear = ({ title, description, link, items }) => {
                 <GatsbyImage image={getImage(avatar)} alt={name} />
                 <div className="flex flex-col">
                   <span className="font-bold">{name}</span>
-                  <span className="text-gray-1">{nick}</span>
+                  <span className="text-gray-1 mt-1.5">{nick}</span>
                 </div>
               </div>
               <p
