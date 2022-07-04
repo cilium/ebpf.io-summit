@@ -3,13 +3,9 @@ import React, { useState } from 'react';
 
 import Button from 'components/shared/button';
 import Container from 'components/shared/container';
-import CustomModal from 'components/shared/custom-modal';
 import Heading from 'components/shared/heading';
-import HubspotForm from 'components/shared/hubspot-form';
-import CloseIcon from 'icons/close.inline.svg';
+import RegisterFormModal from 'components/shared/register-form-modal';
 import SlackIcon from 'icons/slack.inline.svg';
-
-const HUBSPOT_FORM_ID = 'ecd4bee1-a31f-4c5c-83b6-ee7df83c885d';
 
 const Hero = ({ date, title, description, firstButton, secondButton }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,18 +62,7 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
         {/* TODO: add hero image */}
         {/* <Image className="absolute top-0 -right-48 w-[700px] xl:w-[550px] xl:-right-7 xl:top-16 lg:static lg:w-full h-auto" /> */}
       </Container>
-      <CustomModal
-        className="relative p-11 overflow-scroll lg:p-8 md:py-7"
-        title="Register form"
-        isOpen={isOpen}
-        closeModal={closeModal}
-      >
-        <CloseIcon className="absolute w-4 h-4 top-4 right-5" role="button" onClick={closeModal} />
-        <Heading className="text-center" size="lg" tag="h2">
-          Register for eBPF Summit
-        </Heading>
-        <HubspotForm className="min-h-[870px] mt-8" hubspotFormId={HUBSPOT_FORM_ID} />
-      </CustomModal>
+      <RegisterFormModal isOpen={isOpen} closeModal={closeModal} />
     </section>
   );
 };

@@ -70,13 +70,13 @@ const Information = () => (
       </div>
       <div className="mt-7 relative flex bg-gray-3 items-center self-stretch justify-center py-14 md:py-10 rounded-lg space-x-4 md:flex-col md:space-x-0 md:space-y-4 overflow-hidden">
         <img
-          className="absolute -right-40 -bottom-20 lg:-right-64 sm:hidden"
+          className="absolute -right-40 -bottom-20 lg:-right-72 sm:hidden"
           src={hexagon}
           alt=""
           aria-hidden
         />
         <img
-          className="absolute -left-40 lg:-left-64 -top-20 sm:hidden"
+          className="absolute -left-40 lg:-left-72 -top-20 sm:hidden"
           src={hexagon}
           alt=""
           aria-hidden
