@@ -17,7 +17,6 @@ const hero = {
   description:
     '<p>eBPF Summit is a virtual event, targeted at DevOps, SecOps, platform architects, security engineers, and developers. Register to save the date and stay updated on event information.</p>',
   firstButton: {
-    url: '#form',
     title: 'Register for event',
   },
   secondButton: {

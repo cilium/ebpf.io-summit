@@ -81,18 +81,28 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
     </section>
   );
 };
+
 Hero.propTypes = {
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   firstButton: PropTypes.shape({
-    url: PropTypes.string.isRequired,
+    url: PropTypes.string,
     title: PropTypes.string.isRequired,
-  }).isRequired,
+  }),
   secondButton: PropTypes.shape({
-    url: PropTypes.string.isRequired,
+    url: PropTypes.string,
     title: PropTypes.string.isRequired,
-  }).isRequired,
+  }),
+};
+
+Hero.defaultProps = {
+  firstButton: {
+    url: null,
+  },
+  secondButton: {
+    url: null,
+  },
 };
 
 export default Hero;
