@@ -82,17 +82,9 @@ const LastYear = ({ title, description, link, items }) => {
 
   return (
     <section
-      className="relative mt-28 md:mt-20 pt-40 pb-32 lg:pt-32 md:pt-20 md:pb-20 bg-gray-3 overflow-hidden"
-      id="last-year's-summit"
+      className="relative mt-28 md:mt-20 pt-40 lg:pt-32 pb-32 md:pt-20 md:pb-20 overflow-hidden after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-gray-3 after:-z-20"
+      id="last-year-summit"
     >
-      <img
-        className="absolute top-0 left-1/2 translate-x-[calc(-50%+3rem)]"
-        width={1501}
-        height={1015}
-        src={hexagonBg}
-        alt=""
-        aria-hidden
-      />
       <Container>
         <div className="grid grid-cols-2 items-start gap-x-8 lg:grid-cols-1 gap-y-10">
           <div className="flex flex-col items-start max-w-[546px]">
@@ -117,33 +109,42 @@ const LastYear = ({ title, description, link, items }) => {
             />
           </div>
         </div>
-
-        <ul className="mt-[8.5rem] lg:mt-32 md:mt-28 sm:mt-24 grid grid-cols-4 max-w-[760px] md:max-w-[400px] mx-auto gap-x-10 place-items-center gap-y-8 md:grid-cols-2 md:gap-x-8">
-          {items.map(({ number, unit, theme }, index) => {
-            const isThemeBlack = theme === 'black';
-            return (
-              <li className="relative max-w-[160px]" key={index}>
-                <img src={shapes[index]} alt="" aria-hidden />
-                <div className="absolute flex flex-col transform -translate-x-1/2 text-center -translate-y-1/2 top-1/2 left-1/2 space-y-0.5">
-                  <span
-                    className={`font-semibold leading-none text-7xl lg:text-5xl md:text-6xl xs:text-5xl ${
-                      isThemeBlack ? 'text-primary-5' : 'text-white'
-                    }`}
-                  >
-                    {number}
-                  </span>
-                  <span
-                    className={`text-base font-medium leading-none ${
-                      isThemeBlack ? 'text-black' : 'text-white'
-                    }`}
-                  >
-                    {unit}
-                  </span>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
+        <div className="relative">
+          <img
+            className="absolute -z-10 top-1/2 md:hidden translate-y-[calc(-50%-13.5rem)] left-1/2 w-[1501px] h-[1015px] max-w-none translate-x-[calc(-50%+3rem)]"
+            width={1501}
+            height={1015}
+            src={hexagonBg}
+            alt=""
+            aria-hidden
+          />
+          <ul className="mt-[8.5rem] lg:mt-32 md:mt-28 sm:mt-24 grid grid-cols-4 max-w-[760px] md:max-w-[400px] mx-auto gap-x-10 place-items-center gap-y-8 md:grid-cols-2 md:gap-x-8">
+            {items.map(({ number, unit, theme }, index) => {
+              const isThemeBlack = theme === 'black';
+              return (
+                <li className="relative max-w-[160px]" key={index}>
+                  <img src={shapes[index]} alt="" aria-hidden />
+                  <div className="absolute flex flex-col transform -translate-x-1/2 text-center -translate-y-1/2 top-1/2 left-1/2 space-y-0.5">
+                    <span
+                      className={`font-semibold leading-none text-7xl lg:text-5xl md:text-6xl xs:text-5xl ${
+                        isThemeBlack ? 'text-primary-5' : 'text-white'
+                      }`}
+                    >
+                      {number}
+                    </span>
+                    <span
+                      className={`text-base font-medium leading-none ${
+                        isThemeBlack ? 'text-black' : 'text-white'
+                      }`}
+                    >
+                      {unit}
+                    </span>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-1 mt-32 lg:mt-28 mg:mt-24 sm:mt-20 place-items-start">
           {twitterCards.map(({ avatar, name, nick, text, time, date, url }, index) => (
             <Link

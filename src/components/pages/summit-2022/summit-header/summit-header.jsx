@@ -19,7 +19,7 @@ const navigation = [
   { name: 'Agenda', href: '/summit-2022/#agenda' },
   { name: 'Information', href: '/summit-2022/#information' },
   { name: 'Topics', href: '/summit-2022/#topics' },
-  { name: `Last year's summit`, href: `/summit-2022/#last-year's-summit` },
+  { name: `Last year's summit`, href: `/summit-2022/#last-year-summit` },
 ];
 
 const SummitHeader = () => {
