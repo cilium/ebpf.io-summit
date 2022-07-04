@@ -29,7 +29,7 @@ const Banner = () => {
             aria-hidden
           />
           <img
-            className="absolute left-0 xl:-left-10 lg:hidden"
+            className="absolute left-0 xl:-left-14 lg:hidden"
             src={honeycombLeft}
             alt=""
             aria-hidden
