@@ -118,11 +118,11 @@ const LastYear = ({ title, description, link, items }) => {
             alt=""
             aria-hidden
           />
-          <ul className="mt-[8.5rem] lg:mt-32 md:mt-28 sm:mt-24 grid grid-cols-4 max-w-[760px] md:max-w-[400px] mx-auto gap-x-10 place-items-center gap-y-8 md:grid-cols-2 md:gap-x-8">
+          <ul className="mt-[8.5rem] mx-auto lg:mt-32 md:mt-28 sm:mt-24 grid grid-cols-4 max-w-[760px] lg:max-w-[740px] md:max-w-[400px] gap-x-10 lg:gap-x-[82px] place-items-center gap-y-8 md:grid-cols-2 md:gap-x-8">
             {items.map(({ number, unit, theme }, index) => {
               const isThemeBlack = theme === 'black';
               return (
-                <li className="relative max-w-[160px]" key={index}>
+                <li className="relative max-w-[160px] lg:min-w-[140px]" key={index}>
                   <img src={shapes[index]} alt="" aria-hidden />
                   <div className="absolute flex flex-col transform -translate-x-1/2 text-center -translate-y-1/2 top-1/2 left-1/2 space-y-0.5">
                     <span

@@ -23,13 +23,13 @@ const Banner = () => {
         <div className="relative flex-col bg-orange-gradient flex items-center justify-center py-14 rounded-lg px-6 overflow-hidden">
           <img className="absolute top-full left-3/8" src={shape} alt="" aria-hidden />
           <img
-            className="absolute right-0 xl:-right-10 lg:hidden"
+            className="absolute right-0 xl:-right-10 lg:-right-20 lg:-top-48"
             src={honeycomb}
             alt=""
             aria-hidden
           />
           <img
-            className="absolute left-0 xl:-left-14 lg:hidden"
+            className="absolute left-0 xl:-left-14 lg:-left-20 lg:-bottom-48"
             src={honeycombLeft}
             alt=""
             aria-hidden

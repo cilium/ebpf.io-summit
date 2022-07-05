@@ -15,10 +15,9 @@ import Logo from 'images/logo.inline.svg';
 const HUBSPOT_FORM_ID = 'ecd4bee1-a31f-4c5c-83b6-ee7df83c885d';
 
 const navigation = [
-  { name: 'Featured Speakers', href: '/summit-2022/#featured-speakers' },
-  { name: 'Agenda', href: '/summit-2022/#agenda' },
+  { name: 'Call for proposals', href: '/summit-2022/#cfp' },
   { name: 'Information', href: '/summit-2022/#information' },
-  { name: 'Topics', href: '/summit-2022/#topics' },
+  { name: 'Agenda', href: '/summit-2022/#agenda' },
   { name: `Last year's summit`, href: `/summit-2022/#last-year-summit` },
 ];
 

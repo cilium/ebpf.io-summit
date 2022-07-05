@@ -40,7 +40,7 @@ const icons = {
 };
 
 const Information = () => (
-  <section className="mt-32 lg:mt-28 md:mt-24 sm:mt-20">
+  <section className="mt-32 lg:mt-28 md:mt-24 sm:mt-20" id="information">
     <Container className="flex flex-col items-center">
       <div className="max-w-3xl md:max-w-2xl text-center">
         <Heading size="xl" tag="h2">
@@ -68,21 +68,24 @@ const Information = () => (
           );
         })}
       </div>
-      <div className="mt-7 relative flex bg-gray-3 items-center self-stretch justify-center py-14 md:py-10 rounded-lg space-x-4 md:flex-col md:space-x-0 md:space-y-4 overflow-hidden">
+      <div
+        id="agenda"
+        className="mt-7 relative flex bg-gray-3 items-center self-stretch justify-center py-14 md:py-10 rounded-lg space-x-4 md:flex-col md:space-x-0 md:space-y-4 overflow-hidden"
+      >
         <img
-          className="absolute -right-40 -bottom-20 lg:-right-72 sm:hidden"
+          className="absolute -right-40 -bottom-20 lg:-right-72 sm:-right-64"
           src={hexagon}
           alt=""
           aria-hidden
         />
         <img
-          className="absolute -left-40 lg:-left-72 -top-20 sm:hidden"
+          className="absolute -left-40 lg:-left-72 -top-20 sm:-left-64"
           src={hexagon}
           alt=""
           aria-hidden
         />
-        <HourglassIcon className="shrink-0 w-[30px] h-[34px] md:w-6 md:h-7" />
-        <p className="text-3xl text-center md:text-left md:text-xl font-medium leading-none">
+        <HourglassIcon className="shrink-0 w-[30px] h-[34px] md:w-6 md:h-7 z-10" />
+        <p className="text-3xl text-center md:text-left md:text-xl font-medium leading-none z-10">
           Full schedule coming soon
         </p>
       </div>

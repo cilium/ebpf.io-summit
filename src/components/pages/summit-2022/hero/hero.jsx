@@ -18,8 +18,8 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
   };
   return (
     <section className="overflow-hidden">
-      <Container className="pt-28 pb-32 md:pt-24 md:pb-16 sm:pt-16 xs:pb-9">
-        <div className="max-w-[644px] lg:max-w-[auto] lg:mb-9">
+      <Container className="pt-28 pb-32 md:pt-24 md:pb-20 sm:pt-16">
+        <div className="max-w-[644px] lg:max-w-[auto]">
           <span
             className="with-orange-highlight inline-block p-2 font-bold text-center leading-none uppercase border-2 rounded-md text-black border-primary-5 border-opacity-30"
             dangerouslySetInnerHTML={{ __html: date }}
@@ -37,7 +37,7 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
           />
           <div className="flex space-x-6 sm:flex-col mt-9 sm:space-x-0 sm:space-y-3 xs:w-full">
             <Button
-              className="xs:px-3.5 xs:flex-1 rounded-lg"
+              className="xs:px-3.5 xs:flex-1 rounded-lg sm:min-h-[44px]"
               type="button"
               theme="orange"
               size="sm"
@@ -52,14 +52,12 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
                 theme="gray"
                 size="sm"
               >
-                <SlackIcon className="shrink-0 w-6 h-6" />
+                <SlackIcon className="shrink-0 w-6 h-6 sm:w-5 sm:h-5" />
                 <span>{secondButton.title}</span>
               </Button>
             </div>
           </div>
         </div>
-
-        {/* TODO: add hero image */}
         {/* <Image className="absolute top-0 -right-48 w-[700px] xl:w-[550px] xl:-right-7 xl:top-16 lg:static lg:w-full h-auto" /> */}
       </Container>
       <RegisterFormModal isOpen={isOpen} closeModal={closeModal} />
