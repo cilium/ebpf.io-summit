@@ -17,7 +17,7 @@ const themeStyles = {
   'with-border': 'text-black border-2 border-black',
   orange: 'text-white bg-button-gradient hover:opacity-90',
   'link-primary': 'text-primary-2',
-  gray: 'text-black bg-opacity-50 bg-gray-4 hover:bg-gray-2',
+  gray: 'text-black bg-gray-4 hover:bg-gray-2',
 };
 
 const sizeStyles = {

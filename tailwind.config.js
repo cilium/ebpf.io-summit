@@ -15,7 +15,6 @@ module.exports = {
       lg: { max: '1023.98px' },
       md: { max: '767.98px' },
       sm: { max: '639.98px' },
-      // TODO: Remove this one in case it won't be useful
       xs: { max: '413.98px' },
     },
     extend: {
