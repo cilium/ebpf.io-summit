@@ -9,7 +9,7 @@ import LastYear from 'components/pages/summit-2022/last-year';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'layouts/summit-2022';
 
-const ogImage = '/images/og-summit-2021.png';
+const ogImage = '/images/social-preview-summit-2022.jpg';
 
 const hero = {
   date: 'September <strong>28-29</strong>, 2022',
