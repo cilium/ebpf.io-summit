@@ -7,6 +7,8 @@ import Heading from 'components/shared/heading';
 import RegisterFormModal from 'components/shared/register-form-modal';
 import SlackIcon from 'icons/slack.inline.svg';
 
+import Illustration from './images/illustration.inline.svg';
+
 const Hero = ({ date, title, description, firstButton, secondButton }) => {
   const [isOpen, setIsOpen] = useState(false);
   const openModal = () => {
@@ -17,9 +19,9 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
     setIsOpen(false);
   };
   return (
-    <section className="overflow-hidden">
-      <Container className="pt-28 pb-32 md:pt-24 md:pb-20 sm:pt-16">
-        <div className="max-w-[644px] lg:max-w-[auto]">
+    <section className="relative overflow-hidden">
+      <Container className="pt-28 pb-6 lg:pb-0 md:pt-24">
+        <div className="max-w-[644px] lg:max-w-full">
           <span
             className="with-orange-highlight inline-block p-2 font-bold text-center leading-none uppercase border-2 rounded-md text-black border-primary-5 border-opacity-30"
             dangerouslySetInnerHTML={{ __html: date }}
@@ -32,7 +34,7 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
             innerHTML={title}
           />
           <div
-            className="mt-4 space-y-4 text-xl with-link-primary md:text-lg md:space-y-4 font-semibold"
+            className="mt-4 max-w-lg lg:max-w-full space-y-4 text-xl with-link-primary md:text-lg md:space-y-4 font-semibold"
             dangerouslySetInnerHTML={{ __html: description }}
           />
           <div className="flex space-x-6 sm:flex-col mt-9 sm:space-x-0 sm:space-y-3 xs:w-full">
@@ -58,7 +60,7 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
             </div>
           </div>
         </div>
-        {/* <Image className="absolute top-0 -right-48 w-[700px] xl:w-[550px] xl:-right-7 xl:top-16 lg:static lg:w-full h-auto" /> */}
+        <Illustration className="absolute top-[4.5rem] xl:top-24 right-0 w-[668px] xl:w-[500px] lg:static lg:w-full h-auto lg:mt-12" />
       </Container>
       <RegisterFormModal isOpen={isOpen} closeModal={closeModal} />
     </section>
