@@ -1,17 +1,17 @@
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 import Button from 'components/shared/button';
 import Container from 'components/shared/container';
 
-import drop from './images/drop.png';
 import honeycomb from './images/honeycomb.svg';
 
 const CfpBanner = () => (
   <section className="mt-32 lg:mt-28 md:mt-24 sm:mt-20" id="cfp">
     <Container>
-      <img
+      <StaticImage
         className="mix-blend-multiply absolute w-[378px] xl:w-[300px] xl:right-0 xl:bottom-6 lg:w-[250px] lg:bottom-12 md:top-32 sm:hidden -right-10 z-10 bottom-0"
-        src={drop}
+        src="./images/drop.png"
         alt=""
         aria-hidden
       />
