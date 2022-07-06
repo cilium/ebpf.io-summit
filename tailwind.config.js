@@ -34,7 +34,8 @@ module.exports = {
           1: '#808080',
           2: '#F2F2F2',
           3: '#FAFAFA',
-          4: '#D4D4D4',
+          4: '#F6F6F6',
+          5: '#EBEBEB',
         },
         yellow: {
           1: '#FEF8E7',
