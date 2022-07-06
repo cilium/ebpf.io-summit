@@ -9,6 +9,7 @@ import SlackIcon from 'icons/slack.inline.svg';
 
 import drop1 from './images/drop-1.png';
 import drop2 from './images/drop-2.png';
+import honey from './images/honey.png';
 import Illustration from './images/illustration.inline.svg';
 
 const Hero = ({ date, title, description, firstButton, secondButton }) => {
@@ -23,21 +24,27 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
   return (
     <section className="relative lg:overflow-hidden">
       <img
-        className="absolute -z-20 right-0 md:-right-4 sm:-right-12 -top-20 w-[200px] xl:hidden lg:block"
+        className="absolute -z-20 right-0 md:-right-4 sm:-right-14 -top-20 w-[200px] xl:hidden lg:block"
         src={drop1}
         alt=""
         aria-hidden
       />
       <img
-        className="absolute -z-20 -top-3 2xl:-left-10 2xl:top-12 left-0 md:-left-4 sm:-left-12 w-[200px] xl:hidden lg:block lg:-top-3 lg:left-0"
+        className="absolute -z-20 -top-3 2xl:-left-14 2xl:top-12 left-0 md:-left-4 sm:-left-14 sm:-top-24 w-[128px] xl:hidden lg:block lg:-top-3 lg:left-0"
         src={drop2}
+        alt=""
+        aria-hidden
+      />
+      <img
+        className="absolute -z-20 top-96 2xl:top-[450px] 2xl:-left-10 left-0 md:top-64 md:-left-20 sm:hidden w-[330px] 2xl:w-[280px] xl:hidden lg:block lg:top-80 lg:left-0"
+        src={honey}
         alt=""
         aria-hidden
       />
       <Container className="pt-28 pb-6 lg:pb-0 md:pt-24 lg:w-[95%]">
         <div className="max-w-[644px] lg:max-w-full lg:text-center">
           <span
-            className="with-orange-highlight inline-block p-2 font-bold text-center leading-none uppercase border-2 rounded-md text-black border-primary-5 border-opacity-30"
+            className="bg-white with-orange-highlight inline-block p-2 font-bold text-center leading-none uppercase border-2 rounded-md text-black border-primary-5 border-opacity-30"
             dangerouslySetInnerHTML={{ __html: date }}
           />
 
@@ -76,7 +83,7 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
         </div>
         <Illustration
           className="absolute top-[4.5rem] xl:top-24 right-8 w-[648px] xl:w-[490px] xl:right-0 lg:static lg:w-full h-auto lg:mt-12"
-          alt={Illustration}
+          alt="Illustration"
         />
       </Container>
       <RegisterFormModal isOpen={isOpen} closeModal={closeModal} />

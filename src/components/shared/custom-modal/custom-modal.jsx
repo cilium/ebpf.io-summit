@@ -17,7 +17,7 @@ const CustomModal = ({ className, isOpen, closeModal, title, children }) => (
     ariaHideApp={false}
     bodyOpenClassName="overflow-hidden touch-none"
     className={`
-      relative top-1/2 left-1/2 max-h-[90%] w-[95%] max-w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-lg border-[1.5px] border-gray-2 bg-white p-0 ${className}`}
+      z-50 relative top-1/2 left-1/2 max-h-[90%] w-[95%] max-w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-lg border-[1.5px] border-gray-2 bg-white p-0 ${className}`}
     closeTimeoutMS={200}
     shouldCloseOnOverlayClick
     onRequestClose={closeModal}

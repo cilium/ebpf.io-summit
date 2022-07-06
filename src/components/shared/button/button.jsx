@@ -15,7 +15,7 @@ const themeStyles = {
   white: 'text-black bg-white transition-opacity hover:opacity-90',
   'primary-1': 'bg-primary-1 text-black hover:bg-primary-1-hover',
   'with-border': 'text-black border-2 border-black',
-  orange: 'text-white bg-button-gradient hover:opacity-90',
+  orange: 'text-black bg-button-gradient hover:opacity-90',
   'link-primary': 'text-primary-2',
   gray: 'text-black bg-gray-4 border-[1.5px] border-gray-5 hover:bg-gray-2',
 };

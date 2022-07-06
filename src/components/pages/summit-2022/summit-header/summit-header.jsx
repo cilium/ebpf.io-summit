@@ -104,7 +104,7 @@ const SummitHeader = () => {
                       </Popover.Button>
                     </div>
                   </div>
-                  <div className="px-2 pt-2 pb-3">
+                  <div className="px-2 pt-2">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -115,9 +115,11 @@ const SummitHeader = () => {
                       </a>
                     ))}
                   </div>
-                  <Button className="w-full" type="button" onClick={openModal}>
-                    Register
-                  </Button>
+                  <div className="my-6 mx-5">
+                    <Button className="w-full" theme="orange" type="button" onClick={openModal}>
+                      Register
+                    </Button>
+                  </div>
                 </div>
               </Popover.Panel>
             </Transition>

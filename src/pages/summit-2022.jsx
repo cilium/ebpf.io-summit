@@ -37,22 +37,26 @@ const lastYear = {
     {
       number: '3k',
       unit: 'Registrations',
-      theme: 'black',
+      textColor: 'black',
+      numberColor: 'orange',
     },
     {
       number: '10',
       unit: 'Keynotes',
-      theme: 'white',
+      textColor: 'black',
+      numberColor: 'black',
     },
     {
       number: '28',
       unit: 'Companies',
-      theme: 'white',
+      textColor: 'white',
+      numberColor: 'orange',
     },
     {
       number: '2',
       unit: 'Days',
-      theme: 'black',
+      textColor: 'black',
+      numberColor: 'orange',
     },
   ],
 };
