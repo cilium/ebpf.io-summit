@@ -21,24 +21,15 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
   };
   return (
     <section className="relative lg:overflow-hidden">
-      <StaticImage
-        className="absolute -z-20 right-0 md:-right-4 sm:-right-14 -top-20 w-[200px] xl:hidden lg:block"
-        src="./images/drop-1.jpg"
-        alt=""
-        aria-hidden
-      />
-      <StaticImage
-        className="absolute -z-20 -top-3 2xl:-left-14 2xl:top-12 left-0 md:-left-4 sm:-left-14 sm:-top-24 w-[128px] xl:hidden lg:block lg:-top-3 lg:left-0"
-        src="./images/drop-2.jpg"
-        alt=""
-        aria-hidden
-      />
-      <StaticImage
-        className="absolute -z-20 top-96 2xl:top-[450px] 2xl:-left-10 left-0 md:top-64 md:-left-20 sm:hidden w-[330px] 2xl:w-[280px] xl:hidden lg:block lg:top-80 lg:left-0"
-        src="./images/honey.jpg"
-        alt=""
-        aria-hidden
-      />
+      <div className="absolute -z-20 right-0 md:-right-4 sm:-right-14 -top-20 w-[200px] xl:hidden lg:block">
+        <StaticImage src="./images/drop-1.jpg" alt="" aria-hidden />
+      </div>
+      <div className="absolute -z-20 -top-3 2xl:-left-14 2xl:top-12 left-0 md:-left-4 sm:-left-14 sm:-top-24 w-[128px] xl:hidden lg:block lg:-top-3 lg:left-0">
+        <StaticImage src="./images/drop-2.jpg" alt="" aria-hidden />
+      </div>
+      <div className="absolute -z-20 top-96 2xl:top-[450px] 2xl:-left-10 left-0 md:top-64 md:-left-20 sm:hidden w-[330px] 2xl:w-[280px] xl:hidden lg:block lg:top-80 lg:left-0">
+        <StaticImage src="./images/honey.jpg" alt="" aria-hidden />
+      </div>
       <Container className="pt-28 pb-6 lg:pb-0 md:pt-24 lg:w-[95%]">
         <div className="max-w-[644px] lg:max-w-full lg:text-center">
           <span
