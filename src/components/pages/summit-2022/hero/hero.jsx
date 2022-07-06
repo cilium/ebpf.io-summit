@@ -29,7 +29,7 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
         aria-hidden
       />
       <img
-        className="absolute -z-20 -top-3 left-0 md:-left-4 sm:-left-12 w-[200px] xl:hidden lg:block"
+        className="absolute -z-20 -top-3 2xl:-left-10 2xl:top-12 left-0 md:-left-4 sm:-left-12 w-[200px] xl:hidden lg:block lg:-top-3 lg:left-0"
         src={drop2}
         alt=""
         aria-hidden
