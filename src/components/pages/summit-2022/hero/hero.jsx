@@ -21,7 +21,7 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
     setIsOpen(false);
   };
   return (
-    <section className="relative overflow-x-hidden">
+    <section className="relative lg:overflow-hidden">
       <img
         className="absolute -z-20 right-0 md:-right-4 sm:-right-12 -top-20 w-[200px] xl:hidden lg:block"
         src={drop1}
