@@ -121,14 +121,14 @@ const LastYear = ({ title, description, link, items }) => {
           <ul className="mt-[8.5rem] mx-auto lg:mt-32 md:mt-28 sm:mt-24 grid grid-cols-4 max-w-[760px] lg:max-w-[740px] md:max-w-[400px] gap-x-10 lg:gap-x-[82px] place-items-center gap-y-8 md:grid-cols-2 md:gap-x-8">
             {items.map(({ number, unit, textColor, numberColor }, index) => {
               const isTextBlack = textColor === 'black';
-              const isNumberBlack = numberColor === 'black';
+              const isNumberWhite = numberColor === 'white';
               return (
                 <li className="relative max-w-[160px] lg:min-w-[140px]" key={index}>
                   <img src={shapes[index]} alt="" aria-hidden />
                   <div className="absolute flex flex-col transform -translate-x-1/2 text-center -translate-y-1/2 top-1/2 left-1/2 space-y-0.5">
                     <span
                       className={`font-semibold leading-none text-7xl lg:text-5xl md:text-6xl xs:text-5xl ${
-                        isNumberBlack ? 'text-black' : 'text-primary-5'
+                        isNumberWhite ? 'text-white' : 'text-primary-5'
                       }`}
                     >
                       {number}
@@ -189,7 +189,7 @@ LastYear.propTypes = {
       number: PropTypes.string.isRequired,
       unit: PropTypes.string.isRequired,
       textColor: PropTypes.oneOf(['black', 'white']).isRequired,
-      numberColor: PropTypes.oneOf(['black', 'orange']).isRequired,
+      numberColor: PropTypes.oneOf(['white', 'orange']).isRequired,
     })
   ).isRequired,
 };

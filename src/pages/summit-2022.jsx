@@ -43,8 +43,8 @@ const lastYear = {
     {
       number: '10',
       unit: 'Keynotes',
-      textColor: 'black',
-      numberColor: 'black',
+      textColor: 'white',
+      numberColor: 'white',
     },
     {
       number: '28',
