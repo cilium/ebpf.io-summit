@@ -48,7 +48,7 @@ module.exports = {
       backgroundImage: () => ({
         'hero-foundation': "url('/images/foundation-background.svg')",
         'join-banner': "url('/images/join-background.svg')",
-        'button-gradient': 'linear-gradient(82.18deg, #DB6C2E -0.66%, #FD9800 97.55%)',
+        'button-gradient': 'linear-gradient(82.18deg, #EC6113 -0.66%, #FF9900 97.55%)',
         'orange-gradient': 'linear-gradient(265.88deg, #FFE100 -0.55%, #FF6B00 98.81%)',
       }),
       typography: (theme) => ({
