@@ -10,7 +10,7 @@ const CfpBanner = () => (
   <section className="mt-32 lg:mt-28 md:mt-24 sm:mt-20" id="cfp">
     <Container>
       <div className="mix-blend-multiply absolute w-[378px] xl:w-[300px] xl:right-0 xl:bottom-6 lg:w-[250px] lg:bottom-12 md:top-32 sm:hidden -right-10 z-10 bottom-0">
-        <StaticImage src="./images/drop.png" alt="" aria-hidden />
+        <StaticImage src="./images/drop.png" alt="" loading="eager" aria-hidden />
       </div>
       <div className="relative overflow-hidden bg-orange-gradient flex space-x-9 items-center justify-center py-8 rounded-lg md:flex-col md:space-x-0 px-6">
         <img

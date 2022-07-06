@@ -1,4 +1,7 @@
 // Gatsby has dotenv by default
+
+const { nominalTypeHack } = require('prop-types');
+
 // eslint-disable-next-line import/no-extraneous-dependencies
 require('dotenv').config();
 
@@ -29,7 +32,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sharp',
       options: {
-        defaultQuality: 85,
+        defaults: {
+          quality: 85,
+          placeholder: 'none',
+        },
       },
     },
     {
