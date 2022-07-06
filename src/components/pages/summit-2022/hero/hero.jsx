@@ -21,15 +21,15 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
     setIsOpen(false);
   };
   return (
-    <section className="relative">
+    <section className="relative overflow-x-hidden">
       <img
-        className="absolute -z-10 right-0 md:-right-4 sm:-right-12 w-[200px] xl:hidden -top-20 lg:block"
+        className="absolute -z-20 right-0 md:-right-4 sm:-right-12 -top-20 w-[200px] xl:hidden lg:block"
         src={drop1}
         alt=""
         aria-hidden
       />
       <img
-        className="absolute -z-10 -top-3 left-0 md:-left-4 sm:-left-12 w-[200px] xl:hidden lg:block"
+        className="absolute -z-20 -top-3 left-0 md:-left-4 sm:-left-12 w-[200px] xl:hidden lg:block"
         src={drop2}
         alt=""
         aria-hidden
