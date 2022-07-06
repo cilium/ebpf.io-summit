@@ -1,3 +1,4 @@
+import { StaticImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
@@ -7,9 +8,6 @@ import Heading from 'components/shared/heading';
 import RegisterFormModal from 'components/shared/register-form-modal';
 import SlackIcon from 'icons/slack.inline.svg';
 
-import drop1 from './images/drop-1.png';
-import drop2 from './images/drop-2.png';
-import honey from './images/honey.png';
 import Illustration from './images/illustration.inline.svg';
 
 const Hero = ({ date, title, description, firstButton, secondButton }) => {
@@ -23,21 +21,21 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
   };
   return (
     <section className="relative lg:overflow-hidden">
-      <img
+      <StaticImage
         className="absolute -z-20 right-0 md:-right-4 sm:-right-14 -top-20 w-[200px] xl:hidden lg:block"
-        src={drop1}
+        src="./images/drop-1.jpg"
         alt=""
         aria-hidden
       />
-      <img
+      <StaticImage
         className="absolute -z-20 -top-3 2xl:-left-14 2xl:top-12 left-0 md:-left-4 sm:-left-14 sm:-top-24 w-[128px] xl:hidden lg:block lg:-top-3 lg:left-0"
-        src={drop2}
+        src="./images/drop-2.jpg"
         alt=""
         aria-hidden
       />
-      <img
+      <StaticImage
         className="absolute -z-20 top-96 2xl:top-[450px] 2xl:-left-10 left-0 md:top-64 md:-left-20 sm:hidden w-[330px] 2xl:w-[280px] xl:hidden lg:block lg:top-80 lg:left-0"
-        src={honey}
+        src="./images/honey.jpg"
         alt=""
         aria-hidden
       />
