@@ -136,7 +136,7 @@ const SummitHeader = () => {
         <Heading className="text-center" size="lg" tag="h2">
           Register for eBPF Summit
         </Heading>
-        <HubspotForm className="min-h-[870px] mt-8" hubspotFormId={HUBSPOT_FORM_ID} />
+        <HubspotForm className="min-h-[400px] mt-8" hubspotFormId={HUBSPOT_FORM_ID} />
       </CustomModal>
     </div>
   );
