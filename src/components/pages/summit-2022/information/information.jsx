@@ -28,7 +28,7 @@ const cardItems = [
   {
     title: 'Trending technologies',
     description:
-      'Just like last year, we will hear from both end-users sharing their experience using eBPF as well as developers actively working on eBPF and eBPF projects.',
+      'eBPF is quickly becoming one of the most talked about technologies in our industry - enabling a new generation of networking, observability and security tools.',
     iconName: 'trending',
   },
 ];
