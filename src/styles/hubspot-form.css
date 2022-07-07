@@ -1,5 +1,15 @@
 /* stylelint-disable unit-whitelist */
 .hubspot-form {
+  .submitted-message {
+    span {
+      @apply no-underline !important;
+    }
+
+    a {
+      @apply text-primary-2 font-bold no-underline hover:text-black transition-colors duration-200 !important;
+    }
+  }
+
   .hs-form {
     fieldset {
       @apply max-w-none mb-5 text-sm;
