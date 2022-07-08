@@ -152,6 +152,7 @@ const LastYear = ({ title, description, link, items }) => {
               className="border-[1.5px] border-gray-2 rounded-lg bg-white p-8 flex flex-col justify-start lg:p-7"
               key={index}
               to={url}
+              target="_blank"
             >
               <div className="flex space-x-3 items-center self-start">
                 <GatsbyImage image={getImage(avatar)} alt={name} />
