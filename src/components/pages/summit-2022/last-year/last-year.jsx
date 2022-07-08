@@ -127,7 +127,7 @@ const LastYear = ({ title, description, link, items }) => {
                   <img src={shapes[index]} alt="" aria-hidden />
                   <div className="absolute flex flex-col transform -translate-x-1/2 text-center -translate-y-1/2 top-1/2 left-1/2 space-y-0.5">
                     <span
-                      className={`font-semibold leading-none text-7xl lg:text-5xl md:text-6xl xs:text-5xl ${
+                      className={`font-semibold leading-none text-[64px] lg:text-5xl md:text-6xl xs:text-5xl ${
                         isNumberWhite ? 'text-white' : 'text-primary-5'
                       }`}
                     >

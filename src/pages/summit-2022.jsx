@@ -35,19 +35,19 @@ const lastYear = {
   },
   items: [
     {
-      number: '3k',
+      number: '3.6k',
       unit: 'Registrations',
       textColor: 'black',
       numberColor: 'orange',
     },
     {
-      number: '10',
+      number: '7',
       unit: 'Keynotes',
       textColor: 'white',
       numberColor: 'white',
     },
     {
-      number: '28',
+      number: '30',
       unit: 'Companies',
       textColor: 'white',
       numberColor: 'orange',
