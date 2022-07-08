@@ -3,8 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   mode: 'jit',
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
       body: ['"Inter"', ...defaultTheme.fontFamily.sans],
@@ -16,7 +15,6 @@ module.exports = {
       lg: { max: '1023.98px' },
       md: { max: '767.98px' },
       sm: { max: '639.98px' },
-      // TODO: Remove this one in case it won't be useful
       xs: { max: '413.98px' },
     },
     extend: {
@@ -29,12 +27,15 @@ module.exports = {
           2: '#00ACE6',
           3: '#CFEDFC',
           4: '#FDF1D0',
+          5: '#FFA41D',
           '1-hover': '#E8CD02',
         },
         gray: {
           1: '#808080',
           2: '#F2F2F2',
           3: '#FAFAFA',
+          4: '#F6F6F6',
+          5: '#EBEBEB',
         },
         yellow: {
           1: '#FEF8E7',
@@ -44,9 +45,11 @@ module.exports = {
         xl: ['1.25rem', '1.5'],
         lg: ['1.125rem', '1.5'],
       },
-      backgroundImage: (theme) => ({
+      backgroundImage: () => ({
         'hero-foundation': "url('/images/foundation-background.svg')",
         'join-banner': "url('/images/join-background.svg')",
+        'button-gradient': 'linear-gradient(82.18deg, #EC6113 -0.66%, #FF9900 97.55%)',
+        'orange-gradient': 'linear-gradient(265.88deg, #FFE100 -0.55%, #FF6B00 98.81%)',
       }),
       typography: (theme) => ({
         DEFAULT: {

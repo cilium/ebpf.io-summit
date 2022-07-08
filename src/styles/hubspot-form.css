@@ -1,0 +1,114 @@
+/* stylelint-disable unit-whitelist */
+.hubspot-form {
+  .submitted-message {
+    span {
+      @apply no-underline !important;
+    }
+
+    a {
+      @apply text-primary-2 font-bold no-underline hover:text-black transition-colors duration-200 !important;
+    }
+  }
+
+  .hs-form {
+    fieldset {
+      @apply max-w-none mb-5 text-sm;
+
+      &.form-columns-2 {
+        @apply grid grid-cols-2 gap-x-8 lg:grid-cols-1 gap-y-5;
+      }
+
+      .hs-form-field {
+        @apply !w-full;
+
+        > label {
+          @apply text-sm font-medium;
+        }
+      }
+
+      .input {
+        @apply !mr-0 mt-2;
+      }
+
+      input[type='text'],
+      input[type='email'],
+      select {
+        @apply h-11 rounded-sm px-4 border bg-no-repeat border-[#CCCCCC] !w-full appearance-none focus-visible:outline-none focus:border-blue-500;
+
+        &.error {
+          @apply border-red-500 !important;
+        }
+      }
+
+      select {
+        @apply px-4;
+
+        background-image: url('/images/dropdown-arrow.svg');
+        background-position-x: calc(100% - 16px);
+        background-position-y: 18px;
+
+        &.is-placeholder {
+          @apply text-gray-1;
+        }
+      }
+
+      .hs-form-checkbox-display,
+      .hs-form-booleancheckbox-display {
+        @apply relative cursor-pointer;
+
+        span:not(.hs-form-required) {
+          @apply block font-normal transition-colors duration-200 !ml-0;
+          @apply pl-7 !important;
+
+          &::before {
+            @apply right-5 left-auto border-gray-2 !important;
+          }
+
+          &::after {
+            content: '';
+
+            @apply absolute top-0 border bg-gray-3 rounded border-[#cccccc] left-0 block transform w-5 h-5 !important;
+          }
+        }
+
+        input[type='checkbox'] {
+          @apply sr-only;
+
+          &:hover {
+            ~ span::after {
+              @apply !border-blue-500;
+            }
+          }
+
+          &:checked {
+            ~ span::after {
+              @apply border-blue-500 bg-blue-500 bg-center bg-no-repeat !important;
+
+              background-image: url('/images/check-icon.svg') !important;
+            }
+          }
+        }
+      }
+
+      .hs-error-msgs {
+        label {
+          @apply absolute mt-1 text-xs font-normal text-red-500;
+        }
+      }
+
+      .legal-consent-container {
+        @apply text-gray-1;
+      }
+
+      .inputs-list.multi-container {
+        @apply space-y-4 mt-4;
+      }
+    }
+
+    input[type='submit'] {
+      @apply rounded-lg text-white px-5 py-[18px] leading-none font-extrabold hover:opacity-90 transition-colors duration-200;
+
+      background: linear-gradient(82.18deg, #db6c2e -0.66%, #fd9800 97.55%);
+    }
+  }
+}

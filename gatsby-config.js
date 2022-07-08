@@ -1,4 +1,7 @@
 // Gatsby has dotenv by default
+
+const { nominalTypeHack } = require('prop-types');
+
 // eslint-disable-next-line import/no-extraneous-dependencies
 require('dotenv').config();
 
@@ -16,6 +19,7 @@ module.exports = {
     authorTwitterAccount: '@',
   },
   plugins: [
+    'gatsby-plugin-twitter',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
@@ -28,7 +32,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sharp',
       options: {
-        defaultQuality: 85,
+        defaults: {
+          quality: 85,
+          placeholder: 'none',
+        },
       },
     },
     {
@@ -37,8 +44,8 @@ module.exports = {
         name: 'gatsby-starter-default',
         short_name: 'starter',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#1A1A1A',
+        theme_color: '#1A1A1A',
         display: 'minimal-ui',
         icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MainLayout from 'layouts/summit';
+import MainLayout from 'layouts/summit-2021';
 
 const NotFoundPage = () => (
   <MainLayout>
