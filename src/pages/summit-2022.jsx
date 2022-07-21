@@ -6,6 +6,7 @@ import CfpBanner from 'components/pages/summit-2022/cfp-banner';
 import Hero from 'components/pages/summit-2022/hero';
 import Information from 'components/pages/summit-2022/information';
 import LastYear from 'components/pages/summit-2022/last-year';
+import Schedule from 'components/pages/summit-2022/schedule';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'layouts/summit-2022';
 
@@ -23,6 +24,10 @@ const hero = {
     url: 'https://ebpf.io/slack',
     title: 'Join Summit Slack',
   },
+};
+
+const speakerWall = {
+  title: 'Speaker wall',
 };
 
 const lastYear = {
@@ -73,6 +78,8 @@ const Summit2022 = () => (
       }}
     />
     <Hero {...hero} />
+
+    <Schedule {...speakerWall} />
     <CfpBanner />
     <Information />
     <LastYear {...lastYear} />
