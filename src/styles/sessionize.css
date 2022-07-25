@@ -60,11 +60,7 @@
 #sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__name,
 #sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__tagline,
 #sessionize.sessionize-wrapper .sz-timezone__radio input[type='radio']:checked + label {
-  @apply !text-white;
-}
-
-#sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__tagline {
-  @apply opacity-60;
+  @apply !text-black;
 }
 
 #sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__sessions li {
@@ -81,8 +77,60 @@
   @apply hidden;
 }
 
+#sessionize.sessionize-wrapper .sz-speaker--compact .sz-speaker__photo {
+  @apply border-none mb-0 !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--compact {
+  @apply flex flex-col items-center !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--compact .sz-speaker__name {
+  @apply text-2xl leading-normal mt-5 !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--compact .sz-speaker__tagline {
+  @apply opacity-70 text-lg mt-2.5 max-w-[280px] self-center !important;
+}
+
+#sessionize.sessionize-wrapper .sz-modal {
+  @apply p-10 max-w-3xl !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__photo {
+  @apply w-[72px] h-auto mb-0 mr-6 !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__photo img {
+  @apply rounded-full !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--full {
+  @apply !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__name {
+  @apply text-[28px] font-semibold !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__tagline {
+  @apply font-semibold mt-1.5 !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__bio {
+  @apply text-lg mt-5 indent-0 !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker__sessions {
+  @apply mt-6 !important;
+}
+
 #sessionize.sessionize-wrapper .sz-modal-overlay {
   @apply !bg-black opacity-20;
+}
+
+#sessionize.sessionize-wrapper .sz-modal__close {
+  @apply border-none top-8 right-10 w-4 h-4 !important;
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card a:hover,
@@ -99,4 +147,12 @@
 
 #sessionize.sessionize-wrapper .sz-modal-container-inner {
   @apply px-6;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker__link {
+  @apply border-none bg-white !important;
+
+  .sz-speaker__link-icon {
+    @apply fill-primary-2 stroke-primary-2 hover:fill-primary-3 hover:stroke-primary-3 transition-colors duration-200 !important;
+  }
 }

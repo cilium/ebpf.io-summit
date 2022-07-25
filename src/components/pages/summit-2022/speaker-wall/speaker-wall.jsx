@@ -1,24 +1,23 @@
 import PropTypes from 'prop-types';
 import React, { useCallback, useState, useEffect } from 'react';
 
-import Button from 'components/shared/button';
 import Container from 'components/shared/container';
 import DangerousHtml from 'components/shared/dangerous-html';
 import Heading from 'components/shared/heading';
 
-const fetchScheduleData = async (cb) => {
+const fetchSpeakersData = async (cb) => {
   try {
     const res = await fetch(process.env.GATSBY_SESSIONIZE_URL);
     const data = await res.text();
     cb(data);
   } catch (e) {
     // eslint-disable-next-line
-    console.warn('Can not fetch the schedule:', { e });
+    console.warn('Can not fetch the speakers:', { e });
   }
 };
 
-const Schedule = ({ title }) => {
-  const [scheduleHTML, setScheduleHTML] = useState('');
+const SpeakerWall = ({ title }) => {
+  const [speakersHTML, setSpeakersHTML] = useState('');
 
   const modifySessionizeScript = useCallback((html) => {
     // this requires for the sessionize logic to run
@@ -26,29 +25,29 @@ const Schedule = ({ title }) => {
     const htmlWithModifiedScriptAndReplacedAmpersand = html
       .replace(/(showLocalTimezone = true;)([\s\S]+)$/m, '$1sessionize.onLoad();$2')
       .replace(/&amp;/g, '&');
-    setScheduleHTML(htmlWithModifiedScriptAndReplacedAmpersand);
+    setSpeakersHTML(htmlWithModifiedScriptAndReplacedAmpersand);
   }, []);
 
   useEffect(() => {
     if (process.env.GATSBY_SESSIONIZE_URL) {
-      fetchScheduleData(modifySessionizeScript);
+      fetchSpeakersData(modifySessionizeScript);
     }
   }, [modifySessionizeScript]);
 
   return (
-    <section className="bg-gray-3 py-28 md:py-20" id="schedule">
+    <section className="bg-white py-28 md:py-20" id="speakers">
       <Container>
         <Heading className="text-center" tag="h2">
           {title}
         </Heading>
-        {scheduleHTML ? <DangerousHtml className="mt-6" html={scheduleHTML} /> : null}
+        {speakersHTML ? <DangerousHtml className="mt-20" html={speakersHTML} /> : null}
       </Container>
     </section>
   );
 };
 
-Schedule.propTypes = {
+SpeakerWall.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default Schedule;
+export default SpeakerWall;
