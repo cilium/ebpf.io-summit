@@ -60,7 +60,7 @@
 #sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__name,
 #sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__tagline,
 #sessionize.sessionize-wrapper .sz-timezone__radio input[type='radio']:checked + label {
-  @apply !text-black;
+  @apply !text-white;
 }
 
 #sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__tagline {

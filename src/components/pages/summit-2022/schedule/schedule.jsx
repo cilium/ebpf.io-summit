@@ -17,7 +17,7 @@ const fetchScheduleData = async (cb) => {
   }
 };
 
-const Schedule = ({ title, buttonLink, buttonText, bottomText }) => {
+const Schedule = ({ title }) => {
   const [scheduleHTML, setScheduleHTML] = useState('');
 
   const modifySessionizeScript = useCallback((html) => {
@@ -42,12 +42,6 @@ const Schedule = ({ title, buttonLink, buttonText, bottomText }) => {
           {title}
         </Heading>
         {scheduleHTML ? <DangerousHtml className="mt-6" html={scheduleHTML} /> : null}
-        <div className="text-center">
-          <Button className="mt-9" theme="black" to={buttonLink}>
-            {buttonText}
-          </Button>
-          <span className="block text-xs text-gray-1 mt-2.5">{bottomText}</span>
-        </div>
       </Container>
     </section>
   );
