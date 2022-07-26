@@ -40,7 +40,7 @@ const icons = {
 };
 
 const Information = () => (
-  <section className="mt-32 lg:mt-28 md:mt-24 sm:mt-20" id="information">
+  <section className="mt-40 lg:mt-32 md:mt-28 sm:mt-24" id="information">
     <Container className="flex flex-col items-center">
       <div className="max-w-3xl md:max-w-2xl text-center">
         <Heading size="xl" tag="h2">
