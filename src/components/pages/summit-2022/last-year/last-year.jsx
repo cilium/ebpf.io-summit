@@ -146,7 +146,7 @@ const LastYear = ({ title, description, link, items }) => {
             })}
           </ul>
         </div>
-        <div className="mit-h-[600px] grid grid-cols-2 gap-8 md:grid-cols-1 mt-32 lg:mt-28 mg:mt-24 sm:mt-20 place-items-start">
+        <div className="min-h-[600px] grid grid-cols-2 gap-8 md:grid-cols-1 mt-32 lg:mt-28 mg:mt-24 sm:mt-20 place-items-start">
           {twitterCards.map(({ avatar, name, nick, text, time, date, url }, index) => (
             <Link
               className="border-[1.5px] min-h-[230px] w-full border-gray-2 rounded-lg bg-white p-8 flex flex-col justify-start lg:p-7"
