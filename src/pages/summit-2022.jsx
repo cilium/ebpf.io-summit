@@ -2,7 +2,6 @@
 import React from 'react';
 
 import Banner from 'components/pages/summit-2022/banner';
-import CfpBanner from 'components/pages/summit-2022/cfp-banner';
 import Hero from 'components/pages/summit-2022/hero';
 import Information from 'components/pages/summit-2022/information';
 import LastYear from 'components/pages/summit-2022/last-year';
@@ -73,7 +72,6 @@ const Summit2022 = () => (
       }}
     />
     <Hero {...hero} />
-    <CfpBanner />
     <Information />
     <LastYear {...lastYear} />
     <Banner />
