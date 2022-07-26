@@ -21,7 +21,7 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
   };
   return (
     <section className="relative lg:overflow-hidden">
-      <div className="absolute right-0 md:-right-4 sm:-right-14 -top-20 w-[200px] xl:hidden lg:block">
+      <div className="absolute -z-20 right-0 md:-right-4 sm:-right-14 -top-20 w-[200px] xl:hidden lg:block">
         <StaticImage src="./images/drop-1.jpg" alt="" loading="eager" aria-hidden />
       </div>
       <div className="absolute -top-3 2xl:-left-14 2xl:top-12 left-0 md:-left-4 sm:-left-14 sm:-top-24 w-[128px] xl:hidden lg:block lg:-top-3 lg:left-0">

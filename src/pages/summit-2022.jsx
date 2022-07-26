@@ -78,7 +78,6 @@ const Summit2022 = () => (
       }}
     />
     <Hero {...hero} />
-
     <SpeakerWall {...speakerWall} />
     <CfpBanner />
     <Information />
