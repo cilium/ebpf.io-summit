@@ -90,7 +90,7 @@
 }
 
 #sessionize.sessionize-wrapper .sz-speaker--compact .sz-speaker__tagline {
-  @apply opacity-70 text-lg mt-2.5 max-w-[280px] self-center !important;
+  @apply opacity-70 text-lg mt-1 max-w-[270px] self-center !important;
 }
 
 #sessionize.sessionize-wrapper .sz-modal {

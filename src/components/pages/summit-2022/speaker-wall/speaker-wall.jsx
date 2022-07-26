@@ -35,7 +35,7 @@ const SpeakerWall = ({ title }) => {
   }, [modifySessionizeScript]);
 
   return (
-    <section className="bg-white py-28 md:py-20" id="speakers">
+    <section className="bg-white mt-28 md:mt-24 sm:mt-20" id="speakers">
       <Container className="min-h-[408px]">
         <Heading className="text-center" tag="h2">
           {title}
