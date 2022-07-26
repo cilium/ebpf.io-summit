@@ -130,7 +130,7 @@
 }
 
 #sessionize.sessionize-wrapper .sz-modal__close {
-  @apply border-none top-8 right-10 w-4 h-4 !important;
+  @apply border-none top-6 right-8 w-4 h-4 !important;
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card a:hover,

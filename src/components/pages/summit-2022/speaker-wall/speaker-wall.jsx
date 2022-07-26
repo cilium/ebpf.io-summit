@@ -36,7 +36,7 @@ const SpeakerWall = ({ title }) => {
 
   return (
     <section className="bg-white py-28 md:py-20" id="speakers">
-      <Container>
+      <Container className="min-h-[408px]">
         <Heading className="text-center" tag="h2">
           {title}
         </Heading>
