@@ -124,7 +124,14 @@ const LastYear = ({ title, description, link, items }) => {
               const isNumberWhite = numberColor === 'white';
               return (
                 <li className="relative max-w-[160px] lg:min-w-[140px]" key={index}>
-                  <img src={shapes[index]} alt="" aria-hidden />
+                  <img
+                    src={shapes[index]}
+                    alt=""
+                    width={160}
+                    height={188}
+                    loading="lazy"
+                    aria-hidden
+                  />
                   <div className="absolute flex flex-col transform -translate-x-1/2 text-center -translate-y-1/2 top-1/2 left-1/2 space-y-0.5">
                     <span
                       className={`font-semibold leading-none text-[64px] lg:text-5xl md:text-6xl xs:text-5xl ${
