@@ -7,7 +7,6 @@ import BackmarketLogo from './images/backmarket.svg';
 import BlackberryLogo from './images/blackberry.svg';
 import DatadogLogo from './images/datadog.svg';
 import GoogleLogo from './images/google.svg';
-import IndependentLogo from './images/independent.svg';
 import IsovalentLogo from './images/isovalent.svg';
 import LinkedinLogo from './images/linkedin.svg';
 import MeltwaterLogo from './images/meltwater.svg';
@@ -38,7 +37,6 @@ const logos = [
   { logo: LinkedinLogo, title: 'Linkedin' },
   { logo: VMvareLogo, title: 'VMvare' },
   { logo: BlackberryLogo, title: 'Blackberry' },
-  { logo: IndependentLogo, title: 'Independent' },
   { logo: PolarSignalsLogo, title: 'Polar Signals' },
   { logo: SeznamLogo, title: 'Seznam' },
   { logo: QueenMaryLogo, title: 'QueenMary' },
