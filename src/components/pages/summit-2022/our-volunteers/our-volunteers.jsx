@@ -23,11 +23,6 @@ import vmvareLogo from './images/vmvare.svg';
 const title = 'Our volunteers';
 const description = 'Thank you to our program committee for helping select the sessions this year!';
 
-// eslint-disable-next-line react/prop-types
-const Logo = ({ logo, title, className }) => (
-  <img className={className} src={logo} width={110} height={32} alt={title} loading="lazy" />
-);
-
 const logos = [
   { logo: metaLogo, title: 'Meta' },
   { logo: meltwaterLogo, title: 'Meltwater' },
@@ -59,7 +54,14 @@ const OurVolunteers = () => (
       <div className="mt-12 md:mt-10 gap-5 w-full flex flex-wrap items-center justify-center">
         {logos.map(({ logo, title }, index) => (
           <div className="px-6 py-2 rounded-full shadow-card" key={index}>
-            <Logo logo={logo} title={title} className="w-auto shrink-0 h-8" />
+            <img
+              className="w-auto shrink-0 h-8"
+              src={logo}
+              width={110}
+              height={32}
+              alt={title}
+              loading="lazy"
+            />
           </div>
         ))}
       </div>
