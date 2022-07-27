@@ -23,6 +23,7 @@ const Banner = () => {
         <img
           className="absolute top-full left-[45%] sm:w-16 h-auto"
           src={shape}
+          loading="lazy"
           alt=""
           aria-hidden
         />
@@ -30,12 +31,14 @@ const Banner = () => {
           <img
             className="absolute right-0 xl:-right-10 lg:-right-20 lg:-top-48"
             src={honeycomb}
+            loading="lazy"
             alt=""
             aria-hidden
           />
           <img
             className="absolute left-0 xl:-left-14 lg:-left-20 lg:-bottom-48 sm:-left-24 sm:-bottom-52"
             src={honeycombLeft}
+            loading="lazy"
             alt=""
             aria-hidden
           />
