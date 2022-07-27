@@ -5,6 +5,7 @@ import Banner from 'components/pages/summit-2022/banner';
 import Hero from 'components/pages/summit-2022/hero';
 import Information from 'components/pages/summit-2022/information';
 import LastYear from 'components/pages/summit-2022/last-year';
+import OurVolunteers from 'components/pages/summit-2022/our-volunteers';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'layouts/summit-2022';
 
@@ -73,6 +74,7 @@ const Summit2022 = () => (
     />
     <Hero {...hero} />
     <Information />
+    <OurVolunteers />
     <LastYear {...lastYear} />
     <Banner />
   </SummitLayout>

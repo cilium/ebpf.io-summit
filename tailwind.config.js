@@ -45,6 +45,9 @@ module.exports = {
         xl: ['1.25rem', '1.5'],
         lg: ['1.125rem', '1.5'],
       },
+      boxShadow: {
+        card: '0px 2px 8px rgba(0, 0, 0, 0.1)',
+      },
       backgroundImage: () => ({
         'hero-foundation': "url('/images/foundation-background.svg')",
         'join-banner': "url('/images/join-background.svg')",
