@@ -20,8 +20,13 @@ const Banner = () => {
   return (
     <section className="pb-36 lg:pb-32 md:pb-28 sm:pb-24 bg-gray-3">
       <Container>
+        <img
+          className="absolute top-full left-[45%] sm:w-16 h-auto"
+          src={shape}
+          alt=""
+          aria-hidden
+        />
         <div className="relative flex-col bg-orange-gradient flex items-center justify-center py-14 rounded-lg px-6 overflow-hidden">
-          <img className="absolute top-full left-3/8" src={shape} alt="" aria-hidden />
           <img
             className="absolute right-0 xl:-right-10 lg:-right-20 lg:-top-48"
             src={honeycomb}
