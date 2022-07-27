@@ -3,45 +3,50 @@ import React from 'react';
 import Container from 'components/shared/container';
 import Heading from 'components/shared/heading';
 
-import BackmarketLogo from './images/backmarket.inline.svg';
-import BlackberryLogo from './images/blackberry.inline.svg';
-import DatadogLogo from './images/datadog.inline.svg';
-import GoogleLogo from './images/google.inline.svg';
-import IndependentLogo from './images/independent.inline.svg';
-import IsovalentLogo from './images/isovalent.inline.svg';
-import LinkedinLogo from './images/linkedin.inline.svg';
-import MeltwaterLogo from './images/meltwater.inline.svg';
-import MetaLogo from './images/meta.inline.svg';
-import PalantirLogo from './images/palantir.inline.svg';
-import PolarSignalsLogo from './images/polar-signals.inline.svg';
-import QualysLogo from './images/qualys.inline.svg';
-import QueenMaryLogo from './images/queen-mary.inline.svg';
-import SeznamLogo from './images/seznam-cz.inline.svg';
-import SoloIoLogo from './images/soloio.inline.svg';
-import ThoughtspotLogo from './images/thoughtspot.inline.svg';
-import VMvareLogo from './images/vmvare.inline.svg';
+import BackmarketLogo from './images/backmarket.svg';
+import BlackberryLogo from './images/blackberry.svg';
+import DatadogLogo from './images/datadog.svg';
+import GoogleLogo from './images/google.svg';
+import IndependentLogo from './images/independent.svg';
+import IsovalentLogo from './images/isovalent.svg';
+import LinkedinLogo from './images/linkedin.svg';
+import MeltwaterLogo from './images/meltwater.svg';
+import MetaLogo from './images/meta.svg';
+import PalantirLogo from './images/palantir.svg';
+import PolarSignalsLogo from './images/polar-signals.svg';
+import QualysLogo from './images/qualys.svg';
+import QueenMaryLogo from './images/queen-mary.svg';
+import SeznamLogo from './images/seznam-cz.svg';
+import SoloIoLogo from './images/soloio.svg';
+import ThoughtspotLogo from './images/thoughtspot.svg';
+import VMvareLogo from './images/vmvare.svg';
 
 const title = 'Our volunteers';
 const description = 'Thank you to our program committee for helping select the sessions this year!';
 
+// eslint-disable-next-line react/prop-types
+const Logo = ({ logo, title, className }) => (
+  <img className={className} src={logo} width={110} height={32} alt={title} loading="lazy" />
+);
+
 const logos = [
-  { logo: MetaLogo },
-  { logo: MeltwaterLogo },
-  { logo: IsovalentLogo },
-  { logo: BackmarketLogo },
-  { logo: GoogleLogo },
-  { logo: LinkedinLogo },
-  { logo: VMvareLogo },
-  { logo: BlackberryLogo },
-  { logo: IndependentLogo },
-  { logo: PolarSignalsLogo },
-  { logo: SeznamLogo },
-  { logo: QueenMaryLogo },
-  { logo: DatadogLogo },
-  { logo: QualysLogo },
-  { logo: PalantirLogo },
-  { logo: SoloIoLogo },
-  { logo: ThoughtspotLogo },
+  { logo: MetaLogo, title: 'Meta' },
+  { logo: MeltwaterLogo, title: 'Meltwater' },
+  { logo: IsovalentLogo, title: 'Isovalent' },
+  { logo: BackmarketLogo, title: 'Backmarket' },
+  { logo: GoogleLogo, title: 'Google' },
+  { logo: LinkedinLogo, title: 'Linkedin' },
+  { logo: VMvareLogo, title: 'VMvare' },
+  { logo: BlackberryLogo, title: 'Blackberry' },
+  { logo: IndependentLogo, title: 'Independent' },
+  { logo: PolarSignalsLogo, title: 'Polar Signals' },
+  { logo: SeznamLogo, title: 'Seznam' },
+  { logo: QueenMaryLogo, title: 'QueenMary' },
+  { logo: DatadogLogo, title: 'Datadog' },
+  { logo: QualysLogo, title: 'Qualys' },
+  { logo: PalantirLogo, title: 'Palantir' },
+  { logo: SoloIoLogo, title: 'Solo.io' },
+  { logo: ThoughtspotLogo, title: 'Thoughtspot' },
 ];
 
 const OurVolunteers = () => (
@@ -54,9 +59,9 @@ const OurVolunteers = () => (
         <p className="text-xl lg:text-lg md:text-base mt-5 leading-normal">{description}</p>
       </div>
       <div className="mt-12 md:mt-10 gap-5 w-full flex flex-wrap items-center justify-center">
-        {logos.map(({ logo: Logo }, index) => (
+        {logos.map(({ logo, title }, index) => (
           <div className="px-6 py-2 rounded-full shadow-card" key={index}>
-            <Logo className="h-8 w-auto shrink-0" />
+            <Logo logo={logo} title={title} className="w-auto shrink-0 h-8" />
           </div>
         ))}
       </div>
