@@ -3,22 +3,22 @@ import React from 'react';
 import Container from 'components/shared/container';
 import Heading from 'components/shared/heading';
 
-import BackmarketLogo from './images/backmarket.svg';
-import BlackberryLogo from './images/blackberry.svg';
-import DatadogLogo from './images/datadog.svg';
-import GoogleLogo from './images/google.svg';
-import IsovalentLogo from './images/isovalent.svg';
-import LinkedinLogo from './images/linkedin.svg';
-import MeltwaterLogo from './images/meltwater.svg';
-import MetaLogo from './images/meta.svg';
-import PalantirLogo from './images/palantir.svg';
-import PolarSignalsLogo from './images/polar-signals.svg';
-import QualysLogo from './images/qualys.svg';
-import QueenMaryLogo from './images/queen-mary.svg';
-import SeznamLogo from './images/seznam-cz.svg';
-import SoloIoLogo from './images/soloio.svg';
-import ThoughtspotLogo from './images/thoughtspot.svg';
-import VMvareLogo from './images/vmvare.svg';
+import backmarketLogo from './images/backmarket.svg';
+import blackberryLogo from './images/blackberry.svg';
+import datadogLogo from './images/datadog.svg';
+import googleLogo from './images/google.svg';
+import isovalentLogo from './images/isovalent.svg';
+import linkedinLogo from './images/linkedin.svg';
+import meltwaterLogo from './images/meltwater.svg';
+import metaLogo from './images/meta.svg';
+import palantirLogo from './images/palantir.svg';
+import polarSignalsLogo from './images/polar-signals.svg';
+import qualysLogo from './images/qualys.svg';
+import queenMaryLogo from './images/queen-mary.svg';
+import seznamLogo from './images/seznam-cz.svg';
+import soloIoLogo from './images/soloio.svg';
+import thoughtspotLogo from './images/thoughtspot.svg';
+import vmvareLogo from './images/vmvare.svg';
 
 const title = 'Our volunteers';
 const description = 'Thank you to our program committee for helping select the sessions this year!';
@@ -29,22 +29,22 @@ const Logo = ({ logo, title, className }) => (
 );
 
 const logos = [
-  { logo: MetaLogo, title: 'Meta' },
-  { logo: MeltwaterLogo, title: 'Meltwater' },
-  { logo: IsovalentLogo, title: 'Isovalent' },
-  { logo: BackmarketLogo, title: 'Backmarket' },
-  { logo: GoogleLogo, title: 'Google' },
-  { logo: LinkedinLogo, title: 'Linkedin' },
-  { logo: VMvareLogo, title: 'VMvare' },
-  { logo: BlackberryLogo, title: 'Blackberry' },
-  { logo: PolarSignalsLogo, title: 'Polar Signals' },
-  { logo: SeznamLogo, title: 'Seznam' },
-  { logo: QueenMaryLogo, title: 'QueenMary' },
-  { logo: DatadogLogo, title: 'Datadog' },
-  { logo: QualysLogo, title: 'Qualys' },
-  { logo: PalantirLogo, title: 'Palantir' },
-  { logo: SoloIoLogo, title: 'Solo.io' },
-  { logo: ThoughtspotLogo, title: 'Thoughtspot' },
+  { logo: metaLogo, title: 'Meta' },
+  { logo: meltwaterLogo, title: 'Meltwater' },
+  { logo: isovalentLogo, title: 'Isovalent' },
+  { logo: backmarketLogo, title: 'Backmarket' },
+  { logo: googleLogo, title: 'Google' },
+  { logo: linkedinLogo, title: 'Linkedin' },
+  { logo: vmvareLogo, title: 'VMvare' },
+  { logo: blackberryLogo, title: 'Blackberry' },
+  { logo: polarSignalsLogo, title: 'Polar Signals' },
+  { logo: seznamLogo, title: 'Seznam' },
+  { logo: queenMaryLogo, title: 'QueenMary' },
+  { logo: datadogLogo, title: 'Datadog' },
+  { logo: qualysLogo, title: 'Qualys' },
+  { logo: palantirLogo, title: 'Palantir' },
+  { logo: soloIoLogo, title: 'Solo.io' },
+  { logo: thoughtspotLogo, title: 'Thoughtspot' },
 ];
 
 const OurVolunteers = () => (
