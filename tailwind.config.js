@@ -52,7 +52,9 @@ module.exports = {
         'hero-foundation': "url('/images/foundation-background.svg')",
         'join-banner': "url('/images/join-background.svg')",
         'button-gradient': 'linear-gradient(82.18deg, #EC6113 -0.66%, #FF9900 97.55%)',
-        'orange-gradient': 'linear-gradient(265.88deg, #FFE100 -0.55%, #FF6B00 98.81%)',
+        'orange-gradient': 'linear-gradient(290.88deg, #FFE100 4%, #FF6B00 98%)',
+        'cards-gradient':
+          'linear-gradient(87.75deg, #FFFFFF 1.89%, rgba(255, 255, 255, 0) 9.43%, rgba(255, 255, 255, 0) 87.07%, #FFFFFF 98.11%)',
       }),
       typography: (theme) => ({
         DEFAULT: {

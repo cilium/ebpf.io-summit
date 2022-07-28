@@ -44,26 +44,27 @@ const logos = [
 
 const OurVolunteers = () => (
   <section className="my-32 lg:my-28 md:my-24 sm:my-20" id="volunteers">
-    <Container className="flex flex-col items-center">
+    <Container className="max-w-[1400px] flex flex-col items-center">
       <div className="max-w-3xl md:max-w-2xl text-center">
         <Heading size="xl" tag="h2">
           {title}
         </Heading>
         <p className="text-xl lg:text-lg md:text-base mt-5 leading-normal">{description}</p>
       </div>
-      <div className="mt-12 md:mt-10 gap-5 w-full flex flex-wrap items-center justify-center">
+      <div className="relative mt-12 md:mt-10 gap-5 w-full flex flex-wrap items-center justify-center">
         {logos.map(({ logo, title }, index) => (
           <div className="px-6 py-2 rounded-full shadow-card" key={index}>
             <img
               className="w-auto shrink-0 h-8"
               src={logo}
-              width={110}
+              width={120}
               height={32}
               alt={title}
               loading="lazy"
             />
           </div>
         ))}
+        <div className="absolute inset-0 w-full bg-cards-gradient" />
       </div>
     </Container>
   </section>
