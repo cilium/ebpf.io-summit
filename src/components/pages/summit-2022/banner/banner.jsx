@@ -21,7 +21,7 @@ const Banner = () => {
     <section className="pb-36 lg:pb-32 md:pb-28 sm:pb-24 bg-gray-3">
       <Container>
         <img
-          className="absolute top-full left-[45%] sm:w-16 h-auto"
+          className="absolute top-full left-1/3 sm:w-16 h-auto"
           src={shape}
           loading="lazy"
           alt=""
@@ -50,7 +50,7 @@ const Banner = () => {
             on how to participate, ahead of the event.
           </p>
           <Button
-            className="mt-7 sm:w-full px-7 py-4 rounded-lg"
+            className="mt-7 sm:w-full px-7 !py-[17px] rounded-lg text-lg leading-none"
             type="button"
             theme="black"
             onClick={openModal}

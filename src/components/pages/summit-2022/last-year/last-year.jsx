@@ -114,6 +114,7 @@ const LastYear = ({ title, description, link, items }) => {
             className="absolute -z-10 top-1/2 md:hidden translate-y-[calc(-50%-13.5rem)] left-1/2 w-[1501px] h-[1015px] max-w-none translate-x-[calc(-50%+3rem)]"
             width={1501}
             height={1015}
+            loading="lazy"
             src={hexagonBg}
             alt=""
             aria-hidden
