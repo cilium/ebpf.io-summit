@@ -75,12 +75,18 @@ const Information = () => (
         <img
           className="absolute -right-40 -bottom-20 lg:-right-72 sm:-right-64"
           src={hexagon}
+          loading="lazy"
+          width={362}
+          height={416}
           alt=""
           aria-hidden
         />
         <img
           className="absolute -left-40 lg:-left-72 -top-20 sm:-left-64"
           src={hexagon}
+          width={362}
+          height={416}
+          loading="lazy"
           alt=""
           aria-hidden
         />

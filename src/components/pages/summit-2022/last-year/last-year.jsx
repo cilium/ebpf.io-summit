@@ -114,6 +114,7 @@ const LastYear = ({ title, description, link, items }) => {
             className="absolute -z-10 top-1/2 md:hidden translate-y-[calc(-50%-13.5rem)] left-1/2 w-[1501px] h-[1015px] max-w-none translate-x-[calc(-50%+3rem)]"
             width={1501}
             height={1015}
+            loading="lazy"
             src={hexagonBg}
             alt=""
             aria-hidden
@@ -124,7 +125,14 @@ const LastYear = ({ title, description, link, items }) => {
               const isNumberWhite = numberColor === 'white';
               return (
                 <li className="relative max-w-[160px] lg:min-w-[140px]" key={index}>
-                  <img src={shapes[index]} alt="" aria-hidden />
+                  <img
+                    src={shapes[index]}
+                    alt=""
+                    width={160}
+                    height={188}
+                    loading="lazy"
+                    aria-hidden
+                  />
                   <div className="absolute flex flex-col transform -translate-x-1/2 text-center -translate-y-1/2 top-1/2 left-1/2 space-y-0.5">
                     <span
                       className={`font-semibold leading-none text-[64px] lg:text-5xl md:text-6xl xs:text-5xl ${

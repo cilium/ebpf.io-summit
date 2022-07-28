@@ -8,7 +8,7 @@ import Heading from 'components/shared/heading';
 import RegisterFormModal from 'components/shared/register-form-modal';
 import SlackIcon from 'icons/slack.inline.svg';
 
-import Illustration from './images/illustration.inline.svg';
+import illustration from './images/illustration.svg';
 
 const Hero = ({ date, title, description, firstButton, secondButton }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,7 +70,8 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
             </div>
           </div>
         </div>
-        <Illustration
+        <img
+          src={illustration}
           className="absolute top-[4.5rem] xl:top-24 right-8 w-[648px] xl:w-[490px] xl:right-0 lg:static lg:w-full h-auto lg:mt-12"
           alt="Illustration"
         />
