@@ -63,6 +63,10 @@
   @apply !text-black;
 }
 
+#sessionize.sessionize-wrapper .sz-speaker {
+  @apply !mb-0;
+}
+
 #sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__sessions li {
   @apply pl-0 text-primary-2 !important;
 }

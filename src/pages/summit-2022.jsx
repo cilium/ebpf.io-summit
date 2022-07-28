@@ -27,7 +27,7 @@ const hero = {
 };
 
 const speakerWall = {
-  title: 'Speakers',
+  title: 'Featured speakers',
 };
 
 const lastYear = {

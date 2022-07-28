@@ -36,11 +36,13 @@ const SpeakerWall = ({ title }) => {
 
   return (
     <section className="bg-white mt-40 lg:mt-32 md:mt-28 sm:mt-24" id="speakers">
-      <Container className="min-h-[408px]">
+      <Container className="min-h-[336px]">
         <Heading className="text-center" tag="h2">
           {title}
         </Heading>
-        {speakersHTML ? <DangerousHtml className="mt-20" html={speakersHTML} /> : null}
+        {speakersHTML ? (
+          <DangerousHtml className="mt-14 md:mt-12 sm:mt-10" html={speakersHTML} />
+        ) : null}
       </Container>
     </section>
   );
