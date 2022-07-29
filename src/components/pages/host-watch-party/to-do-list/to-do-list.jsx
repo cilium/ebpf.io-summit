@@ -46,7 +46,6 @@ const ToDoList = ({ title, list }) => (
                   <Button
                     className="rounded-lg h-10 px-6 md:mt-2 text-sm"
                     to={buttonUrl}
-                    type="button"
                     theme="black"
                     size="none"
                   >
