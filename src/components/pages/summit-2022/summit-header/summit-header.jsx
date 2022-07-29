@@ -61,7 +61,7 @@ const SummitHeader = () => {
                     </a>
                   ))}
                 </div>
-                <div className="flex space-x-4 lg:hidden">
+                <div className="z-20 flex space-x-4 lg:hidden">
                   <Button
                     className="rounded-lg flex space-x-2.5 text-base"
                     type="button"

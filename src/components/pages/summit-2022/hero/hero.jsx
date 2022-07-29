@@ -8,7 +8,7 @@ import Heading from 'components/shared/heading';
 import RegisterFormModal from 'components/shared/register-form-modal';
 import SlackIcon from 'icons/slack.inline.svg';
 
-import Illustration from './images/illustration.inline.svg';
+import illustration from './images/illustration.svg';
 
 const Hero = ({ date, title, description, firstButton, secondButton }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,13 +21,13 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
   };
   return (
     <section className="relative lg:overflow-hidden">
-      <div className="absolute -z-20 right-0 md:-right-4 sm:-right-14 -top-20 w-[200px] xl:hidden lg:block">
+      <div className="absolute right-0 md:-right-4 sm:-right-14 -top-20 w-[200px] xl:hidden lg:block">
         <StaticImage src="./images/drop-1.jpg" alt="" loading="eager" aria-hidden />
       </div>
-      <div className="absolute -z-20 -top-3 2xl:-left-14 2xl:top-12 left-0 md:-left-4 sm:-left-14 sm:-top-24 w-[128px] xl:hidden lg:block lg:-top-3 lg:left-0">
+      <div className="absolute -top-3 2xl:-left-14 2xl:top-12 left-0 md:-left-4 sm:-left-14 sm:-top-24 w-[128px] xl:hidden lg:block lg:-top-3 lg:left-0">
         <StaticImage src="./images/drop-2.jpg" alt="" loading="eager" aria-hidden />
       </div>
-      <div className="absolute -z-20 top-96 2xl:top-[450px] 2xl:-left-10 left-0 md:top-64 md:-left-20 sm:hidden w-[330px] 2xl:w-[280px] xl:hidden lg:block lg:top-80 lg:left-0">
+      <div className="absolute top-96 2xl:top-[450px] 2xl:-left-10 left-0 md:top-64 md:-left-20 sm:hidden w-[330px] 2xl:w-[280px] xl:hidden lg:block lg:top-80 lg:left-0">
         <StaticImage src="./images/honey.jpg" alt="" loading="eager" aria-hidden />
       </div>
       <Container className="pt-28 pb-6 lg:pb-0 md:pt-24 lg:w-[95%]">
@@ -70,7 +70,8 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
             </div>
           </div>
         </div>
-        <Illustration
+        <img
+          src={illustration}
           className="absolute top-[4.5rem] xl:top-24 right-8 w-[648px] xl:w-[490px] xl:right-0 lg:static lg:w-full h-auto lg:mt-12"
           alt="Illustration"
         />
