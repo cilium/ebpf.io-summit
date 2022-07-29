@@ -36,6 +36,7 @@ module.exports = {
           3: '#FAFAFA',
           4: '#F6F6F6',
           5: '#EBEBEB',
+          6: '#D8D8D8',
         },
         yellow: {
           1: '#FEF8E7',
@@ -44,6 +45,9 @@ module.exports = {
       fontSize: {
         xl: ['1.25rem', '1.5'],
         lg: ['1.125rem', '1.5'],
+      },
+      lineHeight: {
+        denser: '1.125',
       },
       boxShadow: {
         card: '0px 2px 8px rgba(0, 0, 0, 0.1)',
