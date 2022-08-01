@@ -16,9 +16,10 @@ import SubMenu from './sub-menu';
 const HUBSPOT_FORM_ID = 'ecd4bee1-a31f-4c5c-83b6-ee7df83c885d';
 
 const navigation = [
+  { name: 'Summit', href: '/summit-2022/' },
   { name: 'Agenda', href: '/summit-2022/#agenda' },
   { name: 'Information', href: '/summit-2022/#information' },
-  { name: `Last year's`, href: `/summit-2022/#last-year's-summit` },
+  { name: `Last year's summit`, href: `/summit-2022/#last-year's-summit` },
   {
     name: 'Parties',
     menuItems: [
@@ -33,9 +34,10 @@ const navigation = [
 ];
 
 const mobileNavigation = [
+  { name: 'Summit', href: '/summit-2022/' },
   { name: 'Agenda', href: '/summit-2022/#agenda' },
   { name: 'Information', href: '/summit-2022/#information' },
-  { name: `Last year's`, href: `/summit-2022/#last-year's-summit` },
+  { name: `Last year's summit`, href: `/summit-2022/#last-year's-summit` },
   { name: 'Host a watch party', href: '/host-a-watch-party' },
   {
     name: 'Zurich',
@@ -63,7 +65,7 @@ const Header = () => {
               <nav className="relative flex items-center justify-between" aria-label="Global">
                 <div className="flex items-center flex-none lg:flex-1 -mt-2.5">
                   <div className="flex items-center justify-between w-auto lg:w-full">
-                    <Link to="/summit-2022/">
+                    <Link to="https://ebpf.io/">
                       <span className="sr-only">eBPF</span>
                       <Logo className="w-auto h-15 lg:w-auto lg:h-8" aria-label="Logo" />
                     </Link>
