@@ -31,20 +31,20 @@ const ToDoList = ({ title, list }) => (
           const Icon = icons[iconName];
           return (
             <li
-              className="flex py-8 border-b border-gray-6 border-dashed space-x-5 sm:space-x-3.5"
+              className="flex py-8 md:py-6 border-b border-gray-6 border-dashed space-x-5 sm:block sm:space-x-0"
               key={title}
             >
-              <Icon className="inline-block w-10 flex-shrink-0" />
+              <Icon className="inline-block flex-shrink-0 w-10 sm:w-auto" aria-hidden />
 
-              <div className="flex items-center justify-between space-x-2 w-full md:block md:space-x-0">
+              <div className="flex items-center justify-between space-x-2 w-full sm:block sm:space-x-0 sm:mt-3.5">
                 <div>
                   <h3 className="font-bold leading-tight text-xl sm:text-lg">{title}</h3>
-                  <p className="mt-2 text-lg sm:text-sm">{description}</p>
+                  <p className="mt-2 text-lg sm:text-sm md:mt-1">{description}</p>
                 </div>
 
                 {buttonText && buttonUrl && (
                   <Button
-                    className="rounded-lg h-10 px-6 md:mt-2 text-sm sm:w-full"
+                    className="rounded-lg h-10 px-6 md:mt-3.5 text-sm sm:w-full"
                     to={buttonUrl}
                     theme="black"
                     size="none"

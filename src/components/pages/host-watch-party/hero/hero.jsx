@@ -18,7 +18,7 @@ const Hero = ({ title, description, buttonText, buttonUrl }) => (
         />
         <p className="mt-5 max-w-[488px] lg:mx-auto text-lg">{description}</p>
         <Button
-          className="h-[52px] px-6 rounded-lg mt-5 sm:w-full"
+          className="h-[52px] px-6 rounded-lg mt-5 sm:w-full md:h-[44px]"
           to={buttonUrl}
           theme="black"
           size="nonde"
