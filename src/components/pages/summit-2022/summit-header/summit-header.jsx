@@ -15,8 +15,8 @@ import Logo from 'images/logo.inline.svg';
 const HUBSPOT_FORM_ID = 'ecd4bee1-a31f-4c5c-83b6-ee7df83c885d';
 
 const navigation = [
-  { name: 'Information', href: '/summit-2022/#information' },
   { name: 'Agenda', href: '/summit-2022/#agenda' },
+  { name: 'Information', href: '/summit-2022/#information' },
   { name: `Last year's summit`, href: `/summit-2022/#last-year-summit` },
 ];
 
