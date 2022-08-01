@@ -34,7 +34,7 @@ const ToDoList = ({ title, list }) => (
               className="flex py-8 border-b border-gray-6 border-dashed space-x-5 sm:space-x-3.5"
               key={title}
             >
-              <Icon className="inline-block h-10 flex-shrink-0" />
+              <Icon className="inline-block w-10 flex-shrink-0" />
 
               <div className="flex items-center justify-between space-x-2 w-full md:block md:space-x-0">
                 <div>
@@ -44,7 +44,7 @@ const ToDoList = ({ title, list }) => (
 
                 {buttonText && buttonUrl && (
                   <Button
-                    className="rounded-lg h-10 px-6 md:mt-2 text-sm"
+                    className="rounded-lg h-10 px-6 md:mt-2 text-sm sm:w-full"
                     to={buttonUrl}
                     theme="black"
                     size="none"

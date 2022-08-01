@@ -17,7 +17,12 @@ const Hero = ({ title, description, buttonText, buttonUrl }) => (
           innerHTML={title}
         />
         <p className="mt-5 max-w-[488px] lg:mx-auto text-lg">{description}</p>
-        <Button className="h-[52px] px-6 rounded-lg mt-5" to={buttonUrl} theme="black" size="nonde">
+        <Button
+          className="h-[52px] px-6 rounded-lg mt-5 sm:w-full"
+          to={buttonUrl}
+          theme="black"
+          size="nonde"
+        >
           {buttonText}
         </Button>
       </div>
