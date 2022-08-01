@@ -22,7 +22,7 @@ const navigation = [
   { name: 'Topics', href: '/#' },
   { name: `Last year's`, href: `/summit-2022/#last-year's-summit` },
   {
-    name: `Parties`,
+    name: 'Parties',
     menuItems: [
       { name: 'Host a watch party', href: '/host-a-watch-party' },
       {
@@ -39,10 +39,10 @@ const mobileNavigation = [
   { name: 'Information', href: '/summit-2022/#information' },
   { name: 'Topics', href: '/#' },
   { name: `Last year's`, href: `/summit-2022/#last-year's-summit` },
-  { name: `Host a watch party'`, href: `/host-a-watch-party` },
+  { name: 'Host a watch party', href: '/host-a-watch-party' },
   {
-    name: `Zurich'`,
-    href: `https://community.cncf.io/events/details/cncf-cilium-zurich-presents-ebpf-summit-watch-party/`,
+    name: 'Zurich',
+    href: 'https://community.cncf.io/events/details/cncf-cilium-zurich-presents-ebpf-summit-watch-party/',
   },
 ];
 
