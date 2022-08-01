@@ -16,10 +16,8 @@ import SubMenu from './sub-menu';
 const HUBSPOT_FORM_ID = 'ecd4bee1-a31f-4c5c-83b6-ee7df83c885d';
 
 const navigation = [
-  { name: 'Featured Speakers', href: '/summit-2022/#featured-speakers' },
   { name: 'Agenda', href: '/summit-2022/#agenda' },
   { name: 'Information', href: '/summit-2022/#information' },
-  { name: 'Topics', href: '/#' },
   { name: `Last year's`, href: `/summit-2022/#last-year's-summit` },
   {
     name: 'Parties',
@@ -28,21 +26,21 @@ const navigation = [
       {
         name: 'Zurich',
         href: 'https://community.cncf.io/events/details/cncf-cilium-zurich-presents-ebpf-summit-watch-party/',
+        target: '_blank',
       },
     ],
   },
 ];
 
 const mobileNavigation = [
-  { name: 'Featured Speakers', href: '/summit-2022/#featured-speakers' },
   { name: 'Agenda', href: '/summit-2022/#agenda' },
   { name: 'Information', href: '/summit-2022/#information' },
-  { name: 'Topics', href: '/#' },
   { name: `Last year's`, href: `/summit-2022/#last-year's-summit` },
   { name: 'Host a watch party', href: '/host-a-watch-party' },
   {
     name: 'Zurich',
     href: 'https://community.cncf.io/events/details/cncf-cilium-zurich-presents-ebpf-summit-watch-party/',
+    target: '_blank',
   },
 ];
 
@@ -65,7 +63,7 @@ const Header = () => {
               <nav className="relative flex items-center justify-between" aria-label="Global">
                 <div className="flex items-center flex-none lg:flex-1 -mt-2.5">
                   <div className="flex items-center justify-between w-auto lg:w-full">
-                    <Link to="https://ebpf.io/">
+                    <Link to="https://ebpf.io/summit-2022/">
                       <span className="sr-only">eBPF</span>
                       <Logo className="w-auto h-15 lg:w-auto lg:h-8" aria-label="Logo" />
                     </Link>
@@ -78,16 +76,17 @@ const Header = () => {
                   </div>
                 </div>
                 <div className="flex items-center space-x-10 xl:space-x-8 lg:hidden">
-                  {navigation.map(({ name, href, menuItems }) => {
+                  {navigation.map(({ name, href, menuItems, target }, index) => {
                     const hasSubmenu = menuItems?.length > 0;
                     return (
-                      <Fragment key={name}>
+                      <Fragment key={index}>
                         {hasSubmenu ? (
                           <SubMenu name={name} href={href} menuItems={menuItems} />
                         ) : (
                           <a
-                            href={href}
                             className="font-bold leading-none transition-colors duration-200 hover:text-gray-1"
+                            href={href}
+                            target={target}
                           >
                             {name}
                           </a>
@@ -137,11 +136,12 @@ const Header = () => {
                     </div>
                   </div>
                   <div className="px-2 pt-2">
-                    {mobileNavigation.map((item) => (
+                    {mobileNavigation.map((item, index) => (
                       <a
-                        key={item.name}
-                        href={item.href}
                         className="block px-3 py-2 font-medium text-black transition-colors duration-200 rounded-md hover:text-gray-1 hover:bg-gray-5"
+                        href={item.href}
+                        target={item.target}
+                        key={index}
                       >
                         {item.name}
                       </a>
