@@ -12,12 +12,38 @@ import BeeIcon from 'icons/bee.inline.svg';
 import CloseIcon from 'icons/close.inline.svg';
 import Logo from 'images/logo.inline.svg';
 
+import SubMenu from './sub-menu';
+
 const HUBSPOT_FORM_ID = 'ecd4bee1-a31f-4c5c-83b6-ee7df83c885d';
 
 const navigation = [
   { name: 'Agenda', href: '/summit-2022/#agenda' },
   { name: 'Information', href: '/summit-2022/#information' },
   { name: `Last year's summit`, href: `/summit-2022/#last-year-summit` },
+  {
+    name: 'Parties',
+    menuItems: [
+      { name: 'Host a watch party', href: '/host-a-watch-party/' },
+      {
+        name: 'Zurich',
+        href: 'https://community.cncf.io/events/details/cncf-cilium-zurich-presents-ebpf-summit-watch-party/',
+        target: '_blank',
+      },
+    ],
+  },
+];
+
+const mobileNavigation = [
+  { name: 'Summit', href: '/summit-2022/' },
+  { name: 'Agenda', href: '/summit-2022/#agenda' },
+  { name: 'Information', href: '/summit-2022/#information' },
+  { name: `Last year's summit`, href: `/summit-2022/#last-year's-summit` },
+  { name: 'Host a watch party', href: '/host-a-watch-party/' },
+  {
+    name: 'Zurich',
+    href: 'https://community.cncf.io/events/details/cncf-cilium-zurich-presents-ebpf-summit-watch-party/',
+    target: '_blank',
+  },
 ];
 
 const SummitHeader = () => {
@@ -50,29 +76,37 @@ const SummitHeader = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex space-x-10 lg:hidden lg:space-x-3.5">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="font-bold leading-none transition-colors duration-200 hover:text-gray-1"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
+                <div className="flex items-center space-x-10 xl:space-x-8 lg:hidden">
+                  {navigation.map(({ name, href, menuItems, target }, index) => {
+                    const hasSubmenu = menuItems?.length > 0;
+                    return (
+                      <Fragment key={index}>
+                        {hasSubmenu ? (
+                          <SubMenu name={name} href={href} menuItems={menuItems} />
+                        ) : (
+                          <a
+                            className="font-bold leading-none transition-colors duration-200 hover:text-gray-1"
+                            href={href}
+                            target={target}
+                          >
+                            {name}
+                          </a>
+                        )}
+                      </Fragment>
+                    );
+                  })}
                 </div>
-                <div className="z-20 flex space-x-4 lg:hidden">
-                  <Button
-                    className="rounded-lg flex space-x-2.5 text-base"
-                    type="button"
-                    size="xs"
-                    theme="black"
-                    onClick={openModal}
-                  >
-                    <BeeIcon />
-                    <span>Register</span>
-                  </Button>
-                </div>
+
+                <Button
+                  className="rounded-lg flex space-x-2.5 text-base lg:hidden"
+                  type="button"
+                  size="xs"
+                  theme="black"
+                  onClick={openModal}
+                >
+                  <BeeIcon />
+                  <span>Register</span>
+                </Button>
               </nav>
             </Container>
 
@@ -104,7 +138,7 @@ const SummitHeader = () => {
                     </div>
                   </div>
                   <div className="px-2 pt-2">
-                    {navigation.map((item) => (
+                    {mobileNavigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}

@@ -8,6 +8,7 @@ import CustomModal from 'components/shared/custom-modal';
 import Heading from 'components/shared/heading';
 import HubspotForm from 'components/shared/hubspot-form';
 import Link from 'components/shared/link';
+import BeeIcon from 'icons/bee.inline.svg';
 import CloseIcon from 'icons/close.inline.svg';
 import Logo from 'images/logo.inline.svg';
 
@@ -23,7 +24,7 @@ const navigation = [
   {
     name: 'Parties',
     menuItems: [
-      { name: 'Host a watch party', href: '/host-a-watch-party' },
+      { name: 'Host a watch party', href: '/host-a-watch-party/' },
       {
         name: 'Zurich',
         href: 'https://community.cncf.io/events/details/cncf-cilium-zurich-presents-ebpf-summit-watch-party/',
@@ -38,7 +39,7 @@ const mobileNavigation = [
   { name: 'Agenda', href: '/summit-2022/#agenda' },
   { name: 'Information', href: '/summit-2022/#information' },
   { name: `Last year's summit`, href: `/summit-2022/#last-year's-summit` },
-  { name: 'Host a watch party', href: '/host-a-watch-party' },
+  { name: 'Host a watch party', href: '/host-a-watch-party/' },
   {
     name: 'Zurich',
     href: 'https://community.cncf.io/events/details/cncf-cilium-zurich-presents-ebpf-summit-watch-party/',
@@ -97,16 +98,16 @@ const Header = () => {
                     );
                   })}
                 </div>
-                <div className="flex space-x-4 lg:hidden">
-                  <Button
-                    className="rounded-lg h-10 text-sm px-6"
-                    size="none"
-                    theme="black"
-                    onClick={openModal}
-                  >
-                    Register
-                  </Button>
-                </div>
+
+                <Button
+                  className="rounded-lg flex space-x-2.5 text-base lg:hidden"
+                  size="xs"
+                  theme="black"
+                  onClick={openModal}
+                >
+                  <BeeIcon />
+                  <span>Register</span>
+                </Button>
               </nav>
             </Container>
 
