@@ -21,7 +21,7 @@ const navigation = [
   { name: 'Information', href: '/summit-2022/#information' },
   { name: `Last year's summit`, href: `/summit-2022/#last-year-summit` },
   {
-    name: 'Parties',
+    name: 'Watch Parties',
     menuItems: [
       { name: 'Host a watch party', href: '/host-a-watch-party/' },
       {
