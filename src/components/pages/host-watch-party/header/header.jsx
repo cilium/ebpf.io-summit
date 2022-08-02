@@ -1,6 +1,6 @@
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import React, { useState, Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 
 import Button from 'components/shared/button';
 import Container from 'components/shared/container';
@@ -17,9 +17,10 @@ import SubMenu from './sub-menu';
 const HUBSPOT_FORM_ID = 'ecd4bee1-a31f-4c5c-83b6-ee7df83c885d';
 
 const navigation = [
+  { name: 'Summit', href: '/summit-2022/' },
   { name: 'Agenda', href: '/summit-2022/#agenda' },
   { name: 'Information', href: '/summit-2022/#information' },
-  { name: `Last year's summit`, href: `/summit-2022/#last-year-summit` },
+  { name: `Last year's summit`, href: `/summit-2022/#last-year's-summit` },
   {
     name: 'Watch Parties',
     menuItems: [
@@ -34,6 +35,7 @@ const navigation = [
 ];
 
 const mobileNavigation = [
+  { name: 'Summit', href: '/summit-2022/' },
   { name: 'Agenda', href: '/summit-2022/#agenda' },
   { name: 'Information', href: '/summit-2022/#information' },
   { name: `Last year's summit`, href: `/summit-2022/#last-year's-summit` },
@@ -45,7 +47,7 @@ const mobileNavigation = [
   },
 ];
 
-const SummitHeader = () => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openModal = () => {
     setIsOpen(true);
@@ -54,8 +56,9 @@ const SummitHeader = () => {
     e.stopPropagation();
     setIsOpen(false);
   };
+
   return (
-    <div className="relative z-20">
+    <div className="relative">
       <Popover>
         {({ open }) => (
           <>
@@ -98,7 +101,6 @@ const SummitHeader = () => {
 
                 <Button
                   className="rounded-lg flex space-x-2.5 text-base lg:hidden"
-                  type="button"
                   size="xs"
                   theme="black"
                   onClick={openModal}
@@ -137,11 +139,12 @@ const SummitHeader = () => {
                     </div>
                   </div>
                   <div className="px-2 pt-2">
-                    {mobileNavigation.map((item) => (
+                    {mobileNavigation.map((item, index) => (
                       <a
-                        key={item.name}
-                        href={item.href}
                         className="block px-3 py-2 font-medium text-black transition-colors duration-200 rounded-md hover:text-gray-1 hover:bg-gray-5"
+                        href={item.href}
+                        target={item.target}
+                        key={index}
                       >
                         {item.name}
                       </a>
@@ -174,4 +177,4 @@ const SummitHeader = () => {
   );
 };
 
-export default SummitHeader;
+export default Header;
