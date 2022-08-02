@@ -34,7 +34,6 @@ const navigation = [
 ];
 
 const mobileNavigation = [
-  { name: 'Summit', href: '/summit-2022/' },
   { name: 'Agenda', href: '/summit-2022/#agenda' },
   { name: 'Information', href: '/summit-2022/#information' },
   { name: `Last year's summit`, href: `/summit-2022/#last-year's-summit` },
