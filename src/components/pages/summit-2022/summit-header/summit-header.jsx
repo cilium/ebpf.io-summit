@@ -56,7 +56,7 @@ const SummitHeader = () => {
     setIsOpen(false);
   };
   return (
-    <div className="relative">
+    <div className="relative z-20">
       <Popover>
         {({ open }) => (
           <>
