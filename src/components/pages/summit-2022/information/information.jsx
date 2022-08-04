@@ -70,7 +70,7 @@ const Information = () => (
         {cardItems.map(({ iconName, title, description }, index) => {
           const Icon = icons[iconName];
           return (
-            <div
+            <article
               className="border border-gray-2 rounded-lg flex flex-col items-start p-8 lg:p-6 flex-1"
               key={index}
             >
@@ -82,7 +82,7 @@ const Information = () => (
                 {title}
               </Heading>
               <p className="mt-2.5 text-lg lg:text-base leading-normal">{description}</p>
-            </div>
+            </article>
           );
         })}
       </div>
