@@ -32,7 +32,7 @@ const Hero = ({ date, title, description, firstButton, secondButton }) => {
       </div>
       <Container className="pt-28 pb-6 lg:pb-0 md:pt-24 lg:w-[95%]">
         <div className="max-w-[644px] lg:max-w-full lg:text-center">
-          <span
+          <time
             className="bg-white with-orange-highlight inline-block p-2 font-bold text-center leading-none uppercase border-2 rounded-md text-black border-primary-5 border-opacity-30"
             dangerouslySetInnerHTML={{ __html: date }}
           />

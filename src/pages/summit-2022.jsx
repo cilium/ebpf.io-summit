@@ -1,8 +1,9 @@
-// import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
 import Banner from 'components/pages/summit-2022/banner';
 import Hero from 'components/pages/summit-2022/hero';
+import Hosts from 'components/pages/summit-2022/hosts';
 import Information from 'components/pages/summit-2022/information';
 import LastYear from 'components/pages/summit-2022/last-year';
 import OurVolunteers from 'components/pages/summit-2022/our-volunteers';
@@ -66,24 +67,67 @@ const lastYear = {
   ],
 };
 
-const Summit2022 = () => (
-  <SummitLayout>
-    <SEO
-      data={{
-        title: 'eBPF Summit 2022',
-        description:
-          'Register now for the eBPF Summit 2022, Sep 28-29, 2022, a free virtual event for DevOps, SRE, SecOps, and developers.',
-        image: ogImage,
-        slug: '/summit-2022',
-      }}
-    />
-    <Hero {...hero} />
-    <SpeakerWall {...speakerWall} />
-    <Information />
-    <OurVolunteers />
-    <LastYear {...lastYear} />
-    <Banner />
-  </SummitLayout>
-);
+const Summit2022 = () => {
+  const { tracyHolmes, duffieCooley, lizRice } = useStaticQuery(graphql`
+    query {
+      lizRice: file(relativePath: { eq: "pages/summit-2022/hosts/liz-rice.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 120)
+        }
+      }
+      duffieCooley: file(relativePath: { eq: "pages/summit-2022/hosts/duffie-cooley.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 120)
+        }
+      }
+      tracyHolmes: file(relativePath: { eq: "pages/summit-2022/hosts/tracy-holmes.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 120)
+        }
+      }
+    }
+  `);
+
+  const hosts = {
+    title: 'Your eBPF Summit Hosts',
+    items: [
+      {
+        avatar: lizRice,
+        name: 'Liz Rice',
+        position: 'Chief Open Source Officer - Isovalent',
+      },
+      {
+        avatar: tracyHolmes,
+        name: 'Tracy Holmes',
+        position: 'Technical Community Advocate - Isovalent',
+      },
+      {
+        avatar: duffieCooley,
+        name: 'Duffie Cooley',
+        position: 'Field CTO Open Source Officer - Isovalent',
+      },
+    ],
+  };
+  return (
+    <SummitLayout>
+      <SEO
+        data={{
+          title: 'eBPF Summit 2022',
+          description:
+            'Register now for the eBPF Summit 2022, Sep 28-29, 2022, a free virtual event for DevOps, SRE, SecOps, and developers.',
+          image: ogImage,
+          slug: '/summit-2022',
+        }}
+      />
+      <Hero {...hero} />
+      <SpeakerWall {...speakerWall} />
+      <Hosts {...hosts} />
+      <Information />
+      <OurVolunteers />
+      <LastYear {...lastYear} />
+      <Banner />
+    </SummitLayout>
+  );
+};
 
 export default Summit2022;

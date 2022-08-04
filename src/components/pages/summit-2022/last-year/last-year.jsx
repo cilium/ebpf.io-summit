@@ -174,10 +174,10 @@ const LastYear = ({ title, description, link, items }) => {
                 dangerouslySetInnerHTML={{ __html: text }}
               />
               <div className="mt-4 text-gray-1 leading-normal flex space-x-5 self-start">
-                <span>{time}</span>
-                <span className="relative before:absolute before:w-[3px] before:h-[3px] before:rounded-full before:block before:bg-gray-1 before:top-1/2 before:-translate-y-1/2 before:-left-3">
+                <time>{time}</time>
+                <time className="relative before:absolute before:w-[3px] before:h-[3px] before:rounded-full before:block before:bg-gray-1 before:top-1/2 before:-translate-y-1/2 before:-left-3">
                   {date}
-                </span>
+                </time>
               </div>
             </Link>
           ))}
