@@ -89,22 +89,22 @@ const Summit2022 = () => {
   `);
 
   const hosts = {
-    title: 'Your eBPF Summit hosts',
+    title: 'Your eBPF Summit Hosts',
     items: [
       {
         avatar: lizRice,
         name: 'Liz Rice',
-        position: 'Chief Open Source Officer, Isovalent',
+        position: 'Chief Open Source Officer - Isovalent',
       },
       {
         avatar: tracyHolmes,
         name: 'Tracy Holmes',
-        position: 'Technical Community Advocate, Isovalent',
+        position: 'Technical Community Advocate - Isovalent',
       },
       {
         avatar: duffieCooley,
         name: 'Duffie Cooley',
-        position: 'Field CTO Open Source Officer, Isovalent',
+        position: 'Field CTO Open Source Officer - Isovalent',
       },
     ],
   };
