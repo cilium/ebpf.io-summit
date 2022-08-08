@@ -160,3 +160,7 @@
     @apply fill-primary-2 stroke-primary-2 hover:fill-primary-3 hover:stroke-primary-3 transition-colors duration-200 !important;
   }
 }
+
+#sessionize.sessionize-wrapper .sz-speakers--wall .sz-speaker {
+  @apply w-[200px] xl:w-[300px] lg:w-[256px] !important;
+}
