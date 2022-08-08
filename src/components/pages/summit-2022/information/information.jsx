@@ -50,7 +50,7 @@ const Information = () => {
           Schedule
         </Heading>
         {data.sessionizeSchedule && (
-          <DangerousHtml className="mt-6" html={data.sessionizeSchedule} />
+          <DangerousHtml className="mt-6 w-full" html={data.sessionizeSchedule} />
         )}
         <div className="mt-14 md:mt-10 flex space-x-8 lg:space-x-6 md:flex-col md:space-x-0 md:space-y-6">
           {cardItems.map(({ iconName, title, description }, index) => {
