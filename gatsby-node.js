@@ -1,17 +1,18 @@
 const fetch = require(`node-fetch`);
 
+// Set expiration time as 24 hours in milliseconds
+const expirationTime = 24 * 60 * 60 * 1000;
+
 const createDataResolverFn =
   ({ fetchUrl, cacheKeyName, cache }) =>
   async () => {
     try {
       let data;
-      // Set expiration time as 24 hours in milliseconds
-      const expirationTime = 24 * 60 * 60 * 1000;
       const cacheKey = cacheKeyName;
       const cacheData = await cache.get(cacheKey);
       // Use cache if it is not expired
       if (cacheData && cacheData.created > Date.now() - expirationTime) {
-        data = cacheData.speakers;
+        data = cacheData.data;
       } else {
         // Use setTimeout to avoid hitting API rate limit with a random delay with interval from 500ms to 1500ms
         await new Promise((resolve) => setTimeout(resolve, Math.random() * 3000 + 500));
