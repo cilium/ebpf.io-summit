@@ -199,3 +199,17 @@
 #sessionize.sessionize-wrapper .sz-speakers--wall .sz-speaker {
   @apply w-[200px] xl:w-[300px] lg:w-[256px] !important;
 }
+
+#sessionize.sessionize-wrapper .sz-session.sz-session--full {
+  .sz-session__speakers li {
+    @apply text-gray-1 !important;
+  }
+
+  .sz-session__tags li {
+    @apply bg-white leading-none px-2 py-1.5 border border-primary-6 !important;
+  }
+
+  .sz-session__time {
+    @apply text-white bg-button-gradient hover:opacity-90 rounded-sm !important;
+  }
+}
