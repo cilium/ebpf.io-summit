@@ -210,6 +210,6 @@
   }
 
   .sz-session__time {
-    @apply text-white bg-button-gradient hover:opacity-90 rounded-sm !important;
+    @apply text-white bg-button-gradient rounded-sm !important;
   }
 }
