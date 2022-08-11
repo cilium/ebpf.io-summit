@@ -28,7 +28,7 @@
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card:hover {
-  @apply !bg-gray-3;
+  background: linear-gradient(82.18deg, #ec61130a -0.66%, #ff99000a 97.55%) !important;
 
   .sz-session__title {
     a:first-child {
@@ -52,7 +52,7 @@
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card {
-  @apply border border-gray-2 shadow-none rounded-none bg-white !important;
+  @apply border border-gray-2 shadow-none rounded-none bg-white transition-all duration-200 !important;
 
   .sz-session__title {
     a:first-child {
@@ -104,6 +104,23 @@
 
 #sessionize.sessionize-wrapper .sz-speaker.sz-speaker--full .sz-speaker__sessions li {
   @apply pl-0 text-primary-2 !important;
+}
+
+#sessionize.sessionize-wrapper .sz-speaker__sessions a {
+  @apply transition-all duration-200;
+
+  background: linear-gradient(82.18deg, #ec6113 -0.66%, #f90 97.55%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* stylelint-disable-next-line property-no-unknown */
+  text-fill-color: transparent;
+
+  &:hover {
+    background: linear-gradient(#000, #000);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 }
 
 #sessionize.sessionize-wrapper a:hover,
@@ -192,7 +209,7 @@
   @apply border-none bg-white !important;
 
   .sz-speaker__link-icon {
-    @apply fill-primary-2 stroke-primary-2 hover:fill-primary-3 hover:stroke-primary-3 transition-colors duration-200 !important;
+    @apply fill-[#ec6113] hover:fill-black transition-colors duration-200;
   }
 }
 
