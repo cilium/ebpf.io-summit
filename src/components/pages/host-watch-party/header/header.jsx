@@ -30,6 +30,11 @@ const navigation = [
         href: 'https://community.cncf.io/events/details/cncf-cilium-zurich-presents-ebpf-summit-watch-party/',
         target: '_blank',
       },
+      {
+        name: 'Berlin',
+        href: 'https://www.meetup.com/cloud-native-computing-berlin/events/287759485/',
+        target: '_blank',
+      },
     ],
   },
 ];
@@ -43,6 +48,11 @@ const mobileNavigation = [
   {
     name: 'Zurich',
     href: 'https://community.cncf.io/events/details/cncf-cilium-zurich-presents-ebpf-summit-watch-party/',
+    target: '_blank',
+  },
+  {
+    name: 'Berlin',
+    href: 'https://www.meetup.com/cloud-native-computing-berlin/events/287759485/',
     target: '_blank',
   },
 ];
