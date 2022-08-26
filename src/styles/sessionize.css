@@ -1,5 +1,5 @@
 /* stylelint-disable unit-whitelist */
-.sz-session__room {
+stylelint-disable unit-whitelist .sz-session__room {
   @apply !hidden;
 }
 
@@ -42,6 +42,20 @@
       text-fill-color: transparent;
     }
   }
+}
+
+#sessionize.sessionize-wrapper .sz-session__card {
+  .sz-session__time {
+    @apply text-gray-1;
+  }
+
+  .sz-session__title a {
+    @apply text-black;
+  }
+}
+
+#sessionize.sessionize-wrapper .sz-cssgrid .sz-session {
+  @apply bg-white !important;
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session--service .sz-session__card {
@@ -222,8 +236,9 @@
     @apply text-gray-1 !important;
   }
 
+  .sz-session__room,
   .sz-session__tags li {
-    @apply bg-white leading-none px-2 py-1.5 border border-primary-6 !important;
+    @apply bg-white leading-none px-2 py-1.5 border border-primary-6 text-black !important;
   }
 
   .sz-session__time {
