@@ -55,6 +55,9 @@ const Schedule = ({ title, buttonLink, buttonText, bottomText }) => {
 
 Schedule.propTypes = {
   title: PropTypes.string.isRequired,
+  buttonLink: PropTypes.string.isRequired,
+  buttonText: PropTypes.string.isRequired,
+  bottomText: PropTypes.string.isRequired,
 };
 
 export default Schedule;
