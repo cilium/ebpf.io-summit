@@ -1,5 +1,18 @@
 /* stylelint-disable unit-whitelist */
-stylelint-disable unit-whitelist .sz-session__room {
+
+@property --orange1 {
+  syntax: '<color>';
+  initial-value: transparent;
+  inherits: false;
+}
+
+@property --orange2 {
+  syntax: '<color>';
+  initial-value: transparent;
+  inherits: false;
+}
+
+.sz-session__room {
   @apply !hidden;
 }
 
@@ -57,7 +70,10 @@ stylelint-disable unit-whitelist .sz-session__room {
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card {
-  @apply border border-gray-2 shadow-none rounded-none bg-none bg-white transition-all duration-200 !important;
+  @apply border border-gray-2 shadow-none rounded-none bg-none bg-white !important;
+
+  background: linear-gradient(82.18deg, var(--orange1) -0.66%, var(--orange2) 97.55%) !important;
+  transition: --orange1 0.2s, --orange2 0.2s;
 
   .sz-session__title {
     a:first-child {
@@ -91,7 +107,8 @@ stylelint-disable unit-whitelist .sz-session__room {
 }
 
 #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card:hover {
-  background: linear-gradient(82.18deg, #ec61130a -0.66%, #ff99000a 97.55%) !important;
+  --orange1: #ec61130a;
+  --orange2: #ff99000a;
 
   .sz-session__title {
     a:first-child {
