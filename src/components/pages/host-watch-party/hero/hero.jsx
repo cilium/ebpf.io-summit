@@ -21,7 +21,7 @@ const Hero = ({ title, description, buttonText, buttonUrl }) => (
           className="h-[52px] px-6 rounded-lg mt-5 sm:w-full md:h-[44px]"
           to={buttonUrl}
           theme="black"
-          size="nonde"
+          size="none"
         >
           {buttonText}
         </Button>
@@ -31,7 +31,7 @@ const Hero = ({ title, description, buttonText, buttonUrl }) => (
         className="max-w-[638px] xl:max-w-[475px] lg:max-w-full lg:mt-12"
         src="./images/illustration-host-watch-party.jpg"
         loading="eager"
-        alt="Host a Watch Party ilustration"
+        alt="Host a Watch Party illustration"
       />
     </Container>
   </section>
