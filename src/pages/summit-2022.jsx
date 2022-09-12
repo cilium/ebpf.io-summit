@@ -104,7 +104,7 @@ const Summit2022 = () => {
       {
         avatar: duffieCooley,
         name: 'Duffie Cooley',
-        position: 'Field CTO Open Source Officer - Isovalent',
+        position: 'Field CTO - Isovalent',
       },
     ],
   };
