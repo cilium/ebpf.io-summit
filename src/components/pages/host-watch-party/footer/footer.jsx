@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -8,8 +7,8 @@ import LinkedInIcon from 'icons/linkedin.inline.svg';
 import TwitterIcon from 'icons/twitter.inline.svg';
 import Logo from 'images/logo.inline.svg';
 
-const Footer = ({ className }) => (
-  <footer className={classNames('py-8 lg:py-6 md:py-4', className)} aria-labelledby="footerHeading">
+const Footer = () => (
+  <footer className="py-8 lg:py-6 md:py-4" aria-labelledby="footerHeading">
     <h2 id="footerHeading" className="sr-only">
       Footer
     </h2>
