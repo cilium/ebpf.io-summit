@@ -1,4 +1,3 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -6,10 +5,12 @@ import Button from 'components/shared/button';
 import Container from 'components/shared/container';
 import Heading from 'components/shared/heading';
 
+import illustration from './images/illustration.svg';
+
 const Hero = ({ title, description, buttonText, buttonUrl }) => (
-  <section>
+  <section className="overflow-hidden">
     <Container className="flex justify-between items-center space-x-5 lg:flex-col lg:items-stretch lg:space-y-14 lg:space-x-0">
-      <div className="shrink-0 max-w-[592px] py-20 lg:pb-0 lg:max-w-full lg:text-center">
+      <div className="shrink-0 max-w-[592px] py-20 lg:pb-0 lg:max-w-full lg:text-center lg:pt-10">
         <Heading
           className="leading-denser font-bold sm:text-4xl"
           tag="h1"
@@ -26,11 +27,14 @@ const Hero = ({ title, description, buttonText, buttonUrl }) => (
           {buttonText}
         </Button>
       </div>
-      <StaticImage
-        className="max-w-[782px] xl:max-w-[700px] absolute top-1/2 -z-10 -translate-y-1/2 -right-40 lg:static lg:max-w-full lg:translate-y-0"
-        src="./images/illustration-swag.jpg"
+      <img
+        className="max-w-[782px] xl:max-w-[700px] absolute top-1/2 -z-10 -translate-y-1/2 -right-40 lg:hidden"
+        src={illustration}
+        width={782}
+        height={449}
+        alt=""
         loading="eager"
-        alt="Swag illustration"
+        aria-hidden
       />
     </Container>
   </section>
