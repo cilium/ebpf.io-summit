@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 import Container from 'components/shared/container';
@@ -46,13 +45,5 @@ const Footer = () => (
     </Container>
   </footer>
 );
-
-Footer.propTypes = {
-  className: PropTypes.string,
-};
-
-Footer.defaultProps = {
-  className: null,
-};
 
 export default Footer;
