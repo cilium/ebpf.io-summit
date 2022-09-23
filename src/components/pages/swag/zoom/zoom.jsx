@@ -30,15 +30,14 @@ const Zoom = () => (
         </div>
         <p className="mt-5 lg:mx-auto text-lg">{data.description}</p>
 
-        <Button
-          className="h-[52px] px-12 rounded-md mt-5 sm:w-full md:h-[44px]"
-          to={data.buttonUrl}
+        <a
+          className="h-[52px] px-12 rounded-md mt-5 sm:w-full md:h-[44px] text-white bg-black hover:bg-black-hover relative inline-flex justify-center items-center font-extrabold leading-none whitespace-nowrap transition-colors transition-opacity duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline disabled:pointer-events-none"
+          href={data.buttonUrl}
           theme="black"
-          size="none"
           download
         >
           {data.buttonText}
-        </Button>
+        </a>
       </div>
     </Container>
   </section>
