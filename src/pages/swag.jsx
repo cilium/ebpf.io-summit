@@ -1,31 +1,27 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 import Hero from 'components/pages/swag/hero';
 import Swag from 'components/pages/swag/swag';
 import Zoom from 'components/pages/swag/zoom';
-import SEO from 'components/shared/seo';
 import HostWatchPartyLayout from 'layouts/host-watch-party';
 
 const hero = {
   title: 'eBPF Summit Attendee Swag',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  description: 'Bee a part of the hive, get your eBPF swag now!',
   buttonText: 'Visit our store',
-  buttonUrl: '/swag',
+  buttonUrl: 'https://cilium.myspreadshop.net/',
 };
 
-const HostWatchParty = () => (
-  <HostWatchPartyLayout>
-    <SEO
-      data={{
-        title: 'eBPF Summit Attendee Swag',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        // TODO: add ogImage when it is ready
-        // image: ogImage,
-        slug: '/swag',
-      }}
-    />
+const seoData = {
+  title: 'Attendee swag for eBPF Summit',
+  description: 'Bee a part of the hive, get your eBPF swag now!',
+  // TODO: add ogImage when it is ready
+  // image: ogImage,
+};
+
+const HostWatchParty = ({ location: { pathname } }) => (
+  <HostWatchPartyLayout path={pathname} seo={seoData}>
     <Hero {...hero} />
     <Zoom />
     <Swag />

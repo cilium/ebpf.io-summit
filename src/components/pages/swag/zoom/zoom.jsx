@@ -11,7 +11,7 @@ const data = {
   title: 'Zoom background',
   description: 'Sweeten your Zoom setup with an eBPF Summit background',
   buttonText: 'Get it now',
-  buttonUrl: '/swag',
+  buttonUrl: '/images/zoom-background.jpg',
 };
 
 const Zoom = () => (
@@ -35,6 +35,7 @@ const Zoom = () => (
           to={data.buttonUrl}
           theme="black"
           size="none"
+          download
         >
           {data.buttonText}
         </Button>
