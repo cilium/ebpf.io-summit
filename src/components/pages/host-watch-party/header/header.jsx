@@ -22,7 +22,7 @@ const navigation = [
   { name: 'Information', href: '/summit-2022/#information' },
   { name: `Last year's summit`, href: `/summit-2022/#last-year's-summit` },
   {
-    name: 'Watch Parties',
+    name: 'Parties',
     menuItems: [
       { name: 'Host a watch party', href: '/host-a-watch-party/' },
       {
@@ -47,6 +47,7 @@ const navigation = [
       },
     ],
   },
+  { name: 'Attendee Swag', href: '/swag' },
 ];
 
 const mobileNavigation = [
@@ -75,6 +76,7 @@ const mobileNavigation = [
     href: 'https://www.meetup.com/cloud-native-computing-berlin/events/287759485/',
     target: '_blank',
   },
+  { name: 'Attendee Swag', href: '/swag' },
 ];
 
 const Header = () => {

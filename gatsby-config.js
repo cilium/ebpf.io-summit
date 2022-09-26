@@ -11,7 +11,7 @@ module.exports = {
     siteDescription:
       'eBPF is a revolutionary technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading a kernel module.',
     // pathPrefix: "",
-    siteImage: '/images/social-preview.png',
+    siteImage: '/images/social-preview.jpg',
     siteLanguage: 'en',
     siteUrl: process.env.GATSBY_DEFAULT_SITE_URL,
     /* author */
