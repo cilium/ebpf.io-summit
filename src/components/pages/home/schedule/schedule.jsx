@@ -36,7 +36,7 @@ const Schedule = ({ title, buttonLink, buttonText, bottomText }) => {
   }, [modifySessionizeScript]);
 
   return (
-    <section className="bg-gray-3 py-28 md:py-20" id="schedule">
+    <section className="bg-gray-3 py-28 md:py-20">
       <Container>
         <Heading className="text-center" tag="h2">
           {title}
