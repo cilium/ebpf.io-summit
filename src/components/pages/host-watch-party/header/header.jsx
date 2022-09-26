@@ -110,7 +110,7 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center space-x-10 xl:space-x-8 lg:hidden">
+                <div className="flex items-center space-x-10 xl:space-x-6 lg:hidden">
                   {navigation.map(({ name, href, menuItems, target }, index) => {
                     const hasSubmenu = menuItems?.length > 0;
                     return (
