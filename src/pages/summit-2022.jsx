@@ -18,13 +18,23 @@ const hero = {
   title: 'eBPF Summit',
   description:
     '<p>eBPF Summit is a virtual event, targeted at DevOps, SecOps, platform architects, security engineers, and developers. Register to save the date and stay updated on event information.</p>',
-  firstButton: {
-    title: 'Register for event',
-  },
-  secondButton: {
-    url: 'https://ebpf.io/slack',
-    title: 'Join Summit Slack',
-  },
+  ctaButtons: [
+    {
+      url: 'https://ebpf.io/slack',
+      title: 'Join Summit Slack',
+      theme: 'orange',
+    },
+    {
+      url: 'https://ebpf.io/summit-2022/day-1',
+      title: 'Watch day 1',
+      theme: 'gray',
+    },
+    {
+      url: 'https://ebpf.io/summit-2022/day-2',
+      title: 'Watch day 2',
+      theme: 'gray',
+    },
+  ],
 };
 
 const speakerWall = {
