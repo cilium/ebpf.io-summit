@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
@@ -120,15 +121,6 @@ const Summit2022 = () => {
   };
   return (
     <SummitLayout>
-      <SEO
-        data={{
-          title: 'eBPF Summit 2022',
-          description:
-            'Register now for the eBPF Summit 2022, Sep 28-29, 2022, a free virtual event for DevOps, SRE, SecOps, and developers.',
-          image: ogImage,
-          slug: '/summit-2022',
-        }}
-      />
       <Hero {...hero} />
       <SpeakerWall {...speakerWall} />
       <Hosts {...hosts} />
@@ -141,3 +133,14 @@ const Summit2022 = () => {
 };
 
 export default Summit2022;
+
+export const Head = ({ location: { pathname } }) => {
+  const pageMetadata = {
+    title: 'eBPF Summit 2022',
+    description:
+      'Register now for the eBPF Summit 2022, Sep 28-29, 2022, a free virtual event for DevOps, SRE, SecOps, and developers.',
+    image: ogImage,
+    slug: pathname,
+  };
+  return <SEO data={pageMetadata} />;
+};

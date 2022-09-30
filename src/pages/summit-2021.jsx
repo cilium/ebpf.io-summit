@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
@@ -103,7 +104,7 @@ const lastYear = {
   ],
 };
 
-const IndexPage = ({ location: { pathname } }) => {
+const IndexPage = () => {
   const { jaanaDogan, brendanGregg, lizRice, danielBorkmann, tabithaSable, daveThaler } =
     useStaticQuery(graphql`
       query {
@@ -202,15 +203,6 @@ const IndexPage = ({ location: { pathname } }) => {
 
   return (
     <SummitLayout>
-      <SEO
-        data={{
-          title: 'eBPF Summit 2021',
-          description:
-            'Register now for the eBPF Summit 2021, Aug 18-19, 2021, a free virtual event for DevOps, SRE, SecOps, and developers.',
-          image: ogImage,
-          slug: pathname,
-        }}
-      />
       <Hero {...hero} />
       <Speakers {...speakers} />
       <Information {...information} />
@@ -225,3 +217,14 @@ const IndexPage = ({ location: { pathname } }) => {
 };
 
 export default IndexPage;
+
+export const Head = ({ location: { pathname } }) => {
+  const pageMetadata = {
+    title: 'eBPF Summit 2021',
+    description:
+      'Register now for the eBPF Summit 2021, Aug 18-19, 2021, a free virtual event for DevOps, SRE, SecOps, and developers.',
+    image: ogImage,
+    slug: pathname,
+  };
+  return <SEO data={pageMetadata} />;
+};

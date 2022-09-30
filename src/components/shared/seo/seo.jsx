@@ -1,19 +1,11 @@
 /* eslint-disable react/prop-types */
 import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
-const SEO = ({ data: { title, description, image, slug } = {}, facebook } = {}) => {
+const SEO = ({ data: { title, description, image, slug } = {}, facebook, children } = {}) => {
   const {
     site: {
-      siteMetadata: {
-        siteTitle,
-        siteDescription,
-        siteUrl,
-        siteImage,
-        siteLanguage,
-        authorTwitterAccount,
-      },
+      siteMetadata: { siteTitle, siteDescription, siteUrl, siteImage, authorTwitterAccount },
     },
   } = useStaticQuery(graphql`
     query SEO {
@@ -36,13 +28,8 @@ const SEO = ({ data: { title, description, image, slug } = {}, facebook } = {}) 
   const currentImagePath = image ? siteUrl + image : siteUrl + siteImage;
 
   return (
-    <Helmet
-      title={currentTitle}
-      htmlAttributes={{
-        lang: siteLanguage,
-        prefix: 'og: http://ogp.me/ns#',
-      }}
-    >
+    <>
+      <title>{currentTitle}</title>
       {/* General */}
       <meta name="description" content={currentDescription} />
       {/* Open Graph */}
@@ -55,7 +42,8 @@ const SEO = ({ data: { title, description, image, slug } = {}, facebook } = {}) 
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={authorTwitterAccount} />
-    </Helmet>
+      {children}
+    </>
   );
 };
 

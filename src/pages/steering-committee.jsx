@@ -7,7 +7,7 @@ import MemberCards from 'components/shared/member-cards';
 import SEO from 'components/shared/seo';
 import MainLayout from 'layouts/main';
 
-const SteeringCommitteePage = ({ location: { pathname } }) => {
+const SteeringCommitteePage = () => {
   const { avatar1, avatar2, avatar3, avatar4 } = useStaticQuery(graphql`
     query {
       avatar1: file(relativePath: { eq: "pages/governing-board/avatar-1.jpg" }) {
@@ -69,7 +69,6 @@ const SteeringCommitteePage = ({ location: { pathname } }) => {
   };
   return (
     <MainLayout>
-      <SEO data={{ title: 'eBPF Steering Committee', slug: pathname }} />
       <HeroFoundation />
       <MemberCards {...steeringCommittee} />
     </MainLayout>
@@ -77,3 +76,11 @@ const SteeringCommitteePage = ({ location: { pathname } }) => {
 };
 
 export default SteeringCommitteePage;
+
+export const Head = ({ location: { pathname } }) => {
+  const pageMetadata = {
+    title: 'eBPF Steering Committee',
+    slug: pathname,
+  };
+  return <SEO data={pageMetadata} />;
+};
