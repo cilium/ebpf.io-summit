@@ -55,7 +55,7 @@ const join = {
   buttonText: 'Join now',
 };
 
-const FoundationPage = ({ location: { pathname } }) => {
+const FoundationPage = () => {
   const {
     andriiNakryiko,
     brendanGregg,
@@ -201,7 +201,6 @@ const FoundationPage = ({ location: { pathname } }) => {
 
   return (
     <MainLayout>
-      <SEO data={{ title: 'eBPF Foundation', slug: pathname }} />
       <HeroFoundation />
       <EbpfFoundation {...ebpfFoundation} />
       <SteeringCommittee {...steeringCommittee} />
@@ -212,3 +211,11 @@ const FoundationPage = ({ location: { pathname } }) => {
 };
 
 export default FoundationPage;
+
+export const Head = ({ location: { pathname } }) => {
+  const pageMetadata = {
+    title: 'eBPF Foundation',
+    slug: pathname,
+  };
+  return <SEO data={pageMetadata} />;
+};

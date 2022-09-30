@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 import Hero from 'components/pages/host-watch-party/hero';
@@ -50,19 +51,19 @@ const toDoList = {
 
 const HostWatchParty = () => (
   <HostWatchPartyLayout>
-    <SEO
-      data={{
-        title: 'Watch party: Bring Your Hive Together',
-        description:
-          'Do you want to spark or grow your local eBPF community? Host an eBPF Summit Watch Party to gather eBPF enthusiasts from your area and grow the buzz',
-        // TODO: add ogImage when it is ready
-        // image: ogImage,
-        slug: '/host-a-watch-party',
-      }}
-    />
     <Hero {...hero} />
     <ToDoList {...toDoList} />
   </HostWatchPartyLayout>
 );
 
 export default HostWatchParty;
+
+export const Head = ({ location: { pathname } }) => {
+  const pageMetadata = {
+    title: 'Watch party: Bring Your Hive Together',
+    description:
+      'Do you want to spark or grow your local eBPF community? Host an eBPF Summit Watch Party to gather eBPF enthusiasts from your area and grow the buzz',
+    slug: pathname,
+  };
+  return <SEO data={pageMetadata} />;
+};
