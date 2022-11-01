@@ -22,12 +22,12 @@ const Talks = ({ className, title, items }) => {
             >
               <div className="space-y-2.5">
                 <span className="leading-none text-gray-1">{speaker}</span>
-                <h3 className="text-xl font-bold leading-snug md:text-lg">{topic}</h3>
+                <h3 className="text-xl font-bold leading-snug md:text-lg max-w-[696px]">{topic}</h3>
               </div>
-              <div className="flex items-center space-x-4 lg:space-x-0 lg:flex-row-reverse lg:items-center lg:space-y-0">
+              <div className="flex ml-12 lg:ml-0 items-center space-x-4 lg:space-x-0 lg:flex-row-reverse lg:items-center lg:space-y-0">
                 {pdfLink && (
                   <Button
-                    className="items-center h-11 leading-none lg:h-10 md:text-base lg:ml-5 rounded-lg py-[14px] px-[20px] text-base"
+                    className="items-center h-11 leading-none lg:h-10 md:text-base lg:ml-5 rounded-lg py-3.5 px-5 text-base"
                     theme="gray"
                     size="xs"
                     target="_blank"
@@ -38,7 +38,7 @@ const Talks = ({ className, title, items }) => {
                   </Button>
                 )}
                 <Button
-                  className="rounded-lg py-[14px] leading-none px-[20px] text-base"
+                  className="rounded-lg py-3.5 leading-none px-5 text-base"
                   theme="gray"
                   size="sm"
                   target="_blank"
@@ -52,7 +52,7 @@ const Talks = ({ className, title, items }) => {
           ))}
         </ul>
         {!isFullListShown && (
-          <div className="mt-[56px]  text-center">
+          <div className="mt-14  text-center">
             <Button
               className="text-xl text-[#FF9800] transition-colors duration-200 hover:text-[#FFAD33]"
               theme="link-primary"

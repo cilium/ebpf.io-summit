@@ -131,7 +131,7 @@ const Summit2022 = () => {
       <Hero {...hero} />
       <SpeakerWall {...speakerWall} />
       {/* <Information /> */}
-      <Talks className="mt-[112px]" {...talks} />
+      <Talks className="pt-28 md:pt-20" {...talks} />
       <Hosts {...hosts} />
       <OurVolunteers />
       <LastYear {...lastYear} />
