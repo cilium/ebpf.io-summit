@@ -5,12 +5,14 @@ import React from 'react';
 import Banner from 'components/pages/summit-2022/banner';
 import Hero from 'components/pages/summit-2022/hero';
 import Hosts from 'components/pages/summit-2022/hosts';
-import Information from 'components/pages/summit-2022/information';
+// import Information from 'components/pages/summit-2022/information';
 import LastYear from 'components/pages/summit-2022/last-year';
 import OurVolunteers from 'components/pages/summit-2022/our-volunteers';
 import SpeakerWall from 'components/pages/summit-2022/speaker-wall';
+import Talks from 'components/pages/summit-2022/talks/talks';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'layouts/summit-2022';
+import talksData from 'utils/data';
 
 const ogImage = '/images/social-preview-summit-2022.jpg';
 
@@ -78,6 +80,11 @@ const lastYear = {
   ],
 };
 
+const talks = {
+  title: 'Talks',
+  items: talksData.filter((item) => !item.keynotes),
+};
+
 const Summit2022 = () => {
   const { tracyHolmes, duffieCooley, lizRice } = useStaticQuery(graphql`
     query {
@@ -123,8 +130,9 @@ const Summit2022 = () => {
     <SummitLayout>
       <Hero {...hero} />
       <SpeakerWall {...speakerWall} />
+      {/* <Information /> */}
+      <Talks className="mt-[112px]" {...talks} />
       <Hosts {...hosts} />
-      <Information />
       <OurVolunteers />
       <LastYear {...lastYear} />
       <Banner />
