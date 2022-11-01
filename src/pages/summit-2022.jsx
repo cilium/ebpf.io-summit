@@ -12,7 +12,7 @@ import SpeakerWall from 'components/pages/summit-2022/speaker-wall';
 import Talks from 'components/pages/summit-2022/talks/talks';
 import SEO from 'components/shared/seo';
 import SummitLayout from 'layouts/summit-2022';
-import talksData from 'utils/data';
+import talksData from 'utils/talks-data-2022';
 
 const ogImage = '/images/social-preview-summit-2022.jpg';
 
