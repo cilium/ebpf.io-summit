@@ -14,7 +14,8 @@ const talksData = [
     topic:
       'Large scale cloud native networking & security with Cilium/eBPF: 4 years experiences from Trip.com',
     youtubeLink: 'https://youtu.be/NIsU4I950l4',
-    pdfLink: 'https://ebpf.io/summit-2022/#:~:text=Arthur%2DSession%2Dtrip%2Dcom.pdf',
+    pdfLink:
+      'https://sessionize.com/download/iokvamo~LDvBZBkRzu6podCcJdUtQF.pdf~Arthur-Session-trip-com.pdf',
   },
   {
     speaker: 'Alex Mackenzie',
@@ -35,7 +36,8 @@ const talksData = [
     speaker: 'Dave Thaler',
     topic: 'Signed eBPF Programs: A Cross-Platform Analysis',
     youtubeLink: 'https://youtu.be/-hjKkP2I0cU',
-    pdfLink: 'https://ebpf.io/summit-2022/#:~:text=Slide%20Deck-,Thaler%2Dsession.pdf,-%E2%9C%95',
+    pdfLink:
+      'https://sessionize.com/download/ijoudja~NNdP4ty8UFLgJH1C1jCDhA.pdf~Thaler-session.pdf',
   },
   {
     speaker: 'Niek Temme',
@@ -52,13 +54,14 @@ const talksData = [
     topic: 'eBPF for IO latency monitoring',
     youtubeLink: 'https://youtu.be/MwPNjr46UBk',
     pdfLink:
-      'https://ebpf.io/summit-2022/#:~:text=Glauber%20%2D%20eBPF%20for%20IO%20latency%20monitoring.pdf',
+      'https://sessionize.com/download/wqaysef~n7jAqQcgAVDigcEqJTKVGk.pdf~Glauber%20-%20eBPF%20for%20IO%20latency%20monitoring.pdf',
   },
   {
     speaker: 'Jiang Wang .',
     topic: `Improving Cilium's eBPF-based DSR performance by adding support for IP-in-IP`,
     youtubeLink: 'https://youtu.be/zoxQPI91KWk',
-    pdfLink: 'https://ebpf.io/summit-2022/#:~:text=JiangWangCilium%2DIPIP.pdf',
+    pdfLink:
+      'https://sessionize.com/download/irpanceu~JLBcGbfbYH9gB5cfbw7GiS.pdf~JiangWangCilium-IPIP.pdf',
   },
   {
     speaker: 'Toke Høiland-Jørgensen',
@@ -70,7 +73,7 @@ const talksData = [
     topic: 'eBPF: innovations in cloud native',
     youtubeLink: 'https://youtu.be/wdD22mC8TjE',
     pdfLink:
-      'https://ebpf.io/summit-2022/#:~:text=Borkmann%20%2D%20eBPF%20innovations%20in%20cloud%20native.pdf',
+      'https://sessionize.com/download/syahfej~KQRCkDB3zgNUj5nhrujno9.pdf~Borkmann%20-%20eBPF%20innovations%20in%20cloud%20native.pdf',
   },
   {
     speaker: 'Purvi Desai',
@@ -87,7 +90,7 @@ const talksData = [
     topic: 'All Your Queues Are Belong to Us: Debugging and Mitigating a Kernel Bug with eBPF',
     youtubeLink: 'https://youtu.be/7Rat98r7B3U',
     pdfLink:
-      'https://ebpf.io/summit-2022/#:~:text=All%20Your%20Queues%20Are%20Belong%20to%20Us.pdf',
+      'https://sessionize.com/download/iwxaowne~MrxvAnPSQVRLHx8GBHZXeB.pdf~All%20Your%20Queues%20Are%20Belong%20to%20Us.pdf',
   },
   {
     speaker: 'Frederick Lawler',
@@ -104,14 +107,14 @@ const talksData = [
     topic: 'Container Security and Runtime Enforcement with Tetragon',
     youtubeLink: 'https://youtu.be/fw40ROmswbM',
     pdfLink:
-      'https://ebpf.io/summit-2022/#:~:text=Harouni%2DContainer%2DSecurity%2Dand%2DRuntime%2DEnforcement%2Dwith%2DTetragon.pdf',
+      'https://sessionize.com/download/ionyawse~VfsoLquJAT7YTqPtwyz7F.pdf~Harouni-Container-Security-and-Runtime-Enforcement-with-Tetragon.pdf',
   },
   {
     speaker: `Li Qiang, Xufeng Zhang`,
     topic: 'Using eBPF in system security',
     youtubeLink: 'https://youtu.be/TXlxgDvxcoY',
     pdfLink:
-      'https://ebpf.io/summit-2022/#:~:text=Li%20Qiang%20%26%20Xufeng%20Zhang%2Dusing%20eBPF%20in%20system%20security.pdf',
+      'https://sessionize.com/download/iwpaplep~NjmZ2kbAzUy76YtchSrnVe.pdf~Li%20Qiang%20&%20Xufeng%20Zhang-using%20eBPF%20in%20system%20security.pdf',
   },
   {
     speaker: 'Dinesh Venkatesan',
@@ -123,33 +126,35 @@ const talksData = [
     topic: 'Analysis of offensive capabilities of eBPF and implementation of a rootkit',
     youtubeLink: 'https://youtu.be/TAruRXEwNj8',
     pdfLink:
-      'https://ebpf.io/summit-2022/#:~:text=Bajo%20%26%20Tapiador%20%2D%20Analysis%20of%20offensive%20eBPF%20and%20implementation%20of%20a%20rootkit.pdf',
+      'https://sessionize.com/download/iyoqzaz~3og9HVouKVec8BCfXyjhzG.pdf~Bajo%20&%20Tapiador%20-%20Analysis%20of%20offensive%20eBPF%20and%20implementation%20of%20a%20rootkit.pdf',
   },
   {
     speaker: 'Andrea Terzolo, Jason Dellaluce',
     topic: `Falco's Discovery of the Modern eBPF World`,
     youtubeLink: 'https://youtu.be/BxoKztfHnYY',
     pdfLink:
-      'https://ebpf.io/summit-2022/#:~:text=Terzolo_Dellaluce_%2D_Falcos_Discovery_of_the_Modern_eBPF_World.pdf',
+      'https://sessionize.com/download/ighaxmef~hvzKR4pwBLbqeoJBqtX9Cw.pdf~Terzolo_Dellaluce_-_Falcos_Discovery_of_the_Modern_eBPF_World.pdf',
   },
   {
     speaker: 'Nikita Baksalyar',
     topic: 'Metalens: Live Programming and Visualizing eBPF',
     youtubeLink: 'https://youtu.be/YJa5c5IlBpo',
-    pdfLink: 'https://ebpf.io/summit-2022/#:~:text=baksalyzr%2Dmetalens.pdf',
+    pdfLink:
+      'https://sessionize.com/download/cbacgehha~9ranNN3CWxrHyqqWRSH3WE.pdf~baksalyzr-metalens.pdf',
   },
   {
     speaker: 'Shung-Hsi Yu',
     topic: 'Peeking into the eBPF verifierv',
     youtubeLink: 'https://youtu.be/axzmURikZjY',
-    pdfLink: 'https://ebpf.io/summit-2022/#:~:text=Yu%2DPeeking%20into%20the%20eBPF%20verifier.pdf',
+    pdfLink:
+      'https://sessionize.com/download/zlapyen~VAFQCWBowbZNG66EAS71qo.pdf~Yu-Peeking%20into%20the%20eBPF%20verifier.pdf',
   },
   {
     speaker: 'Daniel Xu',
     topic: 'Fighting and overcoming the complexity limit',
     youtubeLink: 'https://youtu.be/JgYJ98f1z3Y',
     pdfLink:
-      'https://ebpf.io/summit-2022/#:~:text=Daniel%20Xu%2DFighting%20and%20overcoming%20the%20complexity%20limit.pdf',
+      'https://sessionize.com/download/ptagqez~K4cVirWokyzbvzcjCXVpd.pdf~Daniel%20Xu-Fighting%20and%20overcoming%20the%20complexity%20limit.pdf',
   },
   {
     speaker: 'Krisztian Fekete',
@@ -160,13 +165,15 @@ const talksData = [
     speaker: 'Francis Laniel',
     topic: 'Porting eBPF CO-RE to arm64 Leads to Fix the Kernel',
     youtubeLink: 'https://youtu.be/7jCSygXhHws',
-    pdfLink: 'https://ebpf.io/summit-2022/#:~:text=Slide%20Deck-,francis%2Dlaniel.pdf,-%E2%9C%95',
+    pdfLink:
+      'https://sessionize.com/download/iwisdaw~9ysA1vyfNAkwY19avUaPY1.pdf~francis-laniel.pdf',
   },
   {
     speaker: 'Alan Maguire, Stephen Brennan',
     topic: 'The power of a self-describing kernel - How BTF can benefit applications',
     youtubeLink: 'https://youtu.be/yOQ6mose7u4',
-    pdfLink: 'https://ebpf.io/summit-2022/#:~:text=BrennanMaguire%2DSession.pdf',
+    pdfLink:
+      'https://sessionize.com/download/lcawteu~nSyD3ghKVQcJTkkTLTzmrS.pdf~BrennanMaguire-Session.pdf',
   },
   {
     speaker: 'Mauricio Vásquez Bernal, Rafael David Tinoco',
@@ -183,7 +190,7 @@ const talksData = [
     topic: 'XRP: In-Kernel Storage Functions with eBPF',
     youtubeLink: 'https://youtu.be/LN4jTI1Bbas',
     pdfLink:
-      'https://ebpf.io/summit-2022/#:~:text=Zhong%2DXRP%20In%2DKernel%20Storage%20Functions%20with%20eBPF.pdf',
+      'https://sessionize.com/download/ibsanvez~EjR9wRNvZ1z9SSmhpXMpBj.pdf~Zhong-XRP%20In-Kernel%20Storage%20Functions%20with%20eBPF.pdf',
   },
 ];
 
