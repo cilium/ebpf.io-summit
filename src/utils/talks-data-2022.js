@@ -57,7 +57,7 @@ const talksData = [
       'https://sessionize.com/download/wqaysef~n7jAqQcgAVDigcEqJTKVGk.pdf~Glauber%20-%20eBPF%20for%20IO%20latency%20monitoring.pdf',
   },
   {
-    speaker: 'Jiang Wang .',
+    speaker: 'Jiang Wang',
     topic: `Improving Cilium's eBPF-based DSR performance by adding support for IP-in-IP`,
     youtubeLink: 'https://youtu.be/zoxQPI91KWk',
     pdfLink:

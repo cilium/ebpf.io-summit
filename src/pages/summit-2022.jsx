@@ -82,7 +82,7 @@ const lastYear = {
 
 const talks = {
   title: 'Talks',
-  items: talksData.filter((item) => !item.keynotes),
+  items: talksData,
 };
 
 const Summit2022 = () => {

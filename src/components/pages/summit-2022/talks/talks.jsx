@@ -10,7 +10,7 @@ const Talks = ({ className, title, items }) => {
   const { handleClick, maxRange, isFullListShown } = useViewAll(items.length);
   return (
     <section className={className} id="talks">
-      <Container>
+      <Container small>
         <Heading className="text-center text-[44px]" tag="h2">
           {title}
         </Heading>
@@ -27,9 +27,9 @@ const Talks = ({ className, title, items }) => {
               <div className="flex ml-12 lg:ml-0 items-center space-x-4 lg:space-x-0 lg:flex-row-reverse lg:items-center lg:space-y-0">
                 {pdfLink && (
                   <Button
-                    className="items-center h-11 leading-none lg:h-10 md:text-base lg:ml-5 rounded-lg py-3.5 px-5 text-base"
+                    className="items-center h-11 leading-none lg:h-10 lg:ml-5 rounded-lg py-3.5 px-5 "
                     theme="gray"
-                    size="xs"
+                    size="sm"
                     target="_blank"
                     rel="noopener noreferrer"
                     to={pdfLink}
@@ -38,7 +38,7 @@ const Talks = ({ className, title, items }) => {
                   </Button>
                 )}
                 <Button
-                  className="rounded-lg py-3.5 leading-none px-5 text-base"
+                  className="rounded-lg py-3.5 leading-none px-5"
                   theme="gray"
                   size="sm"
                   target="_blank"
@@ -52,9 +52,9 @@ const Talks = ({ className, title, items }) => {
           ))}
         </ul>
         {!isFullListShown && (
-          <div className="mt-14  text-center">
+          <div className="mt-14 text-center">
             <Button
-              className="text-xl text-[#FF9800] transition-colors duration-200 hover:text-[#FFAD33]"
+              className="text-xl text-orange-1 transition-colors duration-200 hover:text-orange-2"
               theme="link-primary"
               size="none"
               withArrow

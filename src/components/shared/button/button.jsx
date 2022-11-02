@@ -8,7 +8,7 @@ import LoaderSvg from 'icons/loader.inline.svg';
 const arrow = <ChevronIcon className="ml-2.5" />;
 
 const styles =
-  'relative inline-flex justify-center items-center font-extrabold leading-none whitespace-nowrap transition-colors transition-opacity duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline disabled:pointer-events-none';
+  'relative inline-flex justify-center items-center font-extrabold leading-none whitespace-nowrap transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline disabled:pointer-events-none';
 
 const themeStyles = {
   black: 'text-white bg-black hover:bg-black-hover',
