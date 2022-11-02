@@ -10,12 +10,17 @@ import illustration from './images/illustration.svg';
 
 const Hero = ({ date, title, description, ctaButtons }) => (
   <section className="relative lg:overflow-hidden">
-    <div className="absolute right-0 md:-right-4 sm:-right-14 -top-20 w-[200px] xl:hidden lg:block">
+    <div className="absolute right-0 md:-right-4 -top-20 w-[200px] xl:hidden lg:block sm:-top-[120px] sm:-right-[81px]">
       <StaticImage src="./images/drop-1.jpg" alt="" loading="eager" aria-hidden />
     </div>
-    <div className="absolute -top-3 2xl:-left-14 2xl:top-12 left-0 md:-left-4 sm:-left-14 sm:-top-[28px] w-[128px] xl:hidden lg:block lg:-top-3 lg:left-0">
+    <div className="absolute -top-3 2xl:-left-14 2xl:top-12 left-0 md:-left-4 sm:-left-14 sm:hidden sm:-top-[28px] w-[128px] xl:hidden lg:block lg:-top-3 lg:left-0">
       <StaticImage src="./images/drop-2.jpg" alt="" loading="eager" aria-hidden />
     </div>
+
+    <div className="hidden absolute sm:block -left-14 -top-7 w-32">
+      <StaticImage src="./images/drop-3.jpg" alt="" loading="eager" aria-hidden />
+    </div>
+
     <div className="absolute top-96 2xl:top-[450px] 2xl:-left-10 left-0 md:top-64 md:-left-20 sm:hidden w-[330px] 2xl:w-[280px] xl:hidden lg:block lg:top-80 lg:left-0">
       <StaticImage src="./images/honey.jpg" alt="" loading="eager" aria-hidden />
     </div>

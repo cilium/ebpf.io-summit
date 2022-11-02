@@ -11,16 +11,18 @@ const Hosts = ({ title, items }) => (
       <Heading className="text-center" tag="h2">
         {title}
       </Heading>
-      <div className="mx-auto max-w-[904px] gap-8 mt-16 flex flex-wrap md:mt-11 md:gap-6">
+      <div className="mx-auto max-w-[904px] gap-8 mt-16 flex flex-wrap md:mt-10 md:gap-6">
         {items.map(({ avatar, name, position }, index) => (
           <div className="flex flex-grow flex-col items-center text-center" key={index}>
             <GatsbyImage
-              className="flex-shrink-0 w-[120px] h-[120px] rounded-full"
+              className="flex-shrink-0 w-32 h-32 rounded-full"
               image={getImage(avatar)}
               alt={name}
             />
-            <h3 className="mt-5 text-2xl font-bold md:text-xl">{name}</h3>
-            <span className="max-w-[280px] mt-1 text-lg text-gray-1 md:text-base">{position}</span>
+            <h3 className="mt-5 text-2xl font-bold [@media(max-width:543px)]:mt-3">{name}</h3>
+            <span className="max-w-[280px] mt-1 text-lg text-gray-1 [@media(max-width:543px)]:max-w-none [@media(max-width:543px)]:mt-0">
+              {position}
+            </span>
           </div>
         ))}
       </div>
