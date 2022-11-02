@@ -14,7 +14,7 @@ const Talks = ({ className, title, items }) => {
         <Heading className="text-center text-[44px]" tag="h2">
           {title}
         </Heading>
-        <ul className="mt-14">
+        <ul className="mt-14 md:mt-11">
           {items.slice(0, maxRange).map(({ speaker, topic, pdfLink, youtubeLink }, index) => (
             <li
               className="flex items-center justify-between py-8 border-t-2 last:border-b-2 border-gray-2 lg:flex-col lg:items-start lg:space-y-4"

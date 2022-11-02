@@ -11,7 +11,7 @@ const Hosts = ({ title, items }) => (
       <Heading className="text-center" tag="h2">
         {title}
       </Heading>
-      <div className="mx-auto max-w-[904px] gap-8 mt-16 flex flex-wrap md:gap-6">
+      <div className="mx-auto max-w-[904px] gap-8 mt-16 flex flex-wrap md:mt-11 md:gap-6">
         {items.map(({ avatar, name, position }, index) => (
           <div className="flex flex-grow flex-col items-center text-center" key={index}>
             <GatsbyImage
