@@ -5,7 +5,7 @@ import React from 'react';
 import Banner from 'components/pages/summit-2022/banner';
 import Hero from 'components/pages/summit-2022/hero';
 import Hosts from 'components/pages/summit-2022/hosts';
-// import Information from 'components/pages/summit-2022/information';
+import Information from 'components/pages/summit-2022/information';
 import LastYear from 'components/pages/summit-2022/last-year';
 import OurVolunteers from 'components/pages/summit-2022/our-volunteers';
 import SpeakerWall from 'components/pages/summit-2022/speaker-wall';
@@ -130,8 +130,8 @@ const Summit2022 = () => {
     <SummitLayout>
       <Hero {...hero} />
       <SpeakerWall {...speakerWall} />
-      {/* <Information /> */}
       <Talks className="pt-[92px] md:pt-20" {...talks} />
+      <Information />
       <Hosts {...hosts} />
       <OurVolunteers />
       <LastYear {...lastYear} />
