@@ -17,7 +17,7 @@ import SubMenu from './sub-menu';
 const HUBSPOT_FORM_ID = 'ecd4bee1-a31f-4c5c-83b6-ee7df83c885d';
 
 const navigation = [
-  { name: 'Agenda', href: '/summit-2022/#agenda' },
+  { name: 'Talks', href: '/summit-2022/#talks' },
   { name: 'Information', href: '/summit-2022/#information' },
   { name: `Last year's summit`, href: `/summit-2022/#last-year-summit` },
   {
@@ -50,7 +50,7 @@ const navigation = [
 ];
 
 const mobileNavigation = [
-  { name: 'Agenda', href: '/summit-2022/#agenda' },
+  { name: 'Talks', href: '/summit-2022/#talks' },
   { name: 'Information', href: '/summit-2022/#information' },
   { name: `Last year's summit`, href: `/summit-2022/#last-year's-summit` },
   { name: 'Host a watch party', href: '/host-a-watch-party/' },

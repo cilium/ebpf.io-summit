@@ -9,7 +9,7 @@ import useViewAll from 'hooks/use-view-all';
 const Talks = ({ className, title, items }) => {
   const { handleClick, maxRange, isFullListShown } = useViewAll(items.length);
   return (
-    <section className={className} id="agenda">
+    <section className={className} id="talks">
       <Container small>
         <Heading className="text-center text-[44px]" tag="h2">
           {title}
