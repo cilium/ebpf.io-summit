@@ -186,11 +186,11 @@
 }
 
 #sessionize.sessionize-wrapper .sz-speaker--compact .sz-speaker__name {
-  @apply text-2xl leading-normal mt-5 !important;
+  @apply text-2xl leading-normal mt-5 [@media(max-width:543px)]:mt-3 !important;
 }
 
 #sessionize.sessionize-wrapper .sz-speaker--compact .sz-speaker__tagline {
-  @apply opacity-70 text-lg mt-1 max-w-[270px] self-center !important;
+  @apply text-lg mt-1 max-w-[270px] self-center [@media(max-width:543px)]:mt-0 [@media(max-width:543px)]:max-w-none !important;
 }
 
 #sessionize.sessionize-wrapper .sz-modal {
@@ -198,7 +198,7 @@
 }
 
 #sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__photo {
-  @apply w-[72px] h-auto mb-0 mr-6 !important;
+  @apply w-[72px] h-auto mb-0 mr-6 sm:float-none !important;
 }
 
 #sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__photo img {
@@ -210,7 +210,7 @@
 }
 
 #sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__name {
-  @apply text-[28px] font-semibold !important;
+  @apply text-[28px] font-semibold sm:mt-3.5 !important;
 }
 
 #sessionize.sessionize-wrapper .sz-speaker--full .sz-speaker__tagline {
@@ -258,7 +258,7 @@
 }
 
 #sessionize.sessionize-wrapper .sz-speakers--wall .sz-speaker {
-  @apply w-[200px] xl:w-[300px] lg:w-[256px] !important;
+  @apply w-[200px] xl:w-[300px] lg:w-[256px] xl:mb-5 !important;
 }
 
 #sessionize.sessionize-wrapper .sz-session.sz-session--full {

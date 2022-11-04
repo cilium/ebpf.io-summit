@@ -17,7 +17,7 @@ import SubMenu from './sub-menu';
 const HUBSPOT_FORM_ID = 'ecd4bee1-a31f-4c5c-83b6-ee7df83c885d';
 
 const navigation = [
-  { name: 'Agenda', href: '/summit-2022/#agenda' },
+  { name: 'Talks', href: '/summit-2022/#talks' },
   { name: 'Information', href: '/summit-2022/#information' },
   { name: `Last year's summit`, href: `/summit-2022/#last-year-summit` },
   {
@@ -50,7 +50,7 @@ const navigation = [
 ];
 
 const mobileNavigation = [
-  { name: 'Agenda', href: '/summit-2022/#agenda' },
+  { name: 'Talks', href: '/summit-2022/#talks' },
   { name: 'Information', href: '/summit-2022/#information' },
   { name: `Last year's summit`, href: `/summit-2022/#last-year's-summit` },
   { name: 'Host a watch party', href: '/host-a-watch-party/' },
@@ -100,7 +100,7 @@ const SummitHeader = () => {
                       <Logo className="w-auto h-15 lg:w-auto lg:h-8" aria-label="Logo" />
                     </Link>
                     <div className="items-center hidden -mr-2 lg:flex">
-                      <Popover.Button className="inline-flex items-center justify-center p-2 text-black rounded-md bg-gray-5 hover:text-gray-5 hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline">
+                      <Popover.Button className="inline-flex items-center justify-center p-2 text-black rounded-md hover:text-gray-5 hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-outline">
                         <span className="sr-only">Open main menu</span>
                         <MenuIcon className="w-6 h-6" aria-hidden="true" />
                       </Popover.Button>

@@ -42,6 +42,10 @@ module.exports = {
         yellow: {
           1: '#FEF8E7',
         },
+        orange: {
+          1: '#FF9800',
+          2: '#FFAD33',
+        },
       },
       fontSize: {
         xl: ['1.25rem', '1.5'],

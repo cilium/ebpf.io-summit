@@ -43,7 +43,7 @@ const logos = [
 ];
 
 const OurVolunteers = () => (
-  <section className="my-32 lg:my-28 md:my-24 sm:my-20" id="volunteers">
+  <section className="mt-4 mb-32 lg:mt-0 lg:mb-28 md:mb-24 sm:mb-20" id="volunteers">
     <Container className="max-w-[1400px] flex flex-col items-center">
       <div className="max-w-3xl md:max-w-2xl text-center">
         <Heading size="xl" tag="h2">
